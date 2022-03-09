@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Tajawal;
+  src: url("../fonts/Tajawal/Tajawal-Regular.ttf");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Tajawal , sans-serif !important;
+  background-color: #ffffff !important;
+  font-size: 16pt !important;
+  overflow: hidden;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
