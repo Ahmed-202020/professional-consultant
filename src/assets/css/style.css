@@ -11,7 +11,6 @@ body {
   font-family: Tajawal , sans-serif !important;
   background-color: #ffffff !important;
   font-size: 16pt !important;
-  overflow: hidden;
 }
 
 body a {
@@ -20,5 +19,430 @@ body a {
 
 body ul {
   list-style: none;
+}
+
+.header .navbar .min-nav .lang .dropdown {
+  position: relative;
+}
+
+.header .navbar .min-nav .lang .dropdown .text-lang {
+  color: #ffffff;
+}
+
+.header .navbar .min-nav .lang .dropdown .dropdown-menu {
+  top: 33px;
+  position: absolute;
+  min-width: 11rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  font-size: 16pt;
+  border: none;
+  -webkit-box-shadow: 0 0 3px #e6e7e8;
+          box-shadow: 0 0 3px #e6e7e8;
+}
+
+.header .navbar .min-nav .lang .dropdown .dropdown-item {
+  text-align: center;
+  font-size: 16pt;
+  padding-block: 15px;
+  margin-top: 10px;
+  color: #000;
+  width: 92%;
+  margin-inline: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.header .navbar .min-nav .lang .dropdown .dropdown-item:hover {
+  background-color: #fafafa;
+}
+
+.header .navbar .min-nav .lang .dropdown .drop-1 {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.header .navbar .min-nav .lang .dropdown .drop-1::after {
+  position: absolute;
+  top: 78px;
+  left: 16px;
+  content: "";
+  background-color: #dcdcdc;
+  width: 80%;
+  height: 1px;
+}
+
+.services .title, .why-choose-us .title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 25pt;
+  color: #000;
+  font-weight: bold;
+}
+
+.services .title::after, .why-choose-us .title::after {
+  position: absolute;
+  content: "";
+  top: 30%;
+  right: 39.2%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #484848;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.services .show-case, .why-choose-us .show-case {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(calc(100% / 4), 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / 4), 1fr));
+  gap: 20px;
+}
+
+.services .show-case .card, .why-choose-us .show-case .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  padding-block: 80px;
+  background-color: #fafafa;
+  border: 1px solid #dcdcdc;
+  border-bottom: 4px solid #0e0e0e;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.services .show-case .card img, .why-choose-us .show-case .card img {
+  min-height: 140px;
+  max-height: 140px;
+  margin-bottom: 15px;
+}
+
+.services .show-case .card .card-body, .why-choose-us .show-case .card .card-body {
+  font-size: 25pt;
+  color: #000;
+}
+
+.header #slider .buttons .btn, .features .feature .show-case .btn {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#484848), to(#0e0e0e));
+  background-image: linear-gradient(#484848, #0e0e0e);
+  font-size: 20pt;
+  margin-bottom: 16%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 20%;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
+.header #slider .buttons .btn:hover, .features .feature .show-case .btn:hover {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+}
+
+.active-lang {
+  color: #e8b134 !important;
+  background-color: #fafafa !important;
+  font-weight: bold !important;
+}
+
+.header .navbar {
+  display: block;
+  padding-block: 0;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#484848), to(#0e0e0e));
+  background-image: linear-gradient(#484848, #0e0e0e);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header .navbar .min-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(calc(100% / 3), 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 10px 70px 20px;
+  width: 100%;
+}
+
+.header .navbar .min-nav .lang {
+  text-align: right;
+}
+
+.header .navbar .min-nav .lang .dropdown-toggle::after {
+  border: none;
+  content: url("../icons/Icon ionic-ios-arrow-forward-1.svg");
+}
+
+.header .navbar .min-nav .lang .dropdown .dropdown-menu {
+  right: 80px;
+  z-index: 1545;
+}
+
+.header .navbar .min-nav .navbar-brand {
+  margin-left: 0;
+  text-align: center;
+}
+
+.header .navbar .min-nav .navbar-brand img {
+  width: 20%;
+}
+
+.header .navbar .min-nav .sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .navbar .min-nav .sign .btn {
+  color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  width: 40%;
+  height: 45px;
+  font-size: 16pt;
+  border: none;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.header .navbar .min-nav .sign .btn:hover {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+}
+
+.header .navbar .min-nav .sign .btn + .btn {
+  margin-right: 25px;
+}
+
+.header .navbar:after {
+  position: absolute;
+  content: "";
+  bottom: -7px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.header #slider {
+  position: relative;
+}
+
+.header #slider .carousel-inner {
+  position: relative;
+  z-index: -2;
+}
+
+.header #slider .carousel-inner .carousel-item {
+  position: relative;
+}
+
+.header #slider .carousel-inner .carousel-item .overlay {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.header #slider .carousel-inner .carousel-item .overlay .text {
+  color: #ffffff;
+  font-size: 30pt;
+  width: 520px;
+  text-align: center;
+}
+
+.header #slider .carousel-inner .buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.header #slider .carousel-control-prev {
+  width: 60px;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.2);
+  opacity: 1;
+}
+
+.header #slider .carousel-control-prev::after {
+  position: relative;
+  content: url("../icons/Icon ionic-ios-arrow-forward.svg");
+  top: 0;
+  left: 0;
+}
+
+.header #slider .buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header #slider .carousel-indicators {
+  bottom: 25%;
+}
+
+.header #slider .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 1;
+}
+
+.header #slider .carousel-indicators .active {
+  background-color: #e8b134;
+}
+
+.services {
+  padding: 150px 70px;
+}
+
+.features {
+  padding: 150px 0 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(calc(100% / 2), 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
+}
+
+.features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fafafa;
+}
+
+.features .feature .image img {
+  width: 100%;
+}
+
+.features .feature .show-case {
+  padding-inline: 50px;
+}
+
+.features .feature .show-case .text {
+  font-size: 25pt;
+  width: 500px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.features .feature .show-case .btn {
+  width: 40%;
+}
+
+.why-choose-us {
+  padding: 150px 70px;
+}
+
+.why-choose-us .title:after {
+  right: 43%;
+  top: 35%;
+}
+
+.why-choose-us .show-case {
+  -ms-grid-columns: (minmax(calc(100% / 5), 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(calc(100% / 5), 1fr));
+}
+
+.why-choose-us .show-case .card {
+  height: 500px;
+}
+
+.why-choose-us .show-case .card .card-body {
+  font-size: 18pt;
+  text-align: center;
+}
+
+.why-choose-us .show-case .card .card-body .card-text {
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
