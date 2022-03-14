@@ -35,8 +35,7 @@
                                 <a href="./index.html"><img src="./assets/logo/Logo@3x.png" alt="logo"></a>
                             </div>
                             <div class="sign">
-                                <a class="btn" href="./create-account" data-bs-toggle= "modal" data-bs-target="#register">مستشار جديد</a>
-                                <a class="btn" href="./login.html" data-bs-toggle= "modal" data-bs-target="#create">تسجيل الدخول</a>
+                                <a href="./profile.html"><img src="./assets/icons/Profile-1.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -407,94 +406,6 @@
             </p>
         </footer>
     </body>
-    <div id = "register"  class="modal modal-register register fade" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="signin">
-                            <span class="out">
-                                <a class="close-register"> x</a>
-                            </span>
-                            <nav class="navbar">
-                            </nav>
-                            <h6 class="sub">مرحبا بعودتك !</h6>
-                            <span class="title">تسجيل الدخول</span>
-                            <form   id = "my-form" action="."   class="form-group">
-                                <label for="key-country">
-                                    <!-- <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag"> -->
-                                    <span class="fas fa-sort-down"></span> 
-                                </label>
-                                <select class="form-control" name="key" id="key-country">
-                                    <option value="KSA" selected>+966</option>
-                                    <option value="Egypt">+002</option>
-                                    <option value="known">+111</option>
-                                </select>
-                                <input type="text" class="form-control" name = "number"  placeholder="رقم الهاتف" required>
-                                <input type="password" class="form-control" name = "password"  placeholder="كلمة السر" required>
-                                <a href="#" class="forget">نسيت كلمة المرور ؟</a>
-                                <div class="buttons">
-                                    <button  type="button" class = "btn sign"  >تسجيل الدخول</button>
-                                    <a id="havent-acount" data-bs-toggle= "modal" data-bs-target="#create" class="signup btn" >ليس لديك حساب؟</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-6 ">
-                        <!-- <img  class="w-100 image" src="./assets/images/sign.png" alt="sign"> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id = "create"  class="modal modal-create  create fade" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="signin signup">
-                            <span class="out">
-                                <a class="close-create"> x</a>
-                            </span>
-                            <nav class="navbar">
-                                <div class="navbar-brand">
-                                    <!-- <img  src="./assets/logo/logo.png" alt="logo"> -->
-                                </div>
-                            </nav>
-                            <h6 class="sub">أهلا بك !</h6>
-                            <span class="title">تسجيل مستخدم جديد</span>
-                            <form  action="." class="form-group">
-                                <label for="key-country">
-                                    <!-- <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag"> -->
-                                    <span class="fas fa-sort-down"></span> 
-                                </label>
-                                <select class="form-control" name="key" id="key-country">
-                                    <option value="KSA" selected>+966</option>
-                                    <option value="Egypt">+002</option>
-                                    <option value="known">+111</option>
-                                </select>
-                                <input type="text" class="form-control" name = "number"  placeholder="رقم الهاتف" required>
-                                <input type="email" class="form-control" name = "email"  placeholder="البريد الالكترونى (اختيارى)" required>
-                                <input type="password" class="form-control" name = "password"  placeholder="كلمة السر" required>
-                                <div class="rules">
-                                    <input type="checkbox" id="agree" required>
-                                    <label for="agree">أوافق على الشروط والأحكام</label>
-                                </div>
-                                <div class="buttons">
-                                    <button  class = "btn sign" type="button" >تسجيل الدخول</button>
-                                    <button class = "btn sign custom-btn" type="button" >تصفح المنتجات</button>
-                                    <a id="have-acount" data-bs-toggle= "modal" data-bs-target="#register" class=" signup btn">لديك حساب بالفعل ؟</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-6 ">
-                        <!-- <img  class="w-100 image" src="./assets/images/sign.png" alt="sign"> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./js/index.js"></script>
