@@ -1,6 +1,8 @@
 // color
 
 $white : #ffffff ; 
+$red : #f20000 ; 
+$dark-red : #790000 ; 
 $shadow: #e6e7e8 ; 
 $light-bg : #fafafa ; 
 $light-line : #dcdcdc ;
@@ -32,11 +34,16 @@ body{
     background-color: $white !important;
     font-size: 16pt !important;
     overflow: hidden ;
+    padding-right: 0 !important;
     a{
         text-decoration: none;
     }
     ul{
         list-style: none;
+    }
+    input[type='password'] {
+        font-family: Verdana;
+        letter-spacing: 0.125em;
     }
 }
 

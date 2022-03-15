@@ -1,6 +1,6 @@
 @import "./vars" ; 
 @import "./login" ; 
-@import "./create-account" ; 
+@import "./signup" ;
 .header{
     .navbar{
         display: block;
@@ -160,6 +160,28 @@
             }
             .active{
                 background-color: $min-color ;
+            }
+        }
+    }
+}
+.header-home{
+    .navbar{
+        .min-nav{
+            .sign{
+                .dropdown{
+                    .dropdown-item{
+                        color: $red ;
+                        font-size: 14pt ;
+                    }
+                    .dropdown-menu{
+                        right: -160px ;
+                    }
+                }
+                .dropdown-toggle{
+                    &::after{
+                        content: "" ;
+                    }
+                }
             }
         }
     }
@@ -571,3 +593,4 @@
         }
     }
 }
+
