@@ -1,0 +1,17 @@
+.about-us{
+    padding: 50px 70px 200px;
+    .branch{
+        @extend %branch ; 
+    }
+    .show-case{
+        padding-inline: 280px ;
+        text-align: center ;
+        .text{
+            color: $black ;
+            font-size: 16pt ;
+            &:first-child{
+                margin-bottom: 40px ;
+            }
+        }
+    }
+}

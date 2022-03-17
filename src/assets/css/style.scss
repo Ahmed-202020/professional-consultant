@@ -1,6 +1,15 @@
 @import "./vars" ; 
 @import "./login" ; 
 @import "./signup" ;
+@import "./otp" ; 
+@import "./forget-password" ; 
+@import "./new-password" ; 
+@import "./errors" ; 
+@import "./about-us" ; 
+@import "./t-c" ; 
+@import "./profile" ; 
+@import "./profile-info" ; 
+
 .header{
     .navbar{
         display: block;
@@ -590,6 +599,64 @@
             -moz-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
+        }
+    }
+}
+
+#notifications{
+    padding-left: 0 !important;
+    .modal-dialog{
+        margin-left: 50px ;
+        margin-top: 50px;
+        max-width: 50% !important;
+        .modal-content{
+            background-color: $light-bg ;
+            padding: 50px 60px 0 0;
+            height: 250px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            box-shadow: 0 0 2px $light-line;
+            border: none !important;
+            .sub{
+                color: $black;
+                font-size: 15pt;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }
+            .btn{
+                background-image: linear-gradient($btn-1 , $btn-2);
+                color: $white;
+                border: none ;
+                box-shadow: 0 3px 5px $light-line ;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+                width: 100px;
+                padding: 8px 10px;
+                font-size: 18pt;
+                &:focus{
+                    box-shadow: none;
+                }
+                &:hover{
+                    color: $white;
+                    filter: brightness(95%);
+                    -webkit-filter: brightness(95%);
+                }
+            }
+            .btn:last-child{
+                margin-right: 15px;
+                background-image: linear-gradient($light-bg , $light-line) !important ;
+                box-shadow: 0 0 2px $light-line;
+                color: $black ;
+            }
+        }
+        .modal-open{
+            padding: 0 !important;
         }
     }
 }

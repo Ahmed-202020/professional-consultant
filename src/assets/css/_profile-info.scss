@@ -1,0 +1,139 @@
+.profile-info{
+    padding: 50px 70px 200px ;
+    .branch{
+        @extend %branch ; 
+        margin-bottom: 125px;
+        .shape{
+            img{
+                &:nth-child(2){
+                    z-index: 5 ;
+                }
+                &:nth-child(3){
+                    position: absolute ;
+                    right: 8px ;
+                    transform: scaleX(1.2);
+                    -webkit-transform: scaleX(1.2);
+                    -moz-transform: scaleX(1.2);
+                    -ms-transform: scaleX(1.2);
+                    -o-transform: scaleX(1.2);
+                }
+                &:nth-child(4){
+                    position: absolute ;
+                    right: 104px ;
+                    z-index: -1;
+                    transform: scaleX(1.2) ;
+                    -webkit-transform: scaleX(1.2) ;
+                    -moz-transform: scaleX(1.2) ;
+                    -ms-transform: scaleX(1.2) ;
+                    -o-transform: scaleX(1.2) ;
+                }
+            }
+            .text{
+                &:last-child(){
+                    right: 130px ;
+                }   
+            }
+        }
+    }
+    .show-case{
+        position: relative ;
+        padding: 200px 0 100px ;
+        background-color: $light-bg ;
+        border: 2px solid $light-line ;
+        width: 70% ;
+        border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -ms-border-radius: 10px ;
+        -o-border-radius: 10px ;
+        margin-inline:auto;
+        .image-profile{
+            position: absolute ;
+            left: 50% ;
+            top: -50px ;
+            transform: translateX(-50% );
+            -webkit-transform: translateX(-50% );
+            -moz-transform: translateX(-50% );
+            -ms-transform: translateX(-50% );
+            -o-transform: translateX(-50% );
+            img{
+                width: 115px ;
+                margin-bottom: 15px ;
+                border: 1px solid $min-color ;
+                border-radius: 50% ;
+                -webkit-border-radius: 50% ;
+                -moz-border-radius: 50% ;
+                -ms-border-radius: 50% ;
+                -o-border-radius: 50% ;
+            }
+            .name{
+                text-align: center ;
+                color: $black ;
+            }
+        }
+        .form-group{
+            width: 42% ;
+            margin-inline: auto ; 
+            @extend %form ; 
+            select{
+                top: -8px ;
+            }
+            label.key-country{
+                top: 82px !important ;
+            }
+            .form-control{
+                background-color: $white ;
+                text-align: right ;
+                font-size: 14pt ;
+            }
+            .buttons{
+                margin-top: 60px ;
+                .signup{
+                    background-image: none ;
+                    color: $min-color ;
+                    font-size: 14pt ;
+                }
+            }
+        }
+    }
+}
+#change-pass-prof{
+    .modal-content{
+        border: none ;
+        .show-case{
+            padding: 125px 0 200px ;
+            .out{
+                position: absolute ;
+                right: 30px  ;
+                top: 30px ;
+                cursor: pointer ;
+            }
+            .title{
+                text-align: center ;  
+                font-weight: bolder ;
+                color: $black ;
+                font-size: 18pt ;
+                margin-bottom: 5px ;
+            }
+            .sub{
+                text-align: center ;
+                font-size: 10pt ;
+                margin-bottom: 80px ;
+            }
+            .form-group{
+                margin-inline: auto ; 
+                width: 40% ;
+                @extend %form ; 
+                .eye{
+                    top: 3% ;
+                }
+                .eye-2{
+                    top: 27% ;
+                }
+                .buttons{
+                    margin-top: 80px ;
+                }
+            }
+        }
+    }
+}

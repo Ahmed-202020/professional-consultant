@@ -407,7 +407,7 @@
             </p>
         </footer>
     </body>
-    <div id = "register"  class="modal modal-register register fade" aria-hidden="true" tabindex="-1">
+    <div id = "register"  class="modal modal-register register fade"  aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
@@ -420,10 +420,10 @@
                             </div>
                             <div class="title">مرحبا بك فى المستشار المحترف</div>
                             <div class="sub">تسجيل الدخول</div>
-                            <form   id = "my-form" action="./home.html"   class="form-group">
-                                <label for="key-country">
+                            <form  action="./home.html"   class="form-group">
+                                <label for="key-country-1" class="key-country">
                                     <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag">
-                                    <select  name="key" id="key-country">
+                                    <select  name="key" id="key-country-1">
                                         <option value="KSA" selected>966+</option>
                                         <option value="Egypt">002+</option>
                                         <option value="known">111+</option>
@@ -432,10 +432,118 @@
                                 <input  type="text" class="form-control select" name = "number"  placeholder="رقم الجوال" required>
                                 <input type="password" class="pass form-control" name = "password"  placeholder="كلمة المرور" required>
                                 <div class="eye"><img  src="./assets/icons/Icon ionic-ios-eye.svg" alt="eye"></div>
-                                <a href="./forget-password.html" class="forget">نسيت كلمة المرور ؟</a>
+                                <a href="#" class="forget" data-bs-toggle= "modal" data-bs-target="#forget-password">نسيت كلمة المرور ؟</a>
                                 <div class="buttons">
                                     <button   type="submit" class = "btn sign"  >تسجيل الدخول</button>
-                                    <a href="#" data-bs-toggle= "modal" data-bs-target="#create" class="sign  signup btn" >مستشار جديد</a>
+                                    <button  data-bs-toggle= "modal" data-bs-target="#create" class="sign  signup btn" >مستشار جديد</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <img  class="w-100 image" src="./assets/img/sign img.png" alt="sign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "forget-password"  class="modal modal-forget fade" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="signin">
+                            <div class="out">
+                                <a class="close-register">
+                                    <img src="./assets/icons/Icon ionic-ios-close-circle-outline.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="title">نسيت كلمة المرور</div>
+                            <div class="sub">من فضلك ادخل رقم الجوال لارسال كلمة مرور مؤقتة لتغيير كلمة المرور الخاصة بك</div>
+                            <form  action="."   class="form-group">
+                                <label for="key-country-1" class="key-country">
+                                    <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag">
+                                    <select  name="key" id="key-country-1">
+                                        <option value="KSA" selected>966+</option>
+                                        <option value="Egypt">002+</option>
+                                        <option value="known">111+</option>
+                                    </select>
+                                </label>
+                                <input  type="text" class="form-control select" name = "number"  placeholder="رقم الجوال" required>
+                                <div class="buttons">
+                                    <button   type="submit"   class = "btn sign">ارسال كلمة مرور مؤقتة</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <img  class="w-100 image" src="./assets/img/sign img.png" alt="sign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "otp-pass"  class="modal otp fade" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="signin">
+                            <div class="out">
+                                <a class="close-register">
+                                    <img src="./assets/icons/Icon ionic-ios-close-circle-outline.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="title">كلمة المرور المؤقتة</div>
+                            <div class="sub">تم ارسال كلمة المرور المؤقتة الى رقم الجوال</div>
+                            <span class="code">9660000000000+</span>
+                            <form  action="."   class="form-group">
+                                <div class="codes">
+                                    <input type="password" name="code" class="form-control one" placeholder="-"  required maxlength="1" >
+                                    <input type="password" name="code" class="form-control two" placeholder="-"  required maxlength="1"> 
+                                    <input type="password" name="code" class="form-control three" placeholder="-" required maxlength="1">
+                                    <input type="password" name="code" class="form-control four" placeholder="-"  required maxlength="1">
+                                </div>
+                                <div class="buttons">
+                                    <button disabled  type="submit" class = "btn sign"  >تأكيد</button>
+                                </div>
+                            </form>
+                            <button   class="resent btn" >اعادة ارسال</button>
+                            <div class="timing">
+                                <span class="time">
+                                    <span class="seconds">45</span> : <span class="minutes">03</span>
+                                </span>
+                                <span>د.ق</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <img  class="w-100 image" src="./assets/img/sign img.png" alt="sign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "new-password"  class="modal modal-new-pass  fade" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="signin">
+                            <div class="out">
+                                <a class="close-register">
+                                    <img src="./assets/icons/Icon ionic-ios-close-circle-outline.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="title">كلمة مرور جديدة</div>
+                            <div class="sub">قم بإدخال كلمة المرور الجديدة</div>
+                            <form  action="./home.html"   class="form-group">
+                                <input type="password" class="pass form-control" name = "password"  placeholder="كلمة المرور الجديدة" required>
+                                <div class="eye"><img  src="./assets/icons/Icon ionic-ios-eye.svg" alt="eye"></div>
+                                <input type="password" class="pass-2 form-control" name = "password"  placeholder="تأكيد كلمة المرور الجديدة" required>
+                                <div class="eye eye-2"><img  src="./assets/icons/Icon ionic-ios-eye.svg" alt="eye"></div>
+                                <div class="buttons">
+                                    <button   type="submit" class = "btn sign"  >تغيير كلمة المرور</button>
                                 </div>
                             </form>
                         </div>
@@ -460,10 +568,10 @@
                             </div>
                             <div class="title">مرحبا بك فى المستشار المحترف</div>
                             <div class="sub">تسجيل مستشار جديد</div>
-                            <form   id = "my-form" action="./otp.html"   class="form-group">
-                                <label for="key-country">
+                            <form  action="." type ="submit"   class="form-group">
+                                <label for="key-country-2" class="key-country" >
                                     <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag">
-                                    <select  name="key" id="key-country">
+                                    <select  name="key" id="key-country-2">
                                         <option value="KSA" selected>966+</option>
                                         <option value="Egypt">002+</option>
                                         <option value="known">111+</option>
@@ -479,7 +587,7 @@
                                 <input type="text"  class="form-control ph" name = "photo"  placeholder="الصورة الشخصية" required>
                                 <input type="text" class="form-control" name = "number"  placeholder="رقم الهوية او الاقامة" required>
                                 <label for="agree">
-                                    <input id="agree" type="checkbox" name="agree" required>
+                                    <input id="agree" type="checkbox"  required>
                                     <span>أوافق علي الشروط و الاحكام</span>
                                 </label>
                                 <div class="buttons">
@@ -495,9 +603,51 @@
             </div>
         </div>
     </div>
+    <div id = "otp-phone"  class="modal otp fade" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="signin">
+                            <div class="out">
+                                <a class="close-register">
+                                    <img src="./assets/icons/Icon ionic-ios-close-circle-outline.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="title">كلمة المرور المؤقتة</div>
+                            <div class="sub">تم ارسال كلمة المرور المؤقتة الى رقم الجوال</div>
+                            <span class="code">9660000000000+</span>
+                            <form  action="./home.html"   class="form-group">
+                                <div class="codes">
+                                    <input type="password" name="code" class="form-control one" placeholder="-"  required maxlength="1" >
+                                    <input type="password" name="code" class="form-control two" placeholder="-"  required maxlength="1"> 
+                                    <input type="password" name="code" class="form-control three" placeholder="-" required maxlength="1">
+                                    <input type="password" name="code" class="form-control four" placeholder="-"  required maxlength="1">
+                                </div>
+                                <div class="buttons">
+                                    <button disabled  type="submit" class = "btn sign"  >تأكيد</button>
+                                </div>
+                            </form>
+                            <button   class="resent btn" >اعادة ارسال</button>
+                            <div class="timing">
+                                <span class="time">
+                                    <span class="seconds">45</span> : <span class="minutes">03</span>
+                                </span>
+                                <span>د.ق</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <img  class="w-100 image" src="./assets/img/sign img.png" alt="sign">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/otp.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </html>

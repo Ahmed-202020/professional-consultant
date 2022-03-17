@@ -1,0 +1,23 @@
+.t-c{
+    .branch{
+        @extend %branch ; 
+        margin-bottom: 100px ;
+        .shape{
+            img{
+                &:last-of-type{
+                    position: absolute ;
+                    right: 35px ;
+                    transform: scaleX(1.8);
+                    -webkit-transform: scaleX(1.8);
+                    -moz-transform: scaleX(1.8);
+                    -ms-transform: scaleX(1.8);
+                    -o-transform: scaleX(1.8);
+                    z-index: -1 ;
+}
+            }
+            .text{
+                right: 30px ;
+            }
+        }
+    }
+}
