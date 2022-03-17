@@ -1034,12 +1034,42 @@ html[dir="ltr"] .errors .show-case .alert {
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
 }
 
-.edit-profile-info .show-case .image-profile img:hover {
+.edit-profile-info .show-case .image-profile .overlay {
+  background-color: rgba(72, 72, 72, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0.9;
-  filter: blur(2);
-  -webkit-filter: blur(2px);
+  width: 115px;
+  height: 115px;
+  line-height: 115px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.edit-profile-info .show-case .camera {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 115px;
+  height: 115px;
+  text-align: center;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.edit-profile-info .show-case .camera input[type="file"] {
+  display: none;
 }
 
 .header .navbar {
