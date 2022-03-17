@@ -1029,8 +1029,17 @@ html[dir="ltr"] .errors .show-case .alert {
 }
 
 .edit-profile-info .show-case .image-profile img {
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
+.edit-profile-info .show-case .image-profile img:hover {
+  opacity: 0.9;
   filter: blur(2);
-  -webkit-filter: blur(2);
+  -webkit-filter: blur(2px);
 }
 
 .header .navbar {
