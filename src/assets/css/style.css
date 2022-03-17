@@ -1028,6 +1028,11 @@ html[dir="ltr"] .errors .show-case .alert {
   margin-top: 80px;
 }
 
+.edit-profile-info .show-case .image-profile img {
+  filter: blur(2);
+  -webkit-filter: blur(2);
+}
+
 .header .navbar {
   display: block;
   padding-block: 0;
