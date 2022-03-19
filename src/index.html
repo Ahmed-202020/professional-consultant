@@ -483,7 +483,7 @@
             </div>
         </div>
     </div>
-    <div id = "otp-pass"  class="modal otp fade" aria-hidden="true" tabindex="-1">
+    <div id = "otp-pass"  class="modal otp fade" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
@@ -524,7 +524,7 @@
             </div>
         </div>
     </div>
-    <div id = "new-password"  class="modal modal-new-pass  fade" aria-hidden="true" tabindex="-1">
+    <div id = "new-password"  class="modal modal-new-pass  fade" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
@@ -583,8 +583,8 @@
                                 </label>
                                 <input type="text" class="form-control" name = "name"  placeholder="الاسم" required>
                                 <input type="text" class="form-control select" name = "number"  placeholder="رقم الجوال" required>
-                                <input type="text" class="form-control" name = "email"  placeholder="البريد الالكترونى" required>
-                                <input type="text"  class="form-control ph" name = "photo"  placeholder="الصورة الشخصية" required>
+                                <input type="text" class="form-control" name = "email" value=""  placeholder="البريد الالكترونى" required>
+                                <input type="text" disabled  class="form-control ph" name = "photo"  placeholder="الصورة الشخصية" >
                                 <input type="text" class="form-control" name = "number"  placeholder="رقم الهوية او الاقامة" required>
                                 <label for="agree">
                                     <input id="agree" type="checkbox"  required>
@@ -603,7 +603,7 @@
             </div>
         </div>
     </div>
-    <div id = "otp-phone"  class="modal otp fade" aria-hidden="true" tabindex="-1">
+    <div id = "otp-phone"  class="modal otp fade" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"  tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">

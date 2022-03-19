@@ -23,12 +23,20 @@ $(function(){
             e.preventDefault();
         }
     });
-    $(".form-control").keyup(function(){
-        if( $(".codes .one").val() && $(".codes .two").val() && $(".codes .three").val() && $(".codes .four").val() ){
-            $(".otp .buttons .sign").css({"background-image" : "linear-gradient(#d6a22b , #b07e0a)" , "box-shadow" : "none" , "color" : "#fff"}).
+    $("#otp-phone .form-control").keyup(function(){
+        if( $("#otp-phone .codes .one").val() && $("#otp-phone .codes .two").val() && $("#otp-phone .codes .three").val() && $("#otp-phone .codes .four").val() ){
+            $("#otp-phone .buttons .sign").css({"background-image" : "linear-gradient(#d6a22b , #b07e0a)" , "box-shadow" : "none" , "color" : "#fff"}).
             removeAttr("disabled");
         }else{
-            $(".otp .buttons .sign").css({"background-image" : "none" , "box-shadow" : "0 3px 5px" , "color" : "#dcdcdc"});
+            $("#otp-phone .buttons .sign").css({"background-image" : "none" , "box-shadow" : "0 3px 5px" , "color" : "#dcdcdc"});
+        }
+    })
+    $("#otp-pass .form-control").keyup(function(){
+        if( $("#otp-pass .codes .one").val() && $("#otp-pass .codes .two").val() && $("#otp-pass .codes .three").val() && $("#otp-pass .codes .four").val() ){
+            $("#otp-pass .buttons .sign").css({"background-image" : "linear-gradient(#d6a22b , #b07e0a)" , "box-shadow" : "none" , "color" : "#fff"}).
+            removeAttr("disabled");
+        }else{
+            $("#otp-pass .buttons .sign").css({"background-image" : "none" , "box-shadow" : "0 3px 5px" , "color" : "#dcdcdc"});
         }
     })
     $(".codes .form-control").keyup (function(){

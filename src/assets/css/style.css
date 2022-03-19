@@ -1039,7 +1039,7 @@ html[dir="ltr"] .errors .show-case .alert {
 }
 
 .edit-profile-info .show-case .image-profile .overlay {
-  background-color: rgba(72, 72, 72, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -1056,7 +1056,7 @@ html[dir="ltr"] .errors .show-case .alert {
 
 .edit-profile-info .show-case .camera {
   position: absolute;
-  top: -10px;
+  top: -49px;
   left: 50%;
   width: 115px;
   height: 115px;
@@ -1066,6 +1066,16 @@ html[dir="ltr"] .errors .show-case .alert {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+}
+
+.edit-profile-info .show-case .camera img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  -webkit-transform: translate(-50%, 100%);
+  -moz-transform: translate(-50%, 100%);
+  -ms-transform: translate(-50%, 100%);
+  -o-transform: translate(-50%, 100%);
 }
 
 .edit-profile-info .show-case .camera input[type="file"] {
