@@ -420,7 +420,7 @@
                             </div>
                             <div class="title">مرحبا بك فى المستشار المحترف</div>
                             <div class="sub">تسجيل الدخول</div>
-                            <form  action="./home.html"   class="form-group">
+                            <form  action="./home.html"   class="form-group error">
                                 <label for="key-country-1" class="key-country">
                                     <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag">
                                     <select  name="key" id="key-country-1">
@@ -433,6 +433,7 @@
                                 <input type="password" class="pass form-control" name = "password"  placeholder="كلمة المرور" required>
                                 <div class="eye"><img  src="./assets/icons/Icon ionic-ios-eye.svg" alt="eye"></div>
                                 <a href="#" class="forget" data-bs-toggle= "modal" data-bs-target="#forget-password">نسيت كلمة المرور ؟</a>
+                                <div class="text-error"></div>
                                 <div class="buttons">
                                     <button   type="submit" class = "btn sign"  >تسجيل الدخول</button>
                                     <button  data-bs-toggle= "modal" data-bs-target="#create" class="sign  signup btn" >مستشار جديد</button>
@@ -460,7 +461,7 @@
                             </div>
                             <div class="title">نسيت كلمة المرور</div>
                             <div class="sub">من فضلك ادخل رقم الجوال لارسال كلمة مرور مؤقتة لتغيير كلمة المرور الخاصة بك</div>
-                            <form  action="."   class="form-group">
+                            <form  action="."   class="form-group error">
                                 <label for="key-country-1" class="key-country">
                                     <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag">
                                     <select  name="key" id="key-country-1">
@@ -473,6 +474,7 @@
                                 <div class="buttons">
                                     <button   type="submit"   class = "btn sign">ارسال كلمة مرور مؤقتة</button>
                                 </div>
+                                <div class="text-error"></div>
                             </form>
                         </div>
                     </div>
@@ -497,13 +499,14 @@
                             <div class="title">كلمة المرور المؤقتة</div>
                             <div class="sub">تم ارسال كلمة المرور المؤقتة الى رقم الجوال</div>
                             <span class="code">9660000000000+</span>
-                            <form  action="."   class="form-group">
+                            <form  action="."   class="form-group error">
                                 <div class="codes">
                                     <input type="password" name="code" class="form-control one" placeholder="-"  required maxlength="1" >
                                     <input type="password" name="code" class="form-control two" placeholder="-"  required maxlength="1"> 
                                     <input type="password" name="code" class="form-control three" placeholder="-" required maxlength="1">
                                     <input type="password" name="code" class="form-control four" placeholder="-"  required maxlength="1">
                                 </div>
+                                <div class="text-error"></div>
                                 <div class="buttons">
                                     <button disabled  type="submit" class = "btn sign"  >تأكيد</button>
                                 </div>
@@ -537,7 +540,7 @@
                             </div>
                             <div class="title">كلمة مرور جديدة</div>
                             <div class="sub">قم بإدخال كلمة المرور الجديدة</div>
-                            <form  action="./home.html"   class="form-group">
+                            <form  action="./home.html"   class="form-group error ">
                                 <input type="password" class="pass form-control" name = "password"  placeholder="كلمة المرور الجديدة" required>
                                 <div class="eye"><img  src="./assets/icons/Icon ionic-ios-eye.svg" alt="eye"></div>
                                 <input type="password" class="pass-2 form-control" name = "password"  placeholder="تأكيد كلمة المرور الجديدة" required>
@@ -545,6 +548,8 @@
                                 <div class="buttons">
                                     <button   type="submit" class = "btn sign"  >تغيير كلمة المرور</button>
                                 </div>
+                                <div class="text-error first"></div>
+                                <div class="text-error second"></div>
                             </form>
                         </div>
                     </div>
@@ -568,7 +573,7 @@
                             </div>
                             <div class="title">مرحبا بك فى المستشار المحترف</div>
                             <div class="sub">تسجيل مستشار جديد</div>
-                            <form  action="." type ="submit"   class="form-group">
+                            <form  action="." type ="submit"   class="form-group error ">
                                 <label for="key-country-2" class="key-country" >
                                     <img src="./assets/icons//علم-المملكة-العربية-السعودية-حاليا.svg" alt="flag">
                                     <select  name="key" id="key-country-2">
@@ -581,7 +586,7 @@
                                     <img src="./assets/icons/Icon metro-image.svg" alt="image">
                                     <input id="photo" type="file">
                                 </label>
-                                <input type="text" class="form-control" name = "name"  placeholder="الاسم" required>
+                                <input type="text" class="form-control name-input" name = "name"  placeholder="الاسم" required>
                                 <input type="text" class="form-control select" name = "number"  placeholder="رقم الجوال" required>
                                 <input type="text" class="form-control" name = "email" value=""  placeholder="البريد الالكترونى" required>
                                 <input type="text" disabled  class="form-control ph" name = "photo"  placeholder="الصورة الشخصية" >
@@ -590,6 +595,9 @@
                                     <input id="agree" type="checkbox"  required>
                                     <span>أوافق علي الشروط و الاحكام</span>
                                 </label>
+                                <div class="text-error first"></div>
+                                <div class="text-error second"></div>
+                                <div class="text-error third"></div>
                                 <div class="buttons">
                                     <button  type="submit" class = "btn sign" >التالى</button>
                                 </div>
@@ -617,13 +625,14 @@
                             <div class="title">كلمة المرور المؤقتة</div>
                             <div class="sub">تم ارسال كلمة المرور المؤقتة الى رقم الجوال</div>
                             <span class="code">9660000000000+</span>
-                            <form  action="./home.html"   class="form-group">
+                            <form  action="./home.html"   class="form-group error ">
                                 <div class="codes">
                                     <input type="password" name="code" class="form-control one" placeholder="-"  required maxlength="1" >
                                     <input type="password" name="code" class="form-control two" placeholder="-"  required maxlength="1"> 
                                     <input type="password" name="code" class="form-control three" placeholder="-" required maxlength="1">
                                     <input type="password" name="code" class="form-control four" placeholder="-"  required maxlength="1">
                                 </div>
+                                <div class="text-error"></div>
                                 <div class="buttons">
                                     <button disabled  type="submit" class = "btn sign"  >تأكيد</button>
                                 </div>

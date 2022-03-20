@@ -6,6 +6,7 @@ $dark-red : #790000 ;
 $shadow: #e6e7e8 ; 
 $light-bg : #fafafa ; 
 $light-line : #dcdcdc ;
+$hint : #c3c3c3 ; 
 $black: #000 ; 
 $bg-color-1 : #484848 ; 
 $bg-color-2 : #0e0e0e ; 
@@ -199,6 +200,30 @@ body{
         }
     }
 }
+%type-consult{
+    color: $black ;
+    font-size: 16pt ;
+    span{
+        background-color: $white  ;
+        display: inline-block ;
+        text-align: center ;
+        border: 2px solid $light-line ;
+        padding-block: 10px ;
+        border-radius:10px ;
+        -webkit-border-radius:10px ;
+        -moz-border-radius:10px ;
+        -ms-border-radius:10px ;
+        -o-border-radius:10px ;
+        &:first-child{
+            margin-left: 15px ;
+            width: 160px ;
+        }
+        &:last-child{
+            margin-left: 15px ;
+            width: 115px ;
+        }
+    }
+}
 
 %form{
     position: relative;
@@ -261,7 +286,7 @@ body{
     .eye{
         position: absolute ;
         cursor: pointer;
-        top: 19% ;
+        top: 68px ;
         left: 7% ;
     }
     .forget{
@@ -326,5 +351,17 @@ body{
                 content: url("../icons/Profile.svg") ;
             }
         }
+    }
+}
+.form-group.error{
+    .form-control:not(:disabled) {
+        border-color: $red !important ;
+    }
+    .form-control.name-input{
+        border-color: $light-line !important ;
+    }
+    .text-error{
+        color: $red ;
+        font-size: 12pt ;
     }
 }

@@ -10,6 +10,9 @@
 @import "./profile" ; 
 @import "./profile-info" ; 
 @import "./edit-profile-info" ; 
+@import "./orders" ; 
+@import "./new-orders" ; 
+@import "./new-order-info" ; 
 
 .header{
     .navbar{
@@ -603,7 +606,6 @@
         }
     }
 }
-
 #notifications{
     padding-left: 0 !important;
     .modal-dialog{

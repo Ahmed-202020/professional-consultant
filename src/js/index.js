@@ -27,6 +27,28 @@ $(function(){
         $(".ph").val($(this).val().replace(/.*(\/|\\)/, ''));
     }) ; 
 
+    if( $(".modal-register .form-group").hasClass("error") ) {
+        $(".modal-register .text-error").text("المستخدم غير مسجل بالنظام") ; 
+    }
+    if( $(".modal-forget .form-group").hasClass("error") ) {
+        $(".modal-forget .text-error").text("المستخدم غير موجود بالنظام").css({"text-align" : "center" , "margin-top" : "40px"}) ; 
+    }
+    if( $(".modal-new-pass .form-group").hasClass("error") ) {
+        $(".modal-new-pass  .text-error").css({"text-align" : "center" , "margin-top" : "40px"}) ; 
+        $(".modal-new-pass .text-error.first").text("برجاء مليء جميع البيانات") ; 
+        $(".modal-new-pass .text-error.second").text("كلمات المرور غير متطابقة").css({"margin-top" : "12px"}) ; 
+    }
+    if( $(".otp .form-group").hasClass("error") ) {
+        $(".otp .text-error").text("كلمة المرور المؤقتة غير صحيحة").css({"text-align" : "center" , "font-size" : "10pt" , "margin-top" : "10px" }) ; 
+    }
+    if( $(".modal-create .form-group").hasClass("error") ) {
+        $(".modal-create .text-error.first").text("برجاء مليء جميع الخانات").css({"margin-top" : "10px"}) ; 
+        $(".modal-create .text-error.second").text("المستخدم مسجل باللوحة").css({"margin-top" : "10px"}) ; 
+        $(".modal-create .text-error.third").text("يوجد خطأ في البيانات المدخلة").css({"margin-top" : "10px"}) ;
+        $(".modal-create .buttons").css({"margin-top" : "35px"}) ; 
+        $(".modal-create .col-6").css({"height" : "900px"}) ; 
+    }
+
     $(".modal-create .form-group").on("submit" , function(e){
         e.preventDefault();
         $(".modal-create").hide() ; 
@@ -42,4 +64,5 @@ $(function(){
     $("#notifications .btn").on("click" , function(){
         $("#notifications").modal("hide") ; 
     });
+
 });
