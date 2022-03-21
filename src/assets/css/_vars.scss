@@ -224,7 +224,6 @@ body{
         }
     }
 }
-
 %form{
     position: relative;
     width: 95% ;
@@ -330,6 +329,21 @@ body{
         .btn + .btn{
             margin-top: 15px ;
         }
+    }
+}
+%form-control{
+    padding-inline: 25px ;
+    margin-bottom: 15px;
+    background-color: $light-bg ;
+    padding-block: 10px ;
+    border: 1px solid $light-line ;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+    &:focus{
+        box-shadow: none ;
     }
 }
 

@@ -90,7 +90,7 @@ body input[type='password'] {
   height: 1px;
 }
 
-.submit-porpose .title, .services .title, .vip-consultant > .title, .why-choose-us .title {
+.submit-porpose .modal-content .title, .submit-porpose .modal-content .show-case .title, .services .title, .vip-consultant > .title, .why-choose-us .title {
   position: relative;
   text-align: center;
   margin-bottom: 80px;
@@ -99,7 +99,7 @@ body input[type='password'] {
   font-weight: bold;
 }
 
-.submit-porpose .title::after, .services .title::after, .vip-consultant > .title::after, .why-choose-us .title::after {
+.submit-porpose .modal-content .title::after, .submit-porpose .modal-content .show-case .title::after, .services .title::after, .vip-consultant > .title::after, .why-choose-us .title::after {
   position: absolute;
   content: "";
   top: 30%;
@@ -151,7 +151,7 @@ body input[type='password'] {
   color: #000;
 }
 
-.new-orders .orders .card .button .btn, .new-order-info .order-info .button .btn, .header #slider .buttons .btn, .features .feature .show-case .btn {
+.payments .data-bank .form-group .btn, .new-orders .orders .card .button .btn, .new-order-info .order-info .button .btn, .successful-submit .modal-content .button .btn, .header #slider .buttons .btn, .features .feature .show-case .btn {
   color: #ffffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#484848), to(#0e0e0e));
   background-image: linear-gradient(#484848, #0e0e0e);
@@ -173,21 +173,21 @@ body input[type='password'] {
   -o-transition: all 300ms ease;
 }
 
-.new-orders .orders .card .button .btn:hover, .new-order-info .order-info .button .btn:hover, .header #slider .buttons .btn:hover, .features .feature .show-case .btn:hover {
+.payments .data-bank .form-group .btn:hover, .new-orders .orders .card .button .btn:hover, .new-order-info .order-info .button .btn:hover, .successful-submit .modal-content .button .btn:hover, .header #slider .buttons .btn:hover, .features .feature .show-case .btn:hover {
   filter: brightness(90%);
   -webkit-filter: brightness(90%);
 }
 
-.about-us .branch, .t-c .branch, .profile .branch, .profile-info .branch, .orders .branch, .new-orders .branch, .new-order-info .branch {
+.about-us .branch, .t-c .branch, .profile .branch, .orders .branch, .profile-info .branch, .new-orders .branch, .new-order-info .branch {
   margin-bottom: 40px;
 }
 
-.about-us .branch .shape, .t-c .branch .shape, .profile .branch .shape, .profile-info .branch .shape, .orders .branch .shape, .new-orders .branch .shape, .new-order-info .branch .shape {
+.about-us .branch .shape, .t-c .branch .shape, .profile .branch .shape, .orders .branch .shape, .profile-info .branch .shape, .new-orders .branch .shape, .new-order-info .branch .shape {
   position: relative;
   right: 80px;
 }
 
-.about-us .branch .shape img:nth-child(1), .t-c .branch .shape img:nth-child(1), .profile .branch .shape img:nth-child(1), .profile-info .branch .shape img:nth-child(1), .orders .branch .shape img:nth-child(1), .new-orders .branch .shape img:nth-child(1), .new-order-info .branch .shape img:nth-child(1) {
+.about-us .branch .shape img:nth-child(1), .t-c .branch .shape img:nth-child(1), .profile .branch .shape img:nth-child(1), .orders .branch .shape img:nth-child(1), .profile-info .branch .shape img:nth-child(1), .new-orders .branch .shape img:nth-child(1), .new-order-info .branch .shape img:nth-child(1) {
   position: absolute;
   right: -52px;
   top: 11px;
@@ -195,12 +195,12 @@ body input[type='password'] {
   z-index: 50;
 }
 
-.about-us .branch .shape img:nth-child(2), .t-c .branch .shape img:nth-child(2), .profile .branch .shape img:nth-child(2), .profile-info .branch .shape img:nth-child(2), .orders .branch .shape img:nth-child(2), .new-orders .branch .shape img:nth-child(2), .new-order-info .branch .shape img:nth-child(2) {
+.about-us .branch .shape img:nth-child(2), .t-c .branch .shape img:nth-child(2), .profile .branch .shape img:nth-child(2), .orders .branch .shape img:nth-child(2), .profile-info .branch .shape img:nth-child(2), .new-orders .branch .shape img:nth-child(2), .new-order-info .branch .shape img:nth-child(2) {
   position: absolute;
   right: -80px;
 }
 
-.about-us .branch .shape .text, .t-c .branch .shape .text, .profile .branch .shape .text, .profile-info .branch .shape .text, .orders .branch .shape .text, .new-orders .branch .shape .text, .new-order-info .branch .shape .text {
+.about-us .branch .shape .text, .t-c .branch .shape .text, .profile .branch .shape .text, .orders .branch .shape .text, .profile-info .branch .shape .text, .new-orders .branch .shape .text, .new-order-info .branch .shape .text {
   position: absolute;
   top: 10px;
   right: 30px;
@@ -236,25 +236,25 @@ body input[type='password'] {
   width: 115px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group, .profile-info .show-case .form-group, #change-pass-prof .modal-content .show-case .form-group {
+.modal .modal-dialog .row .col-6 .signin .form-group, .profile-info .show-case .form-group, #change-pass-prof .modal-content .show-case .form-group, .submit-porpose .modal-content .show-case .form-group {
   position: relative;
   width: 95%;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group label.key-country, .profile-info .show-case .form-group label.key-country, #change-pass-prof .modal-content .show-case .form-group label.key-country {
+.modal .modal-dialog .row .col-6 .signin .form-group label.key-country, .profile-info .show-case .form-group label.key-country, #change-pass-prof .modal-content .show-case .form-group label.key-country, .submit-porpose .modal-content .show-case .form-group label.key-country {
   position: absolute;
   z-index: 10;
   top: 8px;
   right: 22px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group label.key-country img, .profile-info .show-case .form-group label.key-country img, #change-pass-prof .modal-content .show-case .form-group label.key-country img {
+.modal .modal-dialog .row .col-6 .signin .form-group label.key-country img, .profile-info .show-case .form-group label.key-country img, #change-pass-prof .modal-content .show-case .form-group label.key-country img, .submit-porpose .modal-content .show-case .form-group label.key-country img {
   position: absolute;
   width: 25px !important;
   z-index: 5;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group select, .profile-info .show-case .form-group select, #change-pass-prof .modal-content .show-case .form-group select {
+.modal .modal-dialog .row .col-6 .signin .form-group select, .profile-info .show-case .form-group select, #change-pass-prof .modal-content .show-case .form-group select, .submit-porpose .modal-content .show-case .form-group select {
   width: 50px;
   text-align: center;
   position: relative;
@@ -273,11 +273,11 @@ body input[type='password'] {
   -moz-appearance: none;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group select::-ms-expand, .profile-info .show-case .form-group select::-ms-expand, #change-pass-prof .modal-content .show-case .form-group select::-ms-expand {
+.modal .modal-dialog .row .col-6 .signin .form-group select::-ms-expand, .profile-info .show-case .form-group select::-ms-expand, #change-pass-prof .modal-content .show-case .form-group select::-ms-expand, .submit-porpose .modal-content .show-case .form-group select::-ms-expand {
   display: none !important;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control, .profile-info .show-case .form-group .form-control, #change-pass-prof .modal-content .show-case .form-group .form-control {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control, .profile-info .show-case .form-group .form-control, #change-pass-prof .modal-content .show-case .form-group .form-control, .submit-porpose .modal-content .show-case .form-group .form-control {
   padding-inline: 25px;
   margin-bottom: 15px;
   background-color: #fafafa;
@@ -290,50 +290,50 @@ body input[type='password'] {
   -o-border-radius: 10px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control:focus, .profile-info .show-case .form-group .form-control:focus, #change-pass-prof .modal-content .show-case .form-group .form-control:focus {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control:focus, .profile-info .show-case .form-group .form-control:focus, #change-pass-prof .modal-content .show-case .form-group .form-control:focus, .submit-porpose .modal-content .show-case .form-group .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control:last-of-type, .profile-info .show-case .form-group .form-control:last-of-type, #change-pass-prof .modal-content .show-case .form-group .form-control:last-of-type {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control:last-of-type, .profile-info .show-case .form-group .form-control:last-of-type, #change-pass-prof .modal-content .show-case .form-group .form-control:last-of-type, .submit-porpose .modal-content .show-case .form-group .form-control:last-of-type {
   margin-bottom: 10px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control::-webkit-input-placeholder, .profile-info .show-case .form-group .form-control::-webkit-input-placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control::-webkit-input-placeholder {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control::-webkit-input-placeholder, .profile-info .show-case .form-group .form-control::-webkit-input-placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control::-webkit-input-placeholder, .submit-porpose .modal-content .show-case .form-group .form-control::-webkit-input-placeholder {
   color: #dcdcdc;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control:-ms-input-placeholder, .profile-info .show-case .form-group .form-control:-ms-input-placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control:-ms-input-placeholder {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control:-ms-input-placeholder, .profile-info .show-case .form-group .form-control:-ms-input-placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control:-ms-input-placeholder, .submit-porpose .modal-content .show-case .form-group .form-control:-ms-input-placeholder {
   color: #dcdcdc;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control::-ms-input-placeholder, .profile-info .show-case .form-group .form-control::-ms-input-placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control::-ms-input-placeholder {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control::-ms-input-placeholder, .profile-info .show-case .form-group .form-control::-ms-input-placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control::-ms-input-placeholder, .submit-porpose .modal-content .show-case .form-group .form-control::-ms-input-placeholder {
   color: #dcdcdc;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control::placeholder, .profile-info .show-case .form-group .form-control::placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control::placeholder {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control::placeholder, .profile-info .show-case .form-group .form-control::placeholder, #change-pass-prof .modal-content .show-case .form-group .form-control::placeholder, .submit-porpose .modal-content .show-case .form-group .form-control::placeholder {
   color: #dcdcdc;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .form-control.select, .profile-info .show-case .form-group .form-control.select, #change-pass-prof .modal-content .show-case .form-group .form-control.select {
+.modal .modal-dialog .row .col-6 .signin .form-group .form-control.select, .profile-info .show-case .form-group .form-control.select, #change-pass-prof .modal-content .show-case .form-group .form-control.select, .submit-porpose .modal-content .show-case .form-group .form-control.select {
   padding-right: 110px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .eye, .profile-info .show-case .form-group .eye, #change-pass-prof .modal-content .show-case .form-group .eye {
+.modal .modal-dialog .row .col-6 .signin .form-group .eye, .profile-info .show-case .form-group .eye, #change-pass-prof .modal-content .show-case .form-group .eye, .submit-porpose .modal-content .show-case .form-group .eye {
   position: absolute;
   cursor: pointer;
   top: 68px;
   left: 7%;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .forget, .profile-info .show-case .form-group .forget, #change-pass-prof .modal-content .show-case .form-group .forget {
+.modal .modal-dialog .row .col-6 .signin .form-group .forget, .profile-info .show-case .form-group .forget, #change-pass-prof .modal-content .show-case .form-group .forget, .submit-porpose .modal-content .show-case .form-group .forget {
   font-size: 12pt;
   color: #e8b134;
   display: block;
   text-align: left;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons, .profile-info .show-case .form-group .buttons, #change-pass-prof .modal-content .show-case .form-group .buttons {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons, .profile-info .show-case .form-group .buttons, #change-pass-prof .modal-content .show-case .form-group .buttons, .submit-porpose .modal-content .show-case .form-group .buttons {
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +350,7 @@ body input[type='password'] {
           align-items: center;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .profile-info .show-case .form-group .buttons .sign, #change-pass-prof .modal-content .show-case .form-group .buttons .sign {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .profile-info .show-case .form-group .buttons .sign, #change-pass-prof .modal-content .show-case .form-group .buttons .sign, .submit-porpose .modal-content .show-case .form-group .buttons .sign {
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
   background-image: linear-gradient(#d6a22b, #b07e0a);
@@ -371,18 +371,18 @@ body input[type='password'] {
   -o-transition: all 300ms ease;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:hover, .profile-info .show-case .form-group .buttons .sign:hover, #change-pass-prof .modal-content .show-case .form-group .buttons .sign:hover {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:hover, .profile-info .show-case .form-group .buttons .sign:hover, #change-pass-prof .modal-content .show-case .form-group .buttons .sign:hover, .submit-porpose .modal-content .show-case .form-group .buttons .sign:hover {
   filter: brightness(95%);
   -webkit-filter: brightness(95%);
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .signup, .profile-info .show-case .form-group .buttons .signup, #change-pass-prof .modal-content .show-case .form-group .buttons .signup {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .signup, .profile-info .show-case .form-group .buttons .signup, #change-pass-prof .modal-content .show-case .form-group .buttons .signup, .submit-porpose .modal-content .show-case .form-group .buttons .signup {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#484848), to(#0e0e0e));
   background-image: linear-gradient(#484848, #0e0e0e);
   border: #000;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .btn + .btn, .profile-info .show-case .form-group .buttons .btn + .btn, #change-pass-prof .modal-content .show-case .form-group .buttons .btn + .btn {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .btn + .btn, .profile-info .show-case .form-group .buttons .btn + .btn, #change-pass-prof .modal-content .show-case .form-group .buttons .btn + .btn, .submit-porpose .modal-content .show-case .form-group .buttons .btn + .btn {
   margin-top: 15px;
 }
 
@@ -916,6 +916,127 @@ html[dir="ltr"] .errors .show-case .alert {
   -o-transform: scale(0.9);
 }
 
+.orders .branch {
+  margin-bottom: 125px;
+}
+
+.orders .branch .shape img:nth-child(2) {
+  z-index: 5;
+}
+
+.orders .branch .shape img:nth-child(3) {
+  position: absolute;
+  right: 8px;
+  transform: scaleX(1.2);
+  -webkit-transform: scaleX(1.2);
+  -moz-transform: scaleX(1.2);
+  -ms-transform: scaleX(1.2);
+  -o-transform: scaleX(1.2);
+}
+
+.orders .branch .shape img:nth-child(4) {
+  position: absolute;
+  right: 104px;
+  z-index: -1;
+  transform: scaleX(1.2);
+  -webkit-transform: scaleX(1.2);
+  -moz-transform: scaleX(1.2);
+  -ms-transform: scaleX(1.2);
+  -o-transform: scaleX(1.2);
+}
+
+.orders .branch .shape .text:last-child {
+  right: 135px;
+}
+
+.payments .branch .shape .text:last-child {
+  right: 127px;
+}
+
+.payments .sections .section .show-case {
+  position: relative;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 15px 50px;
+  height: 180px;
+}
+
+.payments .sections .section .show-case .title {
+  margin-right: 8px;
+  font-size: 17pt;
+  margin-top: 5px;
+}
+
+.payments .sections .section .show-case .price {
+  position: absolute;
+  color: #e8b134;
+  left: 3%;
+  font-size: 24pt;
+  bottom: 20px;
+}
+
+.payments .sections .section:hover {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+
+.payments .data-bank {
+  margin-top: 50px;
+}
+
+.payments .data-bank .title {
+  color: #e8b134;
+  font-size: 17pt;
+  margin-bottom: 20px;
+}
+
+.payments .data-bank .form-group {
+  width: 33%;
+}
+
+.payments .data-bank .form-group .form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fafafa;
+  padding: 15px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 1px solid #dcdcdc;
+}
+
+.payments .data-bank .form-group .form-control::-webkit-input-placeholder {
+  color: #dcdcdc;
+}
+
+.payments .data-bank .form-group .form-control:-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.payments .data-bank .form-group .form-control::-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.payments .data-bank .form-group .form-control::placeholder {
+  color: #dcdcdc;
+}
+
+.payments .data-bank .form-group .btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  margin-top: 80px;
+  padding-block: 10px;
+  font-size: 18pt;
+  width: 100%;
+  margin-bottom: 0;
+}
+
 .profile-info {
   padding: 50px 70px 200px;
 }
@@ -1121,39 +1242,6 @@ html[dir="ltr"] .errors .show-case .alert {
 
 .edit-profile-info .show-case .camera input[type="file"] {
   display: none;
-}
-
-.orders .branch {
-  margin-bottom: 125px;
-}
-
-.orders .branch .shape img:nth-child(2) {
-  z-index: 5;
-}
-
-.orders .branch .shape img:nth-child(3) {
-  position: absolute;
-  right: 8px;
-  transform: scaleX(1.2);
-  -webkit-transform: scaleX(1.2);
-  -moz-transform: scaleX(1.2);
-  -ms-transform: scaleX(1.2);
-  -o-transform: scaleX(1.2);
-}
-
-.orders .branch .shape img:nth-child(4) {
-  position: absolute;
-  right: 104px;
-  z-index: -1;
-  transform: scaleX(1.2);
-  -webkit-transform: scaleX(1.2);
-  -moz-transform: scaleX(1.2);
-  -ms-transform: scaleX(1.2);
-  -o-transform: scaleX(1.2);
-}
-
-.orders .branch .shape .text:last-child {
-  right: 135px;
 }
 
 .new-orders {
@@ -1524,8 +1612,13 @@ html[dir="ltr"] .errors .show-case .alert {
   margin-right: 15px;
 }
 
-.new-order-info .order-info .info .data .rating .branch-rate {
+.new-order-info .order-info .info .data .rating > div + div {
   margin-block: 5px;
+}
+
+.new-order-info .order-info .info .data .rating .time-consult {
+  margin-right: 10px;
+  color: #000;
 }
 
 .new-order-info .order-info .info .data .interseted-order {
@@ -1618,24 +1711,359 @@ html[dir="ltr"] .errors .show-case .alert {
   margin-bottom: 0;
 }
 
-.submit-porpose .title {
+.submit-porpose .modal-content .title {
   margin-bottom: 40px !important;
 }
 
-.submit-porpose .title::after {
+.submit-porpose .modal-content .title::after {
   right: 42%;
 }
 
-.submit-porpose .form-group > span {
+.submit-porpose .modal-content .show-case {
+  padding: 125px 0 200px;
+}
+
+.submit-porpose .modal-content .show-case .out {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.submit-porpose .modal-content .show-case .form-group {
+  margin-inline: auto;
+  width: 40%;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select {
+  position: relative;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .custom-arrow {
+  position: absolute;
+  left: 8%;
+  top: 8px;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 5px #dcdcdc;
+          box-shadow: 0 0 5px #dcdcdc;
+  border-radius: 10px;
+  z-index: 50;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 15px;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li {
+  text-align: center;
+  padding-block: 10px;
+  cursor: pointer;
+  color: #000;
+  font-size: 14pt;
+  transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li:hover {
+  background-color: #fafafa;
   color: #e8b134;
 }
 
-.submit-porpose .form-group .type-consult {
-  width: 100% !important;
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li:first-of-type {
+  display: none;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li:nth-of-type(2):after {
+  content: initial;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li + li {
+  position: relative;
+  margin-top: 20px;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select .selector-option li + li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 60px;
+  left: 0;
+  background-color: #fafafa;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select select.form-control {
   border: 1px solid #dcdcdc !important;
-  position: initial !important;
-  text-align: right !important;
-  color: #dcdcdc !important;
+  width: 100%;
+  position: initial;
+  text-align: right;
+  color: #dcdcdc;
+  font-weight: normal;
+}
+
+.submit-porpose .modal-content .show-case .form-group .custom-select select.form-control:hover {
+  border: 1px solid #000 !important;
+}
+
+.submit-porpose .modal-content .show-case .form-group .form-control {
+  margin-top: 10px;
+}
+
+.submit-porpose .modal-content .show-case .form-group span {
+  color: #e8b134;
+  font-size: 14pt;
+}
+
+.submit-porpose .modal-content .show-case .form-group .buttons {
+  margin-top: 93px;
+}
+
+.successful-submit .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 70%;
+  border: none;
+  padding-block: 50px;
+  margin-inline: auto;
+}
+
+.successful-submit .modal-content .image {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.successful-submit .modal-content .image img {
+  width: 100%;
+}
+
+.successful-submit .modal-content .text {
+  font-size: 18pt;
+  color: #000;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.successful-submit .modal-content .button {
+  width: 60%;
+}
+
+.successful-submit .modal-content .button .btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  font-size: 16pt;
+  width: 100%;
+}
+
+.prev-order-info .order-info {
+  position: relative;
+}
+
+.prev-order-info .order-info .state-order {
+  position: absolute;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  top: 50px;
+  left: 3%;
+  width: 46.5%;
+  height: 22px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.prev-order-info .order-info .level-orders {
+  position: absolute;
+  top: 90px;
+  left: 3%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prev-order-info .order-info .level-orders .level {
+  position: relative;
+  text-align: right;
+  color: #e8b134;
+  font-size: 12pt;
+  width: calc(100% / 4);
+}
+
+.prev-order-info .order-info .level-orders .level::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  top: -42px;
+  left: 105px;
+}
+
+.pending-order-info .order-info {
+  position: relative;
+}
+
+.pending-order-info .order-info .state-order {
+  background-image: none;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+}
+
+.pending-order-info .order-info .state-order::after {
+  position: absolute;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 101%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.pending-order-info .order-info .level-orders .level:not(:last-child)::after {
+  background-image: none;
+  background-color: #dcdcdc;
+}
+
+.pending-order-info .order-info .button .btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f20000), to(#790000)) !important;
+  background-image: linear-gradient(#f20000, #790000) !important;
+}
+
+.pending-order-info-2 .order-info .state-order::after {
+  width: 47%;
+}
+
+.pending-order-info-2 .order-info .level-orders .level:nth-child(3)::after {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 140px;
+  margin-top: 80px;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .title {
+  text-align: center;
+  color: #e8b134;
+  font-size: 18pt;
+  margin-bottom: 20px;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group {
+  width: 60%;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control {
+  resize: none;
+  border: 1px solid #dcdcdc;
+  padding: 20px 20px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control::-webkit-input-placeholder {
+  color: #dcdcdc;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control:-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control::-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control::placeholder {
+  color: #dcdcdc;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .button .btn {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a)) !important;
+  background-image: linear-gradient(#d6a22b, #b07e0a) !important;
+}
+
+.pending-order-info-2 .order-info .info .data .write-consult .form-group .button .btn:nth-child(2) {
+  margin-top: 25px;
+  background-image: none !important;
+  background-color: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  color: #c3c3c3;
 }
 
 .header .navbar {
