@@ -83,7 +83,6 @@ $(function(){
     });
 
     $(".input-date").on("change" , function(){
-        // $(".available-days .day").text($(".input-date").val()) ;
         let element = $("<span class = 'day'></span>") ; 
         element.text($(".input-date").val()) ; 
         $(".available-days .days").append(element) ;
