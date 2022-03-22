@@ -50,7 +50,7 @@
                 </div>
             </nav>
         </div>
-        <section class="new-order-info">
+        <section class="new-order-info prev-order-info pending-order-info pending-order-info-2  pending-order-info-3 ">
             <div class="branch">
                 <div class="shape">
                     <img class="lawyer" src="./assets/icons/Icon map-lawyer.svg" alt="lawyer">
@@ -61,7 +61,7 @@
                     <img src="./assets/icons/Group 41305.svg" alt="shape">
                     <div class="text">حسابى</div>
                     <div class="text">الطلبات</div>
-                    <div class="text">الطلبات الجديدة</div>
+                    <div class="text">الطلبات المعلقة</div>
                     <div class="text">تفاصيل الطلب</div>
                 </div>
             </div>
@@ -87,6 +87,19 @@
                             <div class="address-consult">
                                 <span class="title">عنوان الطلب :</span>
                                 <span class="text">استشارة قانونية</span>
+                            </div>
+                            <div class="kind-consult">
+                                <span class="title"> نوع الاستشارة :</span>
+                                <span class="text">استشارة مكتبية </span>
+                            </div>
+                            <div class="cost-consult">
+                                <span class="title">تكلفة الاستشارة :</span>
+                                <span class="text">200 ر.س</span>
+                            </div>
+                            <div class="date-consult">
+                                <span class="title">تاريخ الاستشارة :</span>
+                                <span class="text">2 فبراير 2022</span>
+                                <span class="time-consult"> 09:00 AM</span>
                             </div>
                         </div>
                         <div class="interseted-order">
@@ -123,10 +136,63 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="online-consult">
+                            <div class="title">مواعيد الاستشارة :</div>
+                            <form action="." class="form-group">
+                                <div class="show-case">
+                                    <div class="available-days">
+                                        <div class=" days">
+                                            <div class="title">الأيام المتاحة للاستشارة :</div>
+                                           
+                                        </div>
+                                        <div class="image">
+                                            <input type="date" class="input-date">
+                                            <img src="./assets/icons/Icon feather-calendar.svg" alt="calendar">
+                                        </div>
+                                    </div>
+                                    <div class="add-date">
+                                        <div class="available-time">
+                                            <div class="title">المواعيد المتاحة لتقديم الاستشارة :</div>
+                                            <div class="date">
+                                                <input type="text" name="minuts" class="form-control" placeholder="mm" required>
+                                                <span>:</span>
+                                                <input type="text" name="hours" class="form-control" placeholder="hh" required>
+                                                <select name="time" class="form-control">
+                                                    <option value="0">AM</option>
+                                                    <option value="1">PM</option>
+                                                </select>
+                                                <div class="custom-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9">
+                                                        <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M9,22.5l9-9,9,9Z" transform="translate(-9 -13.5)"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="decided-date">
+                                                <div class="date ">
+                                                    <span>09:00</span>
+                                                    <span>10:30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#"  class="add-date-btn ">
+                                    <span>+ </span> أضافة موعد
+                                </a>
+                                <div class="button">
+                                    <button  type="submit" class="btn">تقديم الاستشارة</button>
+                                    <button disabled class="btn">الغاء العرض</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="button">
-                    <button data-bs-toggle= "modal" data-bs-target="#submit-porpose " class="btn">تقديم عرض </button>
+                <div class="state-order"></div>
+                <div class="level-orders">
+                    <div class="level">تم تقديم الاستشارة</div>
+                    <div class="level">تم سداد الرسوم</div>
+                    <div class="level">تم قبول العرض</div>
+                    <div class="level">تم تقديم العرض</div>
                 </div>
             </div>
         </section>
@@ -176,39 +242,6 @@
             </p>
         </footer>
     </body>
-    <div id = "submit-porpose"  class="modal submit-porpose fade"  aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="show-case">
-                    <div class="out">
-                        <a class="close-register">
-                            <img src="./assets/icons/Icon ionic-ios-close-circle-outline.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="title">تقديم عرض</div>
-                    <form  action="."   class="form-group">
-                        <span class="label">نوع الاستشارة :</span>
-                        <div class="custom-select">
-                            <select class="form-control">
-                                <option value="0" >نوع الاستشارة</option>
-                                <option value="1">استشارة مكتبية</option>
-                                <option value="2">استشارة افتراضية</option>
-                                <option value="3">استشارة كتابية</option>
-                            </select>
-                            <div class="custom-arrow">
-                                <img src="./assets/icons/Icon ionic-md-arrow-dropdown.svg" alt="arrow">
-                            </div>
-                        </div>
-                        <span class="label">التكلفة :</span>
-                        <input type="text" class="form-control" name = "costs"  placeholder="التكلفة" required>
-                        <div class="buttons">
-                            <button  class = "btn sign"  >تقديم العرض</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     <div id = "successful-submit"  class="modal successful-submit fade"  data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -225,6 +258,5 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/new-order.js"></script>
     <script src="js/orders.js"></script>
 </html>

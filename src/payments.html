@@ -136,22 +136,24 @@
             </p>
         </footer>
     </body>
-    <div id = "bank-info"  class="modal bank-info fade"  data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" tabindex="-1">
+    <div id = "bank-info"  class="modal bank-info fade"   aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="title">البيانات البنكية</div>
                 <div class="section">
                     <div class="show-case">
-                        <div class="image">
-                            <img src="./assets/icons/svgexport-6.svg" alt="export">
+                        <div class="req-amount">
+                            <div class="image">
+                                <img src="./assets/icons/svgexport-6.svg" alt="export">
+                            </div>
+                            <div class="title">المبلغ المطلوب سحبه</div>
                         </div>
-                        <div class="title">المبلغ المطلوب سحبه</div>
                         <div class="price">2000 ر.س</div>
                     </div>
                 </div>
-                <div class="form-group">
+                <form class="form-group">
                     <label >
-                        <span>رقم الحساب</span>
+                        <span>رقم الحساب :</span>
                         <input type="text" name="num-account" placeholder="رقم الحساب :" class="form-control" required>
                     </label>
                     <label >
@@ -163,15 +165,16 @@
                         <input type="text" name="name-bank" placeholder="اسم البنك :" class="form-control" required>
                     </label>
                     <button class="btn" type="submit">سحب المبلغ</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
+    <!-- في حالة نجاح السحب  -->
     <div id = "successful-submit"  class="modal successful-submit fade"  data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="image">
-                    <img src="./assets/icons/done-1.svg" alt="">
+                    <img src="./assets/icons/done.svg" alt="">
                 </div>
                 <div class="text">تم سحب المبلغ بنجاح </div>
                 <div class="button">
@@ -180,11 +183,12 @@
             </div>
         </div>
     </div>
+    <!-- في حالة فشل السحب  -->
     <div id = "failed-submit"  class="modal successful-submit fade"  data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="image">
-                    <img src="./assets/icons/done.svg" alt="">
+                    <img src="./assets/icons/done-1.svg" alt="">
                 </div>
                 <div class="text">فشل عملية السحب </div>
                 <div class="button">

@@ -497,3 +497,197 @@
         }
     }
 }
+.pending-order-info-3{
+    .online-consult{
+        margin-top: 70px;
+        margin-left: 128px ;
+        &>.title{
+            text-align: center ;
+            color: $min-color ;
+            font-size: 18pt ;
+            margin-bottom: 30px ;
+        }
+        .show-case{
+            padding: 50px 15% ;
+            background-color: $white ;
+            border: 1px solid $light-line ;
+            border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -ms-border-radius: 10px ;
+            -o-border-radius: 10px ;
+            .available-days{
+                display: flex ;
+                justify-content: space-between ;
+                margin-bottom: 100px ;
+                .days{
+                    width: 600px ;
+                    .title{
+                        color: $min-color ;
+                        font-size: 16pt ;
+                        margin-bottom: 15px ;
+                    }
+                    .day{
+                        border: 1px solid $light-line;
+                        background-color: $light-bg ;
+                        width: 160px ;
+                        height: 50px ;
+                        line-height: 50px ;
+                        display: inline-block ;
+                        text-align: center ;
+                        color: $black ;
+                        font-size: 14pt ;
+                        border-radius:8px;
+                        -moz-border-radius:8px;
+                        -ms-border-radius:8px;
+                        -o-border-radius:8px;
+                        -webkit-border-radius:8px;
+                    }
+                    .day+.day{
+                        margin-top: 10px ;
+                        margin-right: 10px;
+                    }
+                }
+                .image{
+                    background-image: linear-gradient($btn-1 , $btn-2);
+                    width: 77px ;
+                    box-shadow: -3px 3px 5px $light-line;
+                    height: 50px ;
+                    line-height: 50px ;
+                    border-radius: 5px ;
+                    -webkit-border-radius: 5px ;
+                    -moz-border-radius: 5px ;
+                    -ms-border-radius: 5px ;
+                    -o-border-radius: 5px ;
+                    text-align: center ;
+                    .input-date{
+                        position: absolute;
+                        left: 22% ;
+                        font-size: 50px;
+                        width: 90px;
+                        opacity: 0 ;
+                        height: 52px ;
+                    }
+                }
+            }
+            .add-date{
+                display: flex ;
+                justify-content: space-between ;
+                .available-time{
+                    .title{
+                        color: $min-color ;
+                        font-size: 16pt ;
+                        margin-bottom: 15px ;
+                    }
+                    &>.date{
+                        display: flex ;
+                        align-items: baseline ;
+                        position: relative;
+                        margin-bottom: 2px ;
+                        .form-control{
+                            @extend %form-control ; 
+                            width: 15% ;
+                            text-align: center ;
+                            &::placeholder{
+                                color: $light-line;
+                            }
+                        }
+                        span{
+                            margin-inline: 15px ;
+                            font-size: 20pt ;
+                            font-weight: bold ;
+                            color: $black ;
+                        }
+                        .form-control:nth-of-type(2){
+                            margin-left: 15px ;
+                        }
+                        select.form-control{
+                            width: 14% ;
+                            color: $black ;
+                            text-align: right ;
+                            font-size: 14pt ;
+                            padding-inline: 15px ;
+                        }
+                        .custom-arrow{
+                            position: relative;
+                            svg{
+                                position: absolute ;
+                                top: -8px ;
+                                left: 17px ;
+                                width: 13px ;
+                                transform:rotate(180deg);
+                                -moz-transform:rotate(180deg);
+                                -ms-transform:rotate(180deg);
+                                -o-transform:rotate(180deg);
+                                -webkit-transform:rotate(180deg);
+                            }
+                        }
+                    }
+                    .decided-date{
+                        .date{
+                            span{
+                                border: 1px solid $light-line;
+                                background-color: $light-bg ;
+                                width: 125px ;
+                                height: 50px ;
+                                line-height: 50px ;
+                                display: inline-block ;
+                                text-align: center ;
+                                color: $black ;
+                                font-size: 15pt ;
+                                border-radius:8px;
+                                -moz-border-radius:8px;
+                                -ms-border-radius:8px;
+                                -o-border-radius:8px;
+                                -webkit-border-radius:8px;
+                            }
+                            span+span{
+                                margin-right: 10px ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .add-date-btn{
+            display: block ;
+            margin-inline: auto ;
+            border: none ;
+            text-align: center ;
+            background-image: linear-gradient($btn-1 , $btn-2);
+            width: 240px ;
+            box-shadow: -3px 3px 5px $light-line;
+            height: 50px ;
+            line-height: 46px ;
+            border-radius: 5px ;
+            -webkit-border-radius: 5px ;
+            -moz-border-radius: 5px ;
+            -ms-border-radius: 5px ;
+            -o-border-radius: 5px ;
+            color: $white ;
+            font-size: 15pt ;
+            span{
+                font-size: 25pt ;
+                margin-left: 3px ;
+            }
+        }
+        .button{
+            display: flex ;
+            flex-direction: column ;
+            align-items: center ;
+            margin-top: 60px ;
+            .btn{
+                background-image: linear-gradient($btn-1 , $btn-2) !important;
+                width: 50% ;
+            }
+            .btn:last-child{
+                background-image: none !important;
+                background-color: $light-line ;
+                border: 1px solid $light-line ;
+                margin-top: 25px ;
+                font-weight: bold ;
+                color: $hint ;
+            }
+        }
+    }
+}
