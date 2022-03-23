@@ -77,7 +77,7 @@ $(function(){
         $(".bank-info").hide() ; 
         $("#successful-submit").modal("show") ; 
     });
-    $(".online-consult .form-group").on("submit" , function(e){
+    $(".online-consult .button .btn").on("click" , function(e){
         e.preventDefault();
         $("#successful-submit").modal("show") ; 
     });
@@ -86,11 +86,53 @@ $(function(){
         let element = $("<span class = 'day'></span>") ; 
         element.text($(".input-date").val()) ; 
         $(".available-days .days").append(element) ;
+    });
+
+    $(".input-date").on("input", function() {
+        $(".input-date").attr("disabled" , "disabled").val("");
+    });
+
+    $(".add-date .btn-time").on("click" , function(e){
+        e.preventDefault() ;
+        if( ( $(".available-time .date input.hours").val()&& $(".available-time .date input.minuts").val()) ){
+            let elementHours = $("<span class = 'decided-hour'></span>") ; 
+            $(elementHours).text($(".date input.hours").val()) ; 
+            let dot = $("<span class = 'dot'></span>");
+            $(dot).text(":") ; 
+            let elementMinuts = $("<span class = 'decided-minuts'></span>") ;
+            $(elementMinuts).text($(".date input.minuts").val()) ; 
+            let nightMorn = $("<span class = 'night-morn'></span>") ; 
+            $(nightMorn).text($(".date select option:selected").text())
+            let element = $("<div class = 'date'></div>")  ; 
+            $(element).append(elementHours) ; 
+            $(element).append(dot) ; 
+            $(element).append(elementMinuts) ; 
+            $(element).append(nightMorn) ; 
+            $(".decided-date").append(element) ; 
+        }
     })
 
-    $(".add-date-btn").on("click" , function(e){
+    $(".online-consult .form-group").on("submit" , function(e){
         e.preventDefault() ; 
-        $(this).closest(".form-group").find("input[type=text] ").val("") ; 
+        let element = $("<div class = 'decided-day'></div>") ; 
+        let titleElement = $("<span class='title'>تاريخ الاستشارة :</span>") ; 
+        let dayElement = $("<span class='day'></span>")
+        dayElement.text($(".available-days .days .day").text()) ; 
+        let timeElement = $("<span class='time-element'></span>") ; 
+        let date = $(".decided-date .date") ; 
+        for(var i = 0 ; i < date.length ; i++){
+            console.log(date[i]) ; 
+            timeElement.append(date[i]) ; 
+        }
+        element.append(titleElement) ; 
+        element.append(dayElement) ; 
+        element.append(timeElement) ; 
+        $(".available-days .days .day").text("") ; 
+        $(".result").append(element).css("display" , "block") ; 
+        $(this).closest(".form-group").find("input[type=text]").val("") ; 
+        $(".input-date").removeAttr("disabled");
+        $(".available-days .days .day").hide();
+        $(".decided-date .date").hide() ;
     })
-
 });
+

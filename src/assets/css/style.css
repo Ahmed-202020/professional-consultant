@@ -2009,6 +2009,7 @@ html[dir="ltr"] .errors .show-case .alert {
 }
 
 .pending-order-info-3 .online-consult .show-case {
+  position: relative;
   padding: 50px 15%;
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
@@ -2079,20 +2080,25 @@ html[dir="ltr"] .errors .show-case .alert {
 
 .pending-order-info-3 .online-consult .show-case .available-days .image .input-date {
   position: absolute;
-  left: 22%;
-  font-size: 50px;
-  width: 90px;
+  left: 13%;
+  font-size: 57px;
+  width: 100px;
   opacity: 0;
   height: 52px;
 }
 
 .pending-order-info-3 .online-consult .show-case .add-date {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.pending-order-info-3 .online-consult .show-case .add-date .available-time {
+  margin-bottom: 100px;
 }
 
 .pending-order-info-3 .online-consult .show-case .add-date .available-time .title {
@@ -2168,7 +2174,11 @@ html[dir="ltr"] .errors .show-case .alert {
   -webkit-transform: rotate(180deg);
 }
 
-.pending-order-info-3 .online-consult .show-case .add-date .available-time .decided-date .date span {
+.pending-order-info-3 .online-consult .show-case .add-date .available-time .decided-date {
+  position: relative;
+}
+
+.pending-order-info-3 .online-consult .show-case .add-date .available-time .decided-date .date {
   border: 1px solid #dcdcdc;
   background-color: #fafafa;
   width: 125px;
@@ -2185,34 +2195,128 @@ html[dir="ltr"] .errors .show-case .alert {
   -webkit-border-radius: 8px;
 }
 
-.pending-order-info-3 .online-consult .show-case .add-date .available-time .decided-date .date span + span {
-  margin-right: 10px;
+.pending-order-info-3 .online-consult .show-case .add-date .available-time .decided-date .date .night-morn {
+  margin-left: 3px;
 }
 
-.pending-order-info-3 .online-consult .add-date-btn {
-  display: block;
-  margin-inline: auto;
+.pending-order-info-3 .online-consult .show-case .add-date .available-time .decided-date .date + .date {
+  margin-right: 20px;
+}
+
+.pending-order-info-3 .online-consult .show-case .add-date .btn-time {
+  position: absolute;
+  left: -50px;
   border: none;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
   background-image: linear-gradient(#d6a22b, #b07e0a);
-  width: 240px;
+  width: 160px;
   -webkit-box-shadow: -3px 3px 5px #dcdcdc;
           box-shadow: -3px 3px 5px #dcdcdc;
   height: 50px;
-  line-height: 46px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   color: #ffffff;
-  font-size: 15pt;
+  font-size: 16pt;
 }
 
-.pending-order-info-3 .online-consult .add-date-btn span {
-  font-size: 25pt;
+.pending-order-info-3 .online-consult .show-case .decided-day {
+  padding-inline: 30px;
+  border: 1px solid #dcdcdc;
+  background-color: #fafafa;
+  height: 50px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  color: #000;
+  font-size: 14pt;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .title {
+  color: #e8b134;
+  margin-left: 10px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .day {
+  margin-left: 10px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .hours {
+  margin-left: 10px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .hours + .hours {
+  margin-right: 10px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .night-morning {
   margin-left: 3px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .time-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .time-element .date {
+  color: #000;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .time-element .date + .date {
+  margin-right: 10px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day + .decided-day {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.pending-order-info-3 .online-consult .show-case .add-date-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: -22px;
+  border: none;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  width: 220px;
+  -webkit-box-shadow: -3px 3px 5px #dcdcdc;
+          box-shadow: -3px 3px 5px #dcdcdc;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #ffffff;
+  font-size: 18pt;
+}
+
+.pending-order-info-3 .online-consult .show-case + .show-case {
+  margin-top: 30px;
+  padding: 30px 25px 150px;
+  display: none;
 }
 
 .pending-order-info-3 .online-consult .button {

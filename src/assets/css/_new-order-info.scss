@@ -508,6 +508,7 @@
             margin-bottom: 30px ;
         }
         .show-case{
+            position: relative;
             padding: 50px 15% ;
             background-color: $white ;
             border: 1px solid $light-line ;
@@ -562,18 +563,20 @@
                     text-align: center ;
                     .input-date{
                         position: absolute;
-                        left: 22% ;
-                        font-size: 50px;
-                        width: 90px;
+                        left: 13%;
+                        font-size: 57px;
+                        width: 100px;
                         opacity: 0 ;
                         height: 52px ;
                     }
                 }
             }
             .add-date{
+                position: relative ;
                 display: flex ;
                 justify-content: space-between ;
                 .available-time{
+                    margin-bottom: 100px ;
                     .title{
                         color: $min-color ;
                         font-size: 16pt ;
@@ -624,52 +627,125 @@
                         }
                     }
                     .decided-date{
+                        position: relative ;
                         .date{
-                            span{
-                                border: 1px solid $light-line;
-                                background-color: $light-bg ;
-                                width: 125px ;
-                                height: 50px ;
-                                line-height: 50px ;
-                                display: inline-block ;
-                                text-align: center ;
-                                color: $black ;
-                                font-size: 15pt ;
-                                border-radius:8px;
-                                -moz-border-radius:8px;
-                                -ms-border-radius:8px;
-                                -o-border-radius:8px;
-                                -webkit-border-radius:8px;
+                            border: 1px solid $light-line;
+                            background-color: $light-bg ;
+                            width: 125px ;
+                            height: 50px ;
+                            line-height: 50px ;
+                            display: inline-block ;
+                            text-align: center ;
+                            color: $black ;
+                            font-size: 15pt ;
+                            border-radius:8px;
+                            -moz-border-radius:8px;
+                            -ms-border-radius:8px;
+                            -o-border-radius:8px;
+                            -webkit-border-radius:8px;
+                            .night-morn{
+                                margin-left: 3px ;
                             }
-                            span+span{
-                                margin-right: 10px ;
-                            }
+                        }
+                        .date+.date{
+                            margin-right:20px ;
                         }
                     }
                 }
+                .btn-time{
+                    position: absolute ;
+                    left: -50px ;
+                    border: none ;
+                    text-align: center ;
+                    background-image: linear-gradient($btn-1 , $btn-2);
+                    width: 160px ;
+                    box-shadow: -3px 3px 5px $light-line;
+                    height: 50px ;
+                    border-radius: 5px ;
+                    -webkit-border-radius: 5px ;
+                    -moz-border-radius: 5px ;
+                    -ms-border-radius: 5px ;
+                    -o-border-radius: 5px ;
+                    color: $white ;
+                    font-size: 16pt ;
+                }
+            }
+            .decided-day{
+                padding-inline: 30px ;
+                border: 1px solid #dcdcdc;
+                background-color: #fafafa;
+                height: 50px;
+                border-radius: 8px ;
+                -webkit-border-radius: 8px ;
+                -moz-border-radius: 8px ;
+                -ms-border-radius: 8px ;
+                -o-border-radius: 8px ;
+                line-height: 50px;
+                display: flex ;
+                width: fit-content ;
+                text-align: center;
+                color: #000;
+                font-size: 14pt;
+                .title{
+                    color: $min-color ;
+                    margin-left: 10px ;
+                }
+                .day{
+                    margin-left: 10px ;
+                }
+                .hours{
+                    margin-left: 10px ;
+                }
+                .hours + .hours{
+                    margin-right: 10px ;
+                }
+                .night-morning{
+                    margin-left: 3px;
+                }
+                .time-element{
+                    display: flex ;
+                    color: $black ;
+                    .date{
+                        color: $black ;
+                    }
+                    .date + .date{
+                        margin-right: 10px ;
+                    }
+                }
+            }
+            .decided-day + .decided-day{
+                margin-top: 15px ;
+                margin-right: 10px ;
+            }
+            .add-date-btn{
+                position: absolute ;
+                left: 50% ;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                bottom: -22px ;
+                border: none ;
+                text-align: center ;
+                background-image: linear-gradient($btn-1 , $btn-2);
+                width: 220px ;
+                box-shadow: -3px 3px 5px $light-line;
+                height: 50px ;
+                line-height: 50px ;
+                border-radius: 5px ;
+                -webkit-border-radius: 5px ;
+                -moz-border-radius: 5px ;
+                -ms-border-radius: 5px ;
+                -o-border-radius: 5px ;
+                color: $white ;
+                font-size: 18pt ;
             }
         }
-        .add-date-btn{
-            display: block ;
-            margin-inline: auto ;
-            border: none ;
-            text-align: center ;
-            background-image: linear-gradient($btn-1 , $btn-2);
-            width: 240px ;
-            box-shadow: -3px 3px 5px $light-line;
-            height: 50px ;
-            line-height: 46px ;
-            border-radius: 5px ;
-            -webkit-border-radius: 5px ;
-            -moz-border-radius: 5px ;
-            -ms-border-radius: 5px ;
-            -o-border-radius: 5px ;
-            color: $white ;
-            font-size: 15pt ;
-            span{
-                font-size: 25pt ;
-                margin-left: 3px ;
-            }
+        .show-case + .show-case{
+            margin-top: 30px ;
+            padding: 30px 25px 150px  ;
+            display: none ;
         }
         .button{
             display: flex ;

@@ -145,7 +145,7 @@
                                             <div class="title">الأيام المتاحة للاستشارة :</div>
                                         </div>
                                         <div class="image">
-                                            <input type="date" class="input-date">
+                                            <input type="date" class="input-date" required>
                                             <img src="./assets/icons/Icon feather-calendar.svg" alt="calendar">
                                         </div>
                                     </div>
@@ -153,9 +153,9 @@
                                         <div class="available-time">
                                             <div class="title">المواعيد المتاحة لتقديم الاستشارة :</div>
                                             <div class="date">
-                                                <input type="text" name="minuts" class="form-control" placeholder="mm" required>
+                                                <input type="text" name="minuts" class="form-control minuts" placeholder="mm" maxlength="2" required>
                                                 <span>:</span>
-                                                <input type="text" name="hours" class="form-control" placeholder="hh" required>
+                                                <input type="text" name="hours" class="form-control hours" placeholder="hh" maxlength="2" required>
                                                 <select name="time" class="form-control">
                                                     <option value="0">AM</option>
                                                     <option value="1">PM</option>
@@ -167,19 +167,18 @@
                                                 </div>
                                             </div>
                                             <div class="decided-date">
-                                                <div class="date ">
-                                                    <span>09:00</span>
-                                                    <span>10:30</span>
-                                                </div>
                                             </div>
                                         </div>
+                                        <button class="btn btn-time">+اضف وقت</button>
                                     </div>
+                                    <button type="submit"  class="add-date-btn ">
+                                        اضافة
+                                    </button>
                                 </div>
-                                <a href="#"  class="add-date-btn ">
-                                    <span>+ </span> أضافة موعد
-                                </a>
+                                <div class="show-case result">
+                                </div>
                                 <div class="button">
-                                    <button  type="submit" class="btn">تقديم الاستشارة</button>
+                                    <button   class="btn">تقديم الاستشارة</button>
                                     <button disabled class="btn">الغاء العرض</button>
                                 </div>
                             </form>
