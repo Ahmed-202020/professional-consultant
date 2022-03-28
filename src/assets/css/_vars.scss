@@ -200,6 +200,44 @@ body{
         }
     }
 }
+%branch-ltr{
+    .shape{
+        left: 80px ;
+        right: initial ;
+        img{
+            &:nth-child(1){
+                left: -52px ;
+                right: initial ;
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+            }
+            &:nth-child(2){
+                left: -80px ;
+                z-index: 1;
+                right: initial ;
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+            }
+            &:nth-child(3){
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+            }
+        }
+        .text{
+            left: 30px ;
+            right: initial ;
+        }
+    }
+}
 %type-consult{
     color: $black ;
     font-size: 16pt ;
@@ -221,6 +259,18 @@ body{
         &:last-child{
             margin-left: 15px ;
             width: 115px ;
+        }
+    }
+}
+%type-consult-ltr{
+    span{
+        &:first-child{
+            margin-right: 15px ;
+            margin-left: 0 ;
+        }
+        &:last-child{
+            margin-right: 15px ;
+            margin-left: 0 ;
         }
     }
 }
@@ -329,6 +379,27 @@ body{
         .btn + .btn{
             margin-top: 15px ;
         }
+    }
+}
+%form-ltr{
+    label.key-country{
+        left: 22px ;
+        right: initial ;
+    }
+    select{
+        left: 27px ;
+        right: initial ;
+    }
+    .form-control.select{
+        padding-left: 110px ;
+        padding-right: 0 ;
+    }
+    .eye{
+        right: 7% ;
+        left: initial ;
+    }
+    .forget{
+        text-align: right ;
     }
 }
 %form-control{

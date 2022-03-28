@@ -1605,6 +1605,22 @@ html[dir = "ltr"]{
             }
         }
     }
+    .header-home{
+        .navbar{
+            .min-nav{
+                display: grid ;
+                align-items: baseline ;
+                padding: 10px 35px 10px !important;
+                .navbar-brand{
+                    position: initial ;
+                    margin-right: 30px ;
+                    img{
+                        width: 40% ;
+                    }
+                }
+            }
+        }
+    }
     .services{
         padding: 100px 70px 120px ;
         .title{
@@ -1707,6 +1723,360 @@ html[dir = "ltr"]{
     .footer{
         .row{
             padding: 40px 30px 200px 30px ;
+        }
+    }
+}
+@media(min-width:280px) and (max-width : 415px){
+    .header{
+        .navbar{
+            .min-nav{
+                .navbar-brand{
+                    left: -120px ;
+                }
+                .sign{
+                    .btn{
+                        font-size: 14pt ;
+                        height: 40px ;
+                    }
+                }
+            }
+        }
+        #slider{
+            .carousel-indicators{
+                display: none ;
+            }
+            .carousel-inner{
+                .carousel-item{
+                    .overlay{
+                        .text{
+                            width: 100% ;
+                            font-size: 12pt ;
+                        }
+                    }
+                }
+            }
+            .buttons{
+                .btn{
+                    font-size: 14pt ;
+                    width: 38% ;
+                }
+                .next-section{
+                    display: none ;
+                }
+            }
+        }
+    }
+    .header-home{
+        .navbar{
+            .min-nav{
+                .navbar-brand{
+                    margin-right: 50px ;
+                    img{
+                        width: 93% !important;
+                    }
+                }
+            }
+        }
+    }
+    .services{
+        padding: 100px 20px 50px ;
+        .title{
+            &::after{
+                content: initial;
+            }
+        }
+    }
+    .features{
+        .feature{
+            .show-case{
+                .text{
+                    font-size: 8pt ;
+                    margin-bottom: 10px ;
+                }
+            }
+        }
+    }
+    .vip-consultant{
+        .title{
+            &::after{
+                content: initial ;
+            }
+        }
+    }
+    .why-choose-us{
+        padding: 150px 20px ;
+        .title{
+            &::after{
+                content: initial ;
+            }
+        }
+    }
+    .app{
+        .show-case{
+            padding: 40px 30px 0 0;
+            .title{
+                font-size: 14pt ;
+                margin-bottom: 20px ;
+            }
+            img{
+                width: 90px ;
+            }
+        }
+        .image{
+            right: 58% ;
+        }
+    }
+    .footer{
+        .row{
+            padding: 40px 20px 200px ;
+            .col-4{
+                .explanation{
+                    .text{
+                        font-size: 13pt ;
+                    }
+                }
+                .items{
+                    .item{
+                        .link{
+                            font-size: 12pt ;
+                        }
+                    }
+                }
+            }
+            .col-4:not(:first-of-type){
+                .contact{
+                    .title{
+                        font-size: 15pt ;
+                    }
+                    .custom-item{
+                        span{
+                            font-size: 10pt ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:412px) and (max-width : 413px){
+    .vip-consultant{
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 412px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width:414px) and (max-width : 415px){
+    .vip-consultant{
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 414px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width:390px) and (max-width : 391px){
+    .vip-consultant{
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 390px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width:393px) and (max-width : 394px){
+    .vip-consultant{
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 393px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width:375px) and (max-width : 376px){
+    .vip-consultant{
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 375px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width:360px) and (max-width : 361px){
+    .vip-consultant{
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 360px !important;
+                }
+            }
+        }
+    }
+}
+@media(min-width:280px) and (max-width : 281px){
+    .header{
+        .navbar{
+            .min-nav{
+                padding: 10px 15px 20px !important;
+                .navbar-brand{
+                    left: -98px;
+                    top: -46px ;
+                    img{
+                        width: 25% ;
+                    }
+                }
+                .sign{
+                    .btn{
+                        font-size: 10pt ;
+                        height: 32px ;
+                    }
+                    .btn+.btn{
+                        margin-right: 12px ;
+                    }
+                }
+                .lang{
+                    .dropdown{
+                        .dropdown-menu{
+                            min-width: 10rem; 
+                        }
+                    }
+                }
+            }
+        }
+        #slider{
+            .carousel-inner{
+                .carousel-item{
+                    .overlay{
+                        top: 14% ;
+                        .text{
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-home{
+        .min-nav{
+            .sign{
+                .dropdown{
+                    .dropdown-menu{
+                        right: -142px !important;
+                    }
+                }
+            }
+        }
+    }
+    .services{
+        padding: 100px 7px 50px ;
+        .title{
+            font-size: 16pt ;
+        }
+    }
+    .features{
+        .feature{
+            .show-case{
+                .text{
+                    margin-bottom: 5px ;
+                    font-size: 7pt ;
+                }
+                .btn{
+                    display: none ;
+                }
+            }
+        }
+    }
+    .vip-consultant{
+        .title{
+            font-size: 16pt ;
+        }
+        .owl-carousel{
+            .center{
+                .card{
+                    width: 280px !important;
+                }
+            }
+        }
+    }
+    .vip-consultant.clients-preview{
+        .title{
+            font-size: 16pt ;
+        }
+        .container-fluid{
+            .owl-carousel{
+                .owl-item{
+                    .card{
+                        .card-body{
+                            .card-text{
+                                margin-bottom: 7px ;
+                            }
+                        }
+                        .image{
+                            top: 85% ;
+                            right: 31%  !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .why-choose-us{
+        padding: 150px 10px ;
+    }
+    .app{
+        .show-case{
+            .title{
+                font-size: 11pt ;
+                margin-bottom: 14px ;
+            }
+            img{
+                width: 80px ;
+            }
+        }
+    }
+    .footer{
+        .icon{
+            width: 45px;
+            height: 45px;
+            top: -20px;
+            &::before{
+                top: 25% ;
+            }
+        }
+        .row{
+            padding: 40px 12px 200px ;
+            .col-4:not(:first-of-type){
+                .contact{
+                    .custom-item{
+                        span{
+                            font-size: 8pt ;
+                        }
+                    }
+                }
+                .items{
+                    padding-right: 0 ;
+                }
+            }
+        }
+        .copyright{
+            font-size: 10pt ;
+            .year{
+                font-size: 12pt ;
+            }
+            .copy{
+                font-size: 10pt ;
+            }
         }
     }
 }
@@ -2061,6 +2431,16 @@ html[dir = "ltr"]{
                 }
             }
         }
+        .header-home{
+            .navbar{
+                .min-nav{
+                    .navbar-brand{
+                        margin-left: 30px ;
+                        margin-right: 0 ;
+                    }
+                }
+            }
+        }
         .services{
             .title{
                 &::after{
@@ -2110,6 +2490,102 @@ html[dir = "ltr"]{
         .app{
             .show-case{
                 padding: 40px 0 0 70px ;
+            }
+        }
+    }
+}
+@media(min-width:280px) and (max-width : 415px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .min-nav{
+                    .navbar-brand{
+                        right: -120px ;
+                        left: initial ;
+                    }
+                }
+            }
+        }
+        .header-home{
+            .navbar{
+                .min-nav{
+                    .navbar-brand{
+                        margin-left: 50px ;
+                        margin-right: 0 ;
+                    }
+                }
+            }
+        }
+        .app{
+            .show-case{
+                padding: 40px 0 0 30px ;
+            }
+            .image{
+                left: 58% ;
+                right: initial ;
+            }
+        }
+        .vip-consultant.clients-preview{
+            .container-fluid{
+                .owl-dots{
+                    text-align: center !important ;
+                    margin-right: 0 !important ;
+                }
+            }
+        }
+    }
+}
+@media(min-width:280px) and (max-width : 281px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .min-nav{
+                    .navbar-brand{
+                        right: -98px ;
+                        left: initial ;
+                    }
+                    .sign{
+                        .btn + .btn{
+                            margin-left: 12px ;
+                            margin-right: 0 ;
+                        }
+                    }
+                }
+            }
+        }
+        .header-home{
+            .min-nav{
+                .sign{
+                    .dropdown{
+                        .dropdown-menu{
+                            left: -142px !important ;
+                            right: initial !important ;
+                        }
+                    }
+                }
+            }
+        }
+        .vip-consultant.clients-preview{
+            .container-fluid{
+                .owl-carousel{
+                    .owl-item{
+                        .card{
+                            .image{
+                                left: 31% !important ;
+                                right: initial !important ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            .row{
+                .col-4:not(:first-of-type){
+                    .items{
+                        padding-left: 0 ;
+                    }
+                }
             }
         }
     }

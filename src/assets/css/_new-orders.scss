@@ -209,3 +209,353 @@
         }
     }
 }
+
+//new-orders[ltr]
+html[dir = "ltr"]{
+    .new-orders{
+        .branch{
+            @extend %branch-ltr ; 
+            .shape{
+                img{
+                    &:nth-child(3){
+                        left: 8px ;
+                        right: initial ;
+                    }
+                    &:nth-child(4){
+                        left: 95px ;
+                        right: initial ;
+                    }
+                    &:nth-child(5){
+                        left: 206px ;
+                        transform: scaleX(2) rotateY(180deg);
+                        -webkit-transform: scaleX(2) rotateY(180deg);
+                        -moz-transform: scaleX(2) rotateY(180deg);
+                        -ms-transform: scaleX(2) rotateY(180deg);
+                        -o-transform: scaleX(2) rotateY(180deg);
+                    }
+                }
+                .text{
+                    &:nth-of-type(2){
+                        left: 114px ;
+                        right: initial ;
+                    }
+                    &:last-child{
+                        left: 210px ;
+                        right: initial ;
+                    }
+                }
+            }
+        }
+        .orders{
+            .card{
+                .info{
+                    .data{
+                        margin-left: 30px ;
+                        margin-right: 0 ;
+                        .rating{
+                            .text{
+                                margin-left: 15px ;
+                                margin-right: 0 ;
+                            }
+                        }
+                        .type-consult{
+                            @extend %type-consult-ltr ; 
+                        }
+                    }
+                }
+                .date{
+                    right: 40px ;
+                    left: initial ;
+                }
+            }
+        }
+        .paginations{
+            .state-page{
+                .bars{
+                    .bar + .bar{
+                        margin-left: 5px ;
+                        margin-right: 0 ; 
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+//responsive[rtl]
+@media(max-width:1399.98px){
+    .new-orders{
+        .orders{
+            .card{
+                padding-inline: 15px ;
+                .info{
+                    .data{
+                        .rating{
+                            font-size: 14pt ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1280px){
+    .new-orders{
+        .orders{
+            grid-template-columns: repeat(auto-fill, minmax(calc(100% / 2), 1fr));
+        }
+    }
+}
+@media(max-width:768px){
+    .new-orders{
+        padding: 50px 0 300px ;
+    }
+}
+@media(max-width:575.98px){
+    .new-orders{
+        .orders{
+            padding: 50px 10px 100px ;
+            .card{
+                .info{
+                    .user-img{
+                        img{
+                            min-height: 90px ;
+                            max-height: 90px ;
+                            border: 3px solid $min-color ;
+                        }
+                    }
+                    .data{
+                        margin-right: 14px ;
+                        .name{
+                            .text{
+                                font-size: 18pt ;
+                            }
+                        }
+                        .type-consult{
+                            span{
+                                &:first-child{
+                                    width: 120px ;
+                                    margin-left: 5px ;
+                                }
+                                &:last-child{
+                                    width: 90px ;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button{
+                    .btn{
+                        width: 150px ;
+                        font-size: 15pt ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .new-orders{
+        .branch{
+            .shape{
+                img{
+                    &:nth-child(3){
+                        right: -7px ;
+                    }
+                    &:nth-child(4){
+                        right: 67px ;
+                    }
+                    &:nth-child(5){
+                        right: 115px ;
+                    }
+                }
+                .text{
+                    font-size: 15px ;
+                    &:nth-of-type(2){
+                        right: 105px ;
+                    }
+                    &:last-child{
+                        right: 175px ;
+                    }
+                }
+            }
+        }
+        .orders{
+            padding: 50px 10px 0 ;
+            .card{
+                .info{
+                    .user-img{
+                        position: absolute ;
+                        img{
+                            min-height: 70px ;
+                            max-height: 70px ;
+                        }
+                    }
+                    .data{
+                        .name{
+                            text-align: center ;
+                            .text{
+                                font-size: 15pt ;
+                            }
+                        }
+                    }
+                }
+                .button{
+                    position: absolute ;
+                    left: 10px ;
+                    .btn{
+                        width: 100px ;
+                        font-size: 9pt ;
+                    }
+                }
+            }
+        }
+        .paginations{
+            .state-page{
+                .bars{
+                    .active-page{
+                        .bar-content{
+                            width: 70px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:280px){
+    .new-orders{
+        padding: 0 0 300px ;
+        .branch{
+            display: none ;
+        }
+        .orders{
+            .card{
+                padding-inline: 3px ;
+                padding-block: 20px ;
+                .info{
+                    .data{
+                        .name{
+                            margin-top: 10px ;
+                        }
+                    }
+                }
+            }
+        }
+        .paginations{
+            .state-page{
+                .bars{
+                    .bar{
+                        .bar-content{
+                            width: 15px ;
+                        }
+                    }
+                    .active-page{
+                        .bar-content{
+                            width: 30px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//responsive[ltr]
+@media(max-width:575.98px){
+    html[dir = "ltr"]{
+        .new-orders{
+            .orders{
+                .card{
+                    .info{
+                        .data{
+                            margin-left: 14px ;
+                            margin-right: 0 ;
+                            .type-consult{
+                                span{
+                                    &:first-child{
+                                        margin-right: 5px ;
+                                        margin-left: 0 ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    html[dir = "ltr"]{
+        .new-orders{
+            .branch{
+                .shape{
+                    img{
+                        &:nth-child(3){
+                            left: -7px ;
+                            right: initial ;
+                        }
+                        &:nth-child(4){
+                            left: 67px ;
+                            right: initial ;
+                        }
+                        &:nth-child(5){
+                            left: 115px ;
+                            right: initial ; 
+                        }
+                    }
+                    .text{
+                        &:nth-of-type(2){
+                            left: 105px ;
+                            right: initial ;
+                        }
+                        &:last-child{
+                            left: 175px ;
+                            right: initial ;
+                        }
+                    }
+                }
+            }
+            .orders{
+                .card{
+                    .button{
+                        right: 10px ;
+                        left: initial ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:280px){
+    html[dir = "ltr"]{
+        .new-orders{
+            .orders{
+                .card{
+                    .info{
+                        .data{
+                            .rating{
+                                .text{
+                                    margin-left: 0 ;
+                                }
+                            }
+                            .type-consult{
+                                span{
+                                    &:first-child{
+                                        margin-right: 0 ;
+                                    }
+                                    &:last-child{
+                                        margin-right: 0 ;
+                                    }
+                                }
+                            } 
+                        } 
+                    } 
+                }
+            }
+        }
+    }
+}

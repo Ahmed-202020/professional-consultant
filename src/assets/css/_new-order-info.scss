@@ -339,7 +339,6 @@
         }
     }
 }
-
 .prev-order-info{
     .order-info{
         position: relative;
@@ -509,7 +508,7 @@
         }
         .show-case{
             position: relative;
-            padding: 50px 15% ;
+            padding: 50px 15% 100px ;
             background-color: $white ;
             border: 1px solid $light-line ;
             border-radius: 10px ;
@@ -576,7 +575,7 @@
                 display: flex ;
                 justify-content: space-between ;
                 .available-time{
-                    margin-bottom: 100px ;
+                    margin-bottom: 50px ;
                     .title{
                         color: $min-color ;
                         font-size: 16pt ;
@@ -725,7 +724,7 @@
                 -moz-transform: translateX(-50%);
                 -ms-transform: translateX(-50%);
                 -o-transform: translateX(-50%);
-                bottom: -22px ;
+                bottom: 30px ;
                 border: none ;
                 text-align: center ;
                 background-image: linear-gradient($btn-1 , $btn-2);
@@ -763,6 +762,1295 @@
                 margin-top: 25px ;
                 font-weight: bold ;
                 color: $hint ;
+            }
+        }
+    }
+}
+
+//ltr 
+html[dir = "ltr"]{
+    .new-order-info{
+        .branch{
+            @extend %branch-ltr ; 
+            .shape{
+                img{
+                    &:nth-child(3){
+                        left: 7px ;
+                        right: initial ;
+                    }
+                    &:nth-child(4){
+                        left: 94px ;
+                        right: initial ;
+                    }
+                    &:nth-child(5){
+                        left: 217px ;
+                        right: initial ;
+                        transform: scaleX(1.8) rotateY(180deg);
+                        -webkit-transform: scaleX(1.8) rotateY(180deg);
+                        -moz-transform: scaleX(1.8) rotateY(180deg);
+                        -ms-transform: scaleX(1.8) rotateY(180deg);
+                        -o-transform: scaleX(1.8) rotateY(180deg);
+                    }
+                    &:nth-child(6){
+                        left: 363px ;
+                        right: initial ;
+                        transform: scaleX(1.5) rotateY(180deg);
+                        -webkit-transform: scaleX(1.5) rotateY(180deg);
+                        -moz-transform: scaleX(1.5) rotateY(180deg);
+                        -ms-transform: scaleX(1.5) rotateY(180deg);
+                        -o-transform: scaleX(1.5) rotateY(180deg);
+                    }
+                }
+                .text{
+                    &:nth-of-type(2){
+                        left: 115px ;
+                        right: initial ;
+                    }
+                    &:nth-of-type(3){
+                        left: 205px ;
+                        right: initial ;
+                    }
+                    &:nth-of-type(4){
+                        left: 365px ;
+                        right: initial ;
+                    }
+                }
+            }
+        }
+        .order-info{
+            .info{
+                .data{
+                    margin-left: 25px ;
+                    margin-right: 0 ;
+                    .rating{
+                        .text{
+                            margin-right: 15px ;
+                            margin-left: 0 ; 
+                        }
+                        .time-consult{
+                            margin-left: 10px ;
+                            margin-right: 0 ;
+                        }
+                    }
+                    .interseted-order{
+                        .type-consult{
+                            @extend %type-consult-ltr ;  
+                        }
+                    }
+                    .documents{
+                        .files{
+                            .document + .document{
+                                margin-left: 20px ;
+                                margin-right: 0 ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submit-porpose{
+        .modal-content{
+            .title{
+                @extend %title-style ; 
+                &::after{
+                    right: initial ;
+                    left: 42% ;
+                }
+            }
+            .show-case{
+                .out{
+                    left: 30px ;
+                    right: initial ;
+                }
+                .title{
+                    @extend %title-style ; 
+                    &:after{
+                        left: 39.2% ;
+                    }
+                }
+                .form-group{
+                    @extend %form-ltr ; 
+                    .custom-select{
+                        select.form-control{
+                            text-align: left ;
+                        }
+                        .custom-arrow{
+                            right: 8% ;
+                            left: initial ;
+                        }
+                        .selector-option{
+                            li+li{
+                                right: 0 ;
+                                left: initial ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prev-order-info{
+        .order-info{
+            .state-order{
+                right: 3% ;
+                left: initial ;
+            }
+            .level-orders{
+                right: 8% ;
+                left: initial ;
+            }
+        }
+    }
+    .pending-order-info{
+        .order-info{
+            .state-order{
+                &::after{
+                    right: 0 ;
+                    left: initial ;
+                }
+            }
+        }
+    }
+    .pending-order-info-2{
+        .order-info{
+            .info{
+                .data{
+                    .write-consult{
+                        margin-right: 140px;
+                        margin-left: 0 ;
+                    }
+                }
+            }
+        }
+    }
+    .pending-order-info-3{
+        .online-consult{
+            margin-right: 128px ;
+            margin-left: 0 ;
+        }
+        .show-case{
+            .add-date{
+                .btn-time{
+                    right: -50px ;
+                    left: initial ;
+                }
+            }
+            .available-days{
+                .days{
+                    .day+.day{
+                        margin-left: 10px ;
+                        margin-right: 0 ;
+                    }
+                }
+                .image{
+                    .input-date{
+                        right: 15% ;
+                        left: initial ;
+                    }
+                }
+            }
+            .add-date{
+                .available-time{
+                    &>.date{
+                        .form-control:nth-of-type(2){
+                            margin-right: 15px ;
+                            margin-left: 0 ;
+                        }
+                        select.form-control{
+                            text-align: left ;
+                        }
+                        .custom-arrow{
+                            svg{
+                                right: 17px ;
+                                left: initial ;
+                            }
+                        }
+                    }
+                    .decided-date{
+                        .date{
+                            .night-morn{
+                                margin-right: 3px ;
+                                margin-left: 0 ;
+                            }
+                        }
+                        .date+.date{
+                            margin-left: 20px ;
+                            margin-right: 0 ;
+                        }
+                    }
+                    .btn-time{
+                        right: -50px ;
+                        left: initial ;
+                    }
+                }
+            }
+            .decided-day{
+                .title{
+                    margin-right: 10px ;
+                    margin-left: 0 ;
+                }
+                .day{
+                    margin-right: 10px ;
+                    margin-left: 0 ;
+                }
+                .hours{
+                    margin-right: 10px ;
+                    margin-left: 0 ;
+                }
+                .hours + .hours{
+                    margin-left: 10px ;
+                    margin-right: 0 ;
+                }
+                .night-morning{
+                    margin-right: 3px ;
+                    margin-left: 0 ;
+                }
+                .time-element{
+                    .date + .date{
+                        margin-left: 10px ;
+                        margin-right: 0 ;
+                    }
+                }
+            }
+            .decided-day + .decided-day{
+                margin-left: 10px ;
+                margin-right: 0 ;  
+            }
+
+        }
+
+    }
+}
+
+//responsive[rtl]
+@media(max-width:1399.98px){
+    .prev-order-info{
+        .order-info{
+            .level-orders{
+                left: 2% ;
+            }
+        }
+    }
+    .pending-order-info-3{
+        .order-info{
+            .data{
+                .user-img{
+                    position: absolute ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1280px){
+    .prev-order-info{
+        .order-info{
+            .level-orders{
+                left: 1% ;
+            }
+        }
+    }
+}
+@media(max-width:1199.98px){
+    .prev-order-info{
+        .order-info{
+            .level-orders{
+                .level{
+                    font-size: 10pt ;
+                }
+            }
+        }
+    }
+    .pending-order-info-2{
+        .order-info{
+            .info{
+                .data{
+                    .write-consult{
+                        .form-group{
+                            width: 80% ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1024px){
+    .prev-order-info{
+        .order-info{
+            .state-order{
+                width: 52.5% ;
+            }
+            .level-orders{
+                width: 58%;
+                .level{
+                    &:after{
+                        left: 80px ;
+                    }
+                }
+            }
+        }
+    }
+    .pending-order-info-3{
+        .order-info{
+            .user-img{
+                position: absolute ;
+            }
+            .data{
+                .name{
+                    margin-right: 100px ;
+                }
+            }
+        }
+        .online-consult{
+            margin-left: 25px ;
+            .show-case{
+                .add-date{
+                    .available-time {
+                        .date{
+                            margin-right: 0 ;
+                        }
+                        &> .date .form-control{
+                            width: 20% ;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+    .successful-submit{
+        .modal-content{
+            width: 80% ;
+        }
+    }
+    .submit-porpose{
+        .modal-content{
+            .show-case{
+                .title{
+                    &::after{
+                        right: 36% ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:912px){
+    .new-order-info{
+        padding: 50px 30px 100px ;
+        .order-info{
+            .button{
+                .btn{
+                    width: 60% ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:820px){
+    .prev-order-info{
+        .order-info{
+            .level-orders{
+                width: 70% ;
+            }
+            .state-order{
+                width: 62.5% ;
+            }
+            .info{
+                margin-top: 80px ;
+            }
+        }
+    }
+    .submit-porpose{
+        .modal-dialog{
+            max-width: 90% !important ;
+        }
+    }
+}
+@media(max-width:768px){
+    .new-order-info{
+        .order-info{
+            .info{
+                .data{
+                    .details-order{
+                        .text{
+                            width: 80% ;
+                        }
+                    }
+                }
+            }
+            .button{
+                .btn{
+                    width: 70% ;
+                }
+            }
+        }
+    }
+    .prev-order-info{
+        .order-info{
+            .state-order{
+                width: 63% ;
+            }
+        }
+    }
+    .pending-order-info-2{
+        .order-info{
+            .info{
+                .user-img{
+                    position: absolute ;
+                }
+                .data{
+                    .name{
+                        margin-right: 100px;
+                    }
+                    .name+ .date{
+                        margin-right: 100px;
+                    }
+                    .write-consult{
+                        margin-left: 20px ;
+                        .form-group{
+                            width: 100% ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pending-order-info-3{
+        padding: 50px 10px 100px ;
+        .order-info{
+            padding: 30px 10px 80px ;
+        }
+        .online-consult{
+            .show-case{
+                .add-date{
+                    .available-time{
+                        &>.date{
+                            margin-left: 45px ;
+                            .custom-arrow{
+                                svg{
+                                    left: 6px;
+                                    width: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submit-porpose{
+        .modal-content{
+            .show-case{
+                .title{
+                    &::after{
+                        right: 34% ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:575.98px){
+    .new-order-info{
+        .branch{
+            .shape{
+                right: 60px ;
+            }
+        }
+        padding: 50px 10px 100px ;
+        .order-info{
+            padding: 30px 15px 80px ;
+            .info{
+                .data{
+                    .details-order{
+                        .text{
+                            padding: 15px ;
+                            width: 92% ;
+                            height: 220px ;
+                        }
+                    }
+                    .documents{
+                        .files{
+                            .document{
+                                width: 70px ;
+                                height: 100px;
+                                line-height: 95px ;
+                                img{
+                                    min-width: 40px ;
+                                    max-width: 40px ;
+                                    min-height: 40px ;
+                                    max-height: 40px ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .button{
+                .btn{
+                    width: 70% ;
+                }
+            }
+        }
+    }
+    .prev-order-info{
+        .order-info{
+            .state-order{
+                width: 88% ;
+            }
+            .level-orders{
+                width: 95% ;
+            }
+            .info{
+                margin-top: 100px ;
+            }
+        }
+    }
+    .pending-order-info-3{
+        .online-consult{
+            .show-case{
+                padding: 50px 7% 100px ;
+                .available-days{
+                    .image{
+                        .input-date{
+                            left: 1% ;
+                        }
+                    }
+                }
+                .add-date{
+                    .btn-time{
+                        width: 120px ;
+                        font-size: 13pt ;
+                        left: -20px !important ;
+                        bottom: 65px ;
+                    }
+                    .available-time{
+                        .date{
+                            &>select.form-control{
+                                width: 20% ;
+                            }
+                            .custom-arrow{
+                                svg{
+                                    left: 14px;
+                                    width: 12px
+                                }
+                            }
+                        }
+                    }
+                }
+                .available-days{
+                    .days{
+                        width: 400px ;
+                    }
+                }
+            }  
+        }
+    } 
+    .submit-porpose{
+        .modal-dialog{
+            max-width: 98% !important ;
+            .modal-content{
+                .show-case{
+                    .title{
+                        &::after{
+                            right: 30% ;
+                        }
+                    }
+                    .form-group{
+                        width: 70% ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .new-order-info{
+        .branch{
+            display: none ;
+        }
+        .order-info{
+            .info{
+                .data{
+                    margin-right: 0 ;
+                    .name{
+                        text-align: center ;
+                        .text{
+                            font-size: 18pt ;
+                        }
+                    }
+                    .date{
+                        text-align: center ;
+                    }
+                    .interseted-order{
+                        .type-consult{
+                            span{
+                                &:first-child{
+                                    margin-left: 0 ;
+                                }
+                            }
+                        }
+                    }
+                    .details-order{
+                        .text{
+                            padding-inline: 10px ;
+                            font-size: 14pt ;
+                            width: 98% ;
+                        }
+                    }
+                    .documents{
+                        .files{
+                            .document + .document{
+                                margin-right: 10px ;
+                            }
+                        }
+                    }
+                }
+                .user-img{
+                    position: absolute ;
+                    img{
+                        min-height: 90px ;
+                        max-height: 90px ;
+                    }
+                }
+            }
+            .button{
+                .btn{
+                    width: 80% ;
+                }
+            }
+        }
+    }
+    .prev-order-info{
+        .order-info{
+            .state-order{
+                width:83% ;
+            }
+            .level-orders{
+                width: 85% ;
+                .level{
+                    &:after{
+                        left: 58px ;
+                    }
+                }
+            }
+            .info{
+                margin-top: 150px ;
+            }
+        }
+    }
+    .successful-submit{
+        .modal-content{
+            width: 100% ;
+        }
+    }
+    .submit-porpose{
+        .modal-content{
+            .show-case{
+                .title{
+                    &::after{
+                        content: initial ;
+                    }
+                }
+            }
+        }
+    }
+    .pending-order-info-3{
+        .order-info{
+            .info{
+                .data{
+                    .name{
+                        margin-right: 0 !important ;
+                        margin-left: 150px ;
+                    }
+                    .name+.date{
+                        margin-right: 0 !important ;
+                        margin-left: 150px ;
+                    }
+                    .rating{
+                        font-size: 12pt ;
+                    }
+                    .details-order{
+                        .text{
+                            width: 70% ;
+                        }
+                    }
+                }
+            }
+        }
+        .online-consult{
+            .show-case{
+                padding: 50px 5px 100px ;
+                width: 76% ;
+                .available-days{
+                    flex-direction: column ;
+                    justify-content: center ;
+                    align-items: center ;
+                    .days{
+                        .title{
+                            text-align: center ;
+                        }
+                        .day{
+                            margin-right: 120px;
+                            margin-bottom: 100px ;
+                        }
+                    }
+                    .image{
+                        .input-date{
+                            left: 35% ;
+                        }
+                    }
+                }
+                .add-date{
+                    flex-direction: column ;
+                    align-items: center ;
+                    justify-content: center ;
+                    .available-time{
+                        .title{
+                            text-align: center ;
+                        }
+                        .date{
+                            margin-right: 0 ;
+                            margin-left: 0 ;
+                            justify-content: center ;
+                            .form-control{
+                                width:  27% ;
+                            }
+                            .custom-arrow{
+                                svg{
+                                    left: 6px ;
+                                }
+                            }
+                        }
+                    }
+                    .btn-time{
+                        position: initial ;
+                    }
+                }
+                .decided-day{
+                    height: auto ;
+                    font-size: 10pt ;
+                    .time-element{
+                        .date{
+                            font-size: 10pt ;
+                        }
+                    }
+                }
+            }
+            .show-case + .show-case{
+                padding: 30px 10px 100px ;
+            }
+            .button{
+                width: 78% ;
+            }
+        }
+    }
+}
+@media(max-width:280px){
+    .new-order-info{
+        padding: 50px 0 100px ;
+        .order-info{
+            .info{
+                .data{
+                    .name{
+                        margin-right: 55px ;
+                    }
+                    .date{
+                        margin-right: 55px ;
+                    }
+                    .rating{
+                        font-size: 13pt ;
+                    }
+                    .interseted-order{
+                        .type-consult{
+                            span{
+                                &:first-child{
+                                    width: 130px ;
+                                }
+                                &:last-child{
+                                    width: 90px ;
+                                }
+                            }
+                        }
+                    }
+                    .details-order{
+                        .text{
+                            font-size: 11pt ;
+                            width: 98% ;
+                            height: 170px ;
+                        }
+                    }
+                    .documents{
+                        .files{
+                            .document{
+                                width: 55px ; 
+                                height: 90px ;
+                                line-height: 87px ;
+                                img{
+                                    min-width: 35px;
+                                    max-width: 35px;
+                                    min-height: 35px;
+                                    max-height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .button{
+                .btn{
+                    width: 88% ;
+                }
+            }
+        }
+    }
+    .prev-order-info{
+        .order-info{
+            .state-order{
+                width:83% ;
+            }
+            .level-orders{
+                width: 85% ;
+                left: -3px ;
+                .level{
+                    font-size: 8pt ;
+                    &:after{
+                        left: 40px ;
+                    }
+                }
+            }
+            .info{
+                margin-top: 150px ;
+            }
+        }
+    }
+    .pending-order-info-2{
+        .order-info{
+            .info{
+                .data{
+                    .write-consult{
+                        margin-left: 0 ;
+                    }
+                }
+            }
+        }
+    }
+    .pending-order-info-3{
+        .order-info{
+            padding: 30px 5px 80px ;
+            .info{
+                .data{
+                    .rating{
+                        font-size: 9pt ;
+                    }
+                    .details-order{
+                        .text{
+                            width: 60% ;
+                        }
+                    }
+                }
+            }
+        }
+        .online-consult{
+            .title{
+                font-size: 12pt;
+            }
+            .show-case{
+                width: 66% ;
+                .add-date{
+                    .available-time{
+                        .date{
+                            select.form-control{
+                                width: 25% ;
+                            }
+                        }
+                    }
+                }
+            }
+            .button{
+                width: 65% ;
+            }
+        }
+    }
+}
+
+
+//responsive[ltr]
+@media(min-width:1399px) and (max-width:1400px){
+    html[dir = "ltr"]{
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    left: initial ;
+                    right: 0% ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1399px){
+    html[dir = "ltr"]{
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    left: initial ;
+                    right: 0% ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1280px){
+    html[dir = "ltr"]{
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    right: 2% ;
+                    left: initial ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1024px){
+    html[dir = "ltr"]{
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    .level{
+                        &:after{
+                            left: initial ;
+                            right: 80px ;
+                        }
+                    }
+                }
+            }
+        }
+        .pending-order-info-3{
+            .order-info{
+                .user-img{
+                    position: absolute ;
+                }
+                .data{
+                    .name{
+                        margin-left: 100px ;
+                        margin-right: 0 ;
+                    }
+                }
+            }
+            .online-consult{
+                margin-left: 0 ;
+                margin-right: 25px ;
+                .show-case{
+                    .add-date{
+                        .available-time {
+                            .date{
+                                margin-right: 0 ;
+                                margin-left: 0 ;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+        .submit-porpose{
+            .modal-content{
+                .show-case{
+                    .title{
+                        &::after{
+                            right: initial ;
+                            left: 36% ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:991.98px){
+    html[dir = "ltr"]{
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    left: initial ;
+                    right: 1%  ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768.98px){
+    html[dir = "ltr"]{
+        .pending-order-info-2{
+            .order-info{
+                .info{
+                    .data{
+                        .name{
+                            margin-left: 100px ;
+                            margin-right: 0 ;
+                        }
+                        .name+.date{
+                            margin-left: 100px ;
+                            margin-right: 0 ;
+                        }
+                        .write-consult{
+                            margin-right: 20px ;
+                            margin-left: 0 ;
+                        }
+                    }
+                }
+            }
+        }
+        .pending-order-info-3{
+            .online-consult{
+                .show-case{
+                    .add-date{
+                        .available-time{
+                            &>.date{
+                                margin-right: 45px ;
+                                .custom-arrow{
+                                    svg{
+                                        right: 6px ;
+                                        left: initial ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .submit-porpose{
+            .modal-content{
+                .show-case{
+                    .title{
+                        &::after{
+                            left : 34% ;
+                            right: initial ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:575.98px){
+    html[dir = "ltr"]{
+        .new-order-info{
+            .branch{
+                .shape{
+                    left: 60px ;
+                    right: initial ;
+                }
+            }
+        }
+        .submit-porpose{
+            .modal-content{
+                .show-case{
+                    .title{
+                        &::after{
+                            left : 30% ;
+                            right: initial ;
+                        }
+                    }
+                }
+            }
+        }
+        .pending-order-info-3{
+            .online-consult{
+                .show-case{
+                    .add-date{
+                        .btn-time{
+                            right: -20px !important ;
+                            left: initial !important ;
+                        }
+                        .available-time{
+                            .date{
+                                .custom-arrow{
+                                    svg{
+                                        right: 14px ;
+                                        left: initial ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .available-days{
+                        .image{
+                            .input-date{
+                                right: 1% ;
+                                left: initial ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    html[dir = "ltr"]{
+        .new-order-info{
+            .order-info{
+                .info{
+                    .data{
+                        margin-left: 0 !important ;
+                        margin-right: 0 !important ;
+                        .interseted-order{
+                            .type-consult{
+                                span{
+                                    &:first-child{
+                                        margin-right: 0 !important ;
+                                        margin-left: 0 !important ;
+                                    }
+                                }
+                            }
+                        }
+                        .documents{
+                            .files{
+                                .document + .document{
+                                    margin-left: 10px !important ;
+                                    margin-right: 0 ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    .level{
+                        &:after{
+                            left: initial ;
+                            right: 58px ;
+                        }
+                    }
+                }
+            }
+        }
+        .pending-order-info-3{
+            .order-info{
+                .info{
+                    .data{
+                        .name{
+                            margin-right: 150px !important ;
+                            margin-left: 0 !important ;
+                        }
+                        .name+.date{
+                            margin-right: 150px !important ;
+                            margin-left: 0 !important ;
+                        }
+                    }
+                }
+            }
+            .online-consult{
+                .show-case{
+                    .available-days{
+                        .days{
+                            .day{
+                                margin-left: 120px ;
+                                margin-right: 0 ;
+                            }
+                        }
+                        .image{
+                            .input-date{
+                                right: 35% ;
+                                left: initial ;
+                            }
+                        }
+                    }
+                    .add-date{
+                        .available-time{
+                            .date{
+                                .form-control{
+                                    width:  27% ;
+                                }
+                                .custom-arrow{
+                                    svg{
+                                        right: 6px ;
+                                        left: initial ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .submit-porpose{
+            .modal-content{
+                .show-case{
+                    .title{
+                        &::after{
+                            content: initial ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:280px){
+    html[dir = "ltr"]{
+        .new-order-info{
+            .order-info{
+                .info{
+                    .data{
+                        .name{
+                            margin-left: 55px ;
+                            margin-right: 0 ;
+                        }
+                        .date{
+                            margin-left: 55px ;
+                            margin-right: 0 ;
+                        }
+                    }
+                }
+            }
+        }
+        .prev-order-info{
+            .order-info{
+                .level-orders{
+                    left: initial ;
+                    right: -3px ;
+                    .level{
+                        &:after{
+                            left: initial ;
+                            right: 40px ;
+                        }
+                    }
+                }
+            }
+        }
+        .pending-order-info-2{
+            .order-info{
+                .info{
+                    .data{
+                        .write-consult{
+                            margin-left: 0 ;
+                            margin-right: 0 ;
+                        }
+                    }
+                }
+            }
+        }
+        .pending-order-info-3{
+            .online-consult{
+                .show-case{
+                    .add-date{
+                        .available-time{
+                            .date{
+                                margin-right: 0 ;
+                                .form-control{
+                                    width: 25% ;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

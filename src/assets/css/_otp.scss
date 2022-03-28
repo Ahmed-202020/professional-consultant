@@ -48,9 +48,6 @@
                                     -ms-transform: translateX(-50%);
                                     -o-transform: translateX(-50%);
                                 }
-                                // &:active{
-                                //     border-color: $bg-color-2 ;
-                                // }
                             }
                             .form-control + .form-control{
                                 margin-right: 15px ;
@@ -82,5 +79,58 @@
                 }
             }
         }
+    }
+}
+//ltr 
+html[dir = "ltr"]{
+    .otp{
+        .modal-dialog{
+            .col-6{
+                .signin{
+                    .form-group{
+                        .codes{
+                            .form-control + .form-control{
+                                margin-left: 15px ;
+                                margin-right: 0 ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:912px){
+    .otp{
+        .modal-dialog{
+            max-width: 97% !important;
+            .row{
+                .col-6{
+                    .signin{
+                        .title{
+                            font-size: 15pt ;
+                        }
+                        .sub{
+                            font-size: 10pt ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}    
+@media(max-width:280px){
+    .otp{
+        .modal-dialog{
+            .row{
+                .col-6{
+                    .signin{
+                        .sub{
+                            font-size: 9pt ;
+                        }
+                    }
+                }
+            }
+        }    
     }
 }
