@@ -489,3 +489,19 @@ body{
         font-size: 12pt ;
     }
 }
+.shape{
+    .order-info{
+        .state-order{
+            &::after{
+                width: 74% !important ;
+            }
+        }
+        .level-orders{
+            .level:not(:first-child){
+                &::after{
+                    background-color: $btn-1 !important;
+                }
+            }
+        }
+    }
+}

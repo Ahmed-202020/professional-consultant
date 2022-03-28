@@ -552,6 +552,14 @@ html[dir="ltr"] .show-case .form-group .forget, html[dir="ltr"] #change-pass-pro
   font-size: 12pt;
 }
 
+.shape .order-info .state-order::after {
+  width: 74% !important;
+}
+
+.shape .order-info .level-orders .level:not(:first-child)::after {
+  background-color: #d6a22b !important;
+}
+
 .modal {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
@@ -2010,11 +2018,13 @@ html[dir="ltr"] #change-pass-prof .modal-content .show-case .out {
 .new-orders .paginations .state-page .prev-page {
   color: #dcdcdc;
   font-size: 14pt;
+  cursor: pointer;
 }
 
 .new-orders .paginations .state-page .next-page {
   color: #000;
   font-size: 14pt;
+  cursor: pointer;
 }
 
 .new-orders .paginations .state-page .bars {

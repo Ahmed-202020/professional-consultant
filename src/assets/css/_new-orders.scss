@@ -139,10 +139,12 @@
             .prev-page{
                 color: $light-line  ;
                 font-size: 14pt;
+                cursor: pointer;
             }
             .next-page{
                 color: $black ;
                 font-size: 14pt;
+                cursor: pointer;
             }
             .bars{
                 margin-inline: 20px;
