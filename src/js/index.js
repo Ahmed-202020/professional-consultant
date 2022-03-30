@@ -49,6 +49,22 @@ $(function(){
         $(".modal-create .col-6").css({"height" : "900px"}) ; 
     }
 
+    $(".importants-sector select").on("change" , function(e){
+        var option = $(".importants-sector select option") ; 
+        for(let w = 0 ; w<option.length ; w++){
+            var customInput = $("<div class='custom-input'></div>") ; 
+            var input = $("<input disabled  type='text' class='form-control' name = 'type' value='' />") ;
+            var close = $("<img class = 'close' src='./assets/icons/Icon ionic-ios-close-circle-outline.svg' alt=''/>") ; 
+            $(customInput).append(close) ;  
+            $(customInput).append(input) ;  
+        }
+        $(".importants").append(customInput) ; 
+        $(input).val($(".importants-sector select option:selected").text());
+        $(".importants .custom-input .close").on("click" , function(){
+            $(this).parentsUntil(".importants").hide() ; 
+        })
+    })
+
     $(".modal-create .form-group").on("submit" , function(e){
         e.preventDefault();
         $(".modal-create").hide() ; 

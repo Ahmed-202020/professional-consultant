@@ -2,7 +2,7 @@
     .modal-dialog{
         .row{
             .col-6{
-                height: 800px ;
+                height: auto !important ;
                 .signin{
                     .title{
                         font-size: 18pt ;
@@ -61,6 +61,23 @@
                                 display: none ;
                             }
                         }
+                        .main-sector , .sub-sector , .exp-sector{
+                            position: relative;
+                            .form-control{
+                                width: 100% ;
+                                border: 1px solid $light-line !important ;
+                                text-align: right;
+                                position: initial ;
+                                color: $light-line ;
+                                background-image: url("../icons/Icon\ ionic-md-arrow-dropdown.svg");
+                                background-repeat: no-repeat;
+                                background-position-x: 5%;
+                                background-position-y: 20px;
+                                option{
+                                    color: $min-color;
+                                }
+                            }
+                        }
                         .buttons{
                             margin-top: 70px ;
                         }
@@ -78,6 +95,11 @@ html[dir = "ltr"]{
             .row{
                 .col-6{
                     .signin{
+                        .form-group{
+                            .main-sector , .sub-sector , .exp-sector , .importants-sector{
+                                @extend %select ; 
+                            }
+                        }
                         label[for = "agree"]{
                             span{
                                 margin-left: 30px ;

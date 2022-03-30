@@ -456,6 +456,23 @@ body{
         -o-transform: scale(.9);
     }
 }
+%select{
+    position: relative;
+    .form-control{
+        width: 100% ;
+        border: 1px solid $light-line !important ;
+        text-align: left ;
+        position: initial ;
+        color: $light-line ;
+        background-image: url("../icons/Icon\ ionic-md-arrow-dropdown.svg");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 20px;
+        option{
+            color: $min-color;
+        }
+    }
+}
 
 //classes
 
