@@ -127,70 +127,105 @@
     .paginations{
         position: absolute;
         left: 50% ;
+        display: flex ;
+        align-items: center ;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         margin-top: 100px ;
-        .state-page{
-            display: flex ;
-            align-items: baseline ;
-            .prev-page{
-                color: $light-line  ;
-                font-size: 14pt;
-                cursor: pointer;
+        flex-wrap: wrap ;
+    }
+    .simple-pagination{
+        padding: 0 5px 60px 0 ;
+    }
+    .light-theme{
+        .next , .prev{
+            color: $black !important ;
+            background: transparent  ;
+            border: none ;
+            box-shadow: none ;
+            font-size: 14pt ;
+            width:initial !important;
+            border: none !important ;
+            height: initial !important ;
+            box-shadow: none ;
+        }
+        .prev{
+            margin-top: 5px ;
+        }
+        .current{
+            transform: all 300ms ease;
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+            -webkit-transform: all 300ms ease;
+            -moz-transform: all 300ms ease;
+            -ms-transform: all 300ms ease;
+            -o-transform: all 300ms ease;
+        }
+        .disabled{
+            .next , .prev{
+                color: $light-line !important ;
             }
-            .next-page{
+        }
+        li{
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+        li + li {
+            margin-right: 5px ;
+            margin-top: 10px ;
+        }
+        .page-link:not(.next) , .page-link:not(.prev){
+            border: 2px solid $light-line ;
+            background: $white ;
+            color: transparent ;
+            overflow: hidden ;
+            width: 30px ;
+            height: 10px ;
+            border-radius: 15px ;
+            -webkit-border-radius: 15px ;
+            -moz-border-radius: 15px ;
+            -ms-border-radius: 15px ;
+            -o-border-radius: 15px ;
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+            box-shadow: none ;
+        } 
+        .active{
+            position: relative ;
+            border: 2px solid $black ;
+            width: 100px ;
+            background-color: $min-color ;
+            height: 10px ;
+            border-radius: 15px ;
+            -webkit-border-radius: 15px ;
+            -moz-border-radius: 15px ;
+            -ms-border-radius: 15px ;
+            -o-border-radius: 15px ;
+            color: $black ;
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+            box-shadow: none ;
+            .current{
+                position: absolute ;
+                left: 50% ;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                bottom: -40px ;
+                background: none ;
                 color: $black ;
-                font-size: 14pt;
-                cursor: pointer;
-            }
-            .bars{
-                margin-inline: 20px;
-                display: flex ;
-                .bar{
-                    display: flex ;
-                    flex-direction: column ;
-                    align-items: center;
-                    .bar-content{
-                        cursor: pointer ;
-                        height: 10px;
-                        width: 30px;
-                        background: $white;
-                        border: 2px solid $light-line ;
-                        border-radius: 15px;
-                        display: inline-block;
-                        margin: 0px 2px;
-                        -webkit-transition: all 0.5s ease 0s;
-                        -o-transition: all 0.5s ease 0s;
-                        transition: all 0.5s ease 0s;
-                        margin-bottom: 10px ;
-                    }
-                    .bar-text{
-                        color: $black ;
-                        font-size: 16pt ;
-                        opacity: 0;
-                        transition: all 300ms ease;
-                        -webkit-transition: all 300ms ease;
-                        -moz-transition: all 300ms ease;
-                        -ms-transition: all 300ms ease;
-                        -o-transition: all 300ms ease;
-                    }
-                }
-                .bar + .bar{
-                    margin-right: 5px ;
-                }
-                .active-page{
-                    .bar-content{
-                        background-color: $min-color ;
-                        width: 100px;
-                        border: 2px solid $black ;
-                    }
-                    .bar-text{
-                        opacity: 1;
-                    }
-                }
+                border: none ;
+                box-shadow: none;
+                font-size: 16pt ;
             }
         }
     }
@@ -271,16 +306,6 @@ html[dir = "ltr"]{
                 }
             }
         }
-        .paginations{
-            .state-page{
-                .bars{
-                    .bar + .bar{
-                        margin-left: 5px ;
-                        margin-right: 0 ; 
-                    }
-                }
-            }
-        }
     }    
 }
 
@@ -355,6 +380,20 @@ html[dir = "ltr"]{
                 }
             }
         }
+        .paginations{
+            margin-top: 15px;
+        }
+        .simple-pagination{
+            padding: 0 5px 5px 0 ;
+        }
+        .light-theme{
+            .prev{
+                margin-top: 40px ;
+            }
+            li + li{
+                margin-top: 46px  ;
+            }
+        }
     }
 }
 @media(max-width:500px){
@@ -413,15 +452,9 @@ html[dir = "ltr"]{
                 }
             }
         }
-        .paginations{
-            .state-page{
-                .bars{
-                    .active-page{
-                        .bar-content{
-                            width: 70px ;
-                        }
-                    }
-                }
+        .light-theme{
+            .active{
+                width: 70px ;
             }
         }
     }
@@ -445,24 +478,16 @@ html[dir = "ltr"]{
                 }
             }
         }
-        .paginations{
-            .state-page{
-                .bars{
-                    .bar{
-                        .bar-content{
-                            width: 15px ;
-                        }
-                    }
-                    .active-page{
-                        .bar-content{
-                            width: 30px ;
-                        }
-                    }
-                }
+        .light-theme{
+            .page-link:not(.next) , .page-link:not(.prev){
+                width: 15px  ;
+            }
+            .active{
+                width: 30px  ;
             }
         }
     }
-}
+}    
 
 //responsive[ltr]
 @media(max-width:575.98px){

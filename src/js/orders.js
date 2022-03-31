@@ -1,62 +1,21 @@
 $(function(){
-    $(".paginations .bar .bar-content").on("click" , function(){
-        $(".paginations .bar").removeClass("active-page");
-        $(this).parent(".bar").addClass("active-page") ; 
-    })
-    var ele =  $(".orders .card");
-    
-})
+    var items = $(".orders .card") ; 
+    var numItems = items.length ; 
+    var perPage = 6 ; 
+    items.slice(perPage).hide() ; 
 
+    $('.paginations').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "السابق",
+        nextText: "التالي",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
+});
 
-// function getPageList(totalPages , page , maxLength){
-
-//     function range(start , end){
-//         return Array.from(Array(end -  start+1) , (_ , i) => + start) ; 
-//     }
-
-//     var sideWidth = maxLength < 9 ? 1 : 2 ;
-//     var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1 ; 
-//     var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1
-//     if(totalPages <= maxLength){
-//         return range(1 , totalPages) ;
-//     }
-//     if(page <= maxLength - sideWidth - 1 - rightWidth){
-//         return range(1 , maxLength - sideWidth - 1).concat(0 , range(totalPages - sideWidth +1 , totalPages)) ;
-//     }
-
-//     if(page >= totalPages - sideWidth - 1 - rightWidth){
-//         return range(1 , sideWidth).concat(0 , range(totalPages - sideWidth - 1 - rightWidth - leftWidth , totalPages));
-//     }
-
-//     return range(1 , sideWidth).concat(0 , range(page - leftWidth , page + rightWidth) , 0 , range(totalPages-sideWidth + 1 , totalPages)) ;
-//     var numberOfItems = $(".orders > .card").length ; 
-//     var limitPerPage = 6 ; 
-//     var totalPages = Math.ceil(numberOfItems / limitPerPage) ; 
-//     var paginationsSize = 4 ; 
-//     var currentPage ;
-//     function showPage(whichPage){
-//         if(whichPage < 1 || whichPage > totalPages) return false ; 
-//         currentPage = whichPage ; 
-//         $(".orders > .card").hide().slice((currentPage-1) *  limitPerPage , currentPage * limitPerPage).show() ;
-//         $(".paginations li").slice(1 , -1).remove() ; 
-//         getPageList(totalPages , currentPage , paginationsSize).forEach(item =>{
-//             $("<li>").addClass(".page-item").addClass(item ? "current-page" : "dots")
-//             .toggleClass("active" , item === currentPage).append($("<a>").addClass("page-link")) 
-//             .attr({href : "javascript:void(0)"}).text(item || ". . .").insertBefore(".next-page") ; 
-//         });
-//         $(".previous-page").toggleClass("disable" , currentPage===1);
-//         $(".next-page").toggleClass("disable" , currentPage===totalPages);
-//         return true ; 
-//     }
-
-// }
-
-
-function paginitions(){
-    let barText =  document.getElementsByClassName("bar-text") ; 
-    for(let x = 0 ; x < barText.length ; x++ ){
-        barText[x].textContent = `0${ x + 1}`; 
-    }
-}
-paginitions() ; 
+$( ".new-orders .light-theme a" ).replaceWith( ".new-orders .light-theme span " )
 

@@ -2204,92 +2204,118 @@ html[dir="ltr"] .edit-profile-info .show-case .form-group label .importants .cus
 .new-orders .paginations {
   position: absolute;
   left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   margin-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.new-orders .paginations .state-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.new-orders .simple-pagination {
+  padding: 0 5px 60px 0;
 }
 
-.new-orders .paginations .state-page .prev-page {
-  color: #dcdcdc;
+.new-orders .light-theme .next, .new-orders .light-theme .prev {
+  color: #000 !important;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   font-size: 14pt;
-  cursor: pointer;
+  width: initial !important;
+  border: none !important;
+  height: initial !important;
+  box-shadow: none;
 }
 
-.new-orders .paginations .state-page .next-page {
-  color: #000;
-  font-size: 14pt;
-  cursor: pointer;
+.new-orders .light-theme .prev {
+  margin-top: 5px;
 }
 
-.new-orders .paginations .state-page .bars {
-  margin-inline: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.new-orders .paginations .state-page .bars .bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.new-orders .paginations .state-page .bars .bar .bar-content {
-  cursor: pointer;
-  height: 10px;
-  width: 30px;
-  background: #ffffff;
-  border: 2px solid #dcdcdc;
-  border-radius: 15px;
-  display: inline-block;
-  margin: 0px 2px;
+.new-orders .light-theme .current {
+  transform: all 300ms ease;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  margin-bottom: 10px;
+  -webkit-transform: all 300ms ease;
+  -moz-transform: all 300ms ease;
+  -ms-transform: all 300ms ease;
+  -o-transform: all 300ms ease;
 }
 
-.new-orders .paginations .state-page .bars .bar .bar-text {
-  color: #000;
-  font-size: 16pt;
-  opacity: 0;
-  transition: all 300ms ease;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
+.new-orders .light-theme .disabled .next, .new-orders .light-theme .disabled .prev {
+  color: #dcdcdc !important;
 }
 
-.new-orders .paginations .state-page .bars .bar + .bar {
+.new-orders .light-theme li {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.new-orders .light-theme li + li {
   margin-right: 5px;
+  margin-top: 10px;
 }
 
-.new-orders .paginations .state-page .bars .active-page .bar-content {
-  background-color: #e8b134;
-  width: 100px;
+.new-orders .light-theme .page-link:not(.next), .new-orders .light-theme .page-link:not(.prev) {
+  border: 2px solid #dcdcdc;
+  background: #ffffff;
+  color: transparent;
+  overflow: hidden;
+  width: 30px;
+  height: 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.new-orders .light-theme .active {
+  position: relative;
   border: 2px solid #000;
+  width: 100px;
+  background-color: #e8b134;
+  height: 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: #000;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.new-orders .paginations .state-page .bars .active-page .bar-text {
-  opacity: 1;
+.new-orders .light-theme .active .current {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: -40px;
+  background: none;
+  color: #000;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16pt;
 }
 
 .pending-orders .branch .shape img:nth-child(5) {
@@ -2344,11 +2370,6 @@ html[dir="ltr"] .new-orders .orders .card .date {
   left: initial;
 }
 
-html[dir="ltr"] .new-orders .paginations .state-page .bars .bar + .bar {
-  margin-left: 5px;
-  margin-right: 0;
-}
-
 @media (max-width: 1399.98px) {
   .new-orders .orders .card {
     padding-inline: 15px;
@@ -2397,6 +2418,18 @@ html[dir="ltr"] .new-orders .paginations .state-page .bars .bar + .bar {
     width: 150px;
     font-size: 15pt;
   }
+  .new-orders .paginations {
+    margin-top: 15px;
+  }
+  .new-orders .simple-pagination {
+    padding: 0 5px 5px 0;
+  }
+  .new-orders .light-theme .prev {
+    margin-top: 40px;
+  }
+  .new-orders .light-theme li + li {
+    margin-top: 46px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2442,7 +2475,7 @@ html[dir="ltr"] .new-orders .paginations .state-page .bars .bar + .bar {
     width: 100px;
     font-size: 9pt;
   }
-  .new-orders .paginations .state-page .bars .active-page .bar-content {
+  .new-orders .light-theme .active {
     width: 70px;
   }
 }
@@ -2461,10 +2494,10 @@ html[dir="ltr"] .new-orders .paginations .state-page .bars .bar + .bar {
   .new-orders .orders .card .info .data .name {
     margin-top: 10px;
   }
-  .new-orders .paginations .state-page .bars .bar .bar-content {
+  .new-orders .light-theme .page-link:not(.next), .new-orders .light-theme .page-link:not(.prev) {
     width: 15px;
   }
-  .new-orders .paginations .state-page .bars .active-page .bar-content {
+  .new-orders .light-theme .active {
     width: 30px;
   }
 }
