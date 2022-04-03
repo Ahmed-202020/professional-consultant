@@ -248,30 +248,22 @@ body{
         border: 2px solid $light-line ;
         padding-block: 10px ;
         border-radius:10px ;
+        margin-left: 10px ;
         -webkit-border-radius:10px ;
         -moz-border-radius:10px ;
         -ms-border-radius:10px ;
         -o-border-radius:10px ;
-        &:first-child{
-            margin-left: 15px ;
-            width: 160px ;
-        }
-        &:last-child{
-            margin-left: 15px ;
-            width: 115px ;
-        }
+        padding-inline: 25px ;
+    }
+    span + span{
+        margin-top: 10px ;
     }
 }
 %type-consult-ltr{
+    margin-left: 0 ;
     span{
-        &:first-child{
-            margin-right: 15px ;
-            margin-left: 0 ;
-        }
-        &:last-child{
-            margin-right: 15px ;
-            margin-left: 0 ;
-        }
+        margin-right: 15px ;
+        margin-left: 0 ;
     }
 }
 %form{
