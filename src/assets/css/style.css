@@ -1160,8 +1160,11 @@ html[dir="ltr"] .otp .modal-dialog .col-6 .signin .form-group .codes .form-contr
   content: initial !important;
 }
 
+.err {
+  background-color: #fafafa !important;
+}
+
 .errors {
-  background-color: #fafafa;
   padding: 100px 100px 200px 100px;
 }
 
