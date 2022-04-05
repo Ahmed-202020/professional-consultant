@@ -2604,6 +2604,7 @@ html[dir="ltr"] .new-orders .orders .card .date {
 }
 
 .new-order-info {
+  position: relative;
   padding: 50px 70px 100px;
 }
 
@@ -2690,6 +2691,8 @@ html[dir="ltr"] .new-orders .orders .card .date {
 .new-order-info .order-info .info .user-img img {
   min-height: 110px;
   max-height: 110px;
+  min-width: 110px;
+  max-width: 110px;
   border: 4px solid #e8b134;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -2811,6 +2814,90 @@ html[dir="ltr"] .new-orders .orders .card .date {
 
 .new-order-info .order-info .info .data .documents .files .document + .document {
   margin-right: 20px;
+}
+
+.new-order-info .order-info .info .data .write-consult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 140px;
+  margin-top: 80px;
+}
+
+.new-order-info .order-info .info .data .write-consult .title {
+  text-align: center;
+  color: #e8b134;
+  font-size: 18pt;
+  margin-bottom: 20px;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group {
+  width: 60%;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .form-control {
+  resize: none;
+  border: 1px solid #dcdcdc;
+  padding: 20px 20px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .form-control::-webkit-input-placeholder {
+  color: #dcdcdc;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .form-control:-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .form-control::-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .form-control::placeholder {
+  color: #dcdcdc;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .button .btn {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a)) !important;
+  background-image: linear-gradient(#d6a22b, #b07e0a) !important;
+}
+
+.new-order-info .order-info .info .data .write-consult .form-group .button .btn:nth-child(2) {
+  margin-top: 25px;
+  background-image: none !important;
+  background-color: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  color: #c3c3c3;
 }
 
 .new-order-info .order-info .button {
@@ -3094,90 +3181,6 @@ html[dir="ltr"] .new-orders .orders .card .date {
 .pending-order-info-2 .order-info .level-orders .level:nth-child(3)::after {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
   background-image: linear-gradient(#d6a22b, #b07e0a);
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 140px;
-  margin-top: 80px;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .title {
-  text-align: center;
-  color: #e8b134;
-  font-size: 18pt;
-  margin-bottom: 20px;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group {
-  width: 60%;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control {
-  resize: none;
-  border: 1px solid #dcdcdc;
-  padding: 20px 20px;
-  height: 200px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control::-webkit-input-placeholder {
-  color: #dcdcdc;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control:-ms-input-placeholder {
-  color: #dcdcdc;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control::-ms-input-placeholder {
-  color: #dcdcdc;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .form-control::placeholder {
-  color: #dcdcdc;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .button .btn {
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a)) !important;
-  background-image: linear-gradient(#d6a22b, #b07e0a) !important;
-}
-
-.pending-order-info-2 .order-info .info .data .write-consult .form-group .button .btn:nth-child(2) {
-  margin-top: 25px;
-  background-image: none !important;
-  background-color: #dcdcdc;
-  border: 1px solid #dcdcdc;
-  color: #c3c3c3;
 }
 
 .pending-order-info-3 .order-info .info .data {
@@ -3602,6 +3605,11 @@ html[dir="ltr"] .new-order-info .order-info .info .data .documents .files .docum
   margin-right: 0;
 }
 
+html[dir="ltr"] .new-order-info .order-info .info .data .write-consult {
+  margin-right: 140px;
+  margin-left: 0;
+}
+
 html[dir="ltr"] .submit-porpose .modal-content .title::after {
   right: initial;
   left: 42%;
@@ -3643,11 +3651,6 @@ html[dir="ltr"] .prev-order-info .order-info .level-orders {
 html[dir="ltr"] .pending-order-info .order-info .state-order::after {
   right: 0;
   left: initial;
-}
-
-html[dir="ltr"] .pending-order-info-2 .order-info .info .data .write-consult {
-  margin-right: 140px;
-  margin-left: 0;
 }
 
 html[dir="ltr"] .pending-order-info-3 .online-consult {
@@ -3698,7 +3701,7 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   .prev-order-info .order-info .level-orders {
     left: 2%;
   }
-  .pending-order-info-3 .order-info .data .user-img {
+  .new-order-info .order-info .data .user-img {
     position: absolute;
   }
 }
@@ -3716,7 +3719,7 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   .prev-order-info .order-info .level-orders .level {
     font-size: 10pt;
   }
-  .pending-order-info-2 .order-info .info .data .write-consult .form-group {
+  .new-order-info .order-info .info .data .write-consult .form-group {
     width: 80%;
   }
 }
@@ -3731,10 +3734,13 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   .prev-order-info .order-info .level-orders .level:after {
     left: 80px;
   }
-  .pending-order-info-3 .order-info .user-img {
+  .new-order-info .order-info .user-img {
     position: absolute;
   }
-  .pending-order-info-3 .order-info .data .name {
+  .new-order-info .order-info .data .name {
+    margin-right: 100px;
+  }
+  .new-order-info .order-info .data .name + .date {
     margin-right: 100px;
   }
   .pending-order-info-3 .online-consult {
@@ -3779,26 +3785,17 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   .new-order-info .order-info .info .data .details-order .text {
     width: 80%;
   }
+  .new-order-info .order-info .info .data .write-consult {
+    margin-left: 20px;
+  }
+  .new-order-info .order-info .info .data .write-consult .form-group {
+    width: 100%;
+  }
   .new-order-info .order-info .button .btn {
     width: 70%;
   }
   .prev-order-info .order-info .state-order {
     width: 63%;
-  }
-  .pending-order-info-2 .order-info .info .user-img {
-    position: absolute;
-  }
-  .pending-order-info-2 .order-info .info .data .name {
-    margin-right: 100px;
-  }
-  .pending-order-info-2 .order-info .info .data .name + .date {
-    margin-right: 100px;
-  }
-  .pending-order-info-2 .order-info .info .data .write-consult {
-    margin-left: 20px;
-  }
-  .pending-order-info-2 .order-info .info .data .write-consult .form-group {
-    width: 100%;
   }
   .pending-order-info-3 {
     padding: 50px 10px 100px;
@@ -3928,6 +3925,8 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   .new-order-info .order-info .info .user-img img {
     min-height: 90px;
     max-height: 90px;
+    min-width: 90px;
+    max-width: 90px;
   }
   .new-order-info .order-info .button .btn {
     width: 80%;
@@ -4070,6 +4069,9 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
     min-height: 35px;
     max-height: 35px;
   }
+  .new-order-info .order-info .info .data .write-consult {
+    margin-left: 0;
+  }
   .new-order-info .order-info .button .btn {
     width: 88%;
   }
@@ -4088,9 +4090,6 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   }
   .prev-order-info .order-info .info {
     margin-top: 150px;
-  }
-  .pending-order-info-2 .order-info .info .data .write-consult {
-    margin-left: 0;
   }
   .pending-order-info-3 .order-info {
     padding: 30px 5px 80px;
@@ -4148,10 +4147,10 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
     left: initial;
     right: 80px;
   }
-  html[dir="ltr"] .pending-order-info-3 .order-info .user-img {
+  html[dir="ltr"] .new-order-info .order-info .user-img {
     position: absolute;
   }
-  html[dir="ltr"] .pending-order-info-3 .order-info .data .name {
+  html[dir="ltr"] .new-order-info .order-info .data .name {
     margin-left: 100px;
     margin-right: 0;
   }
@@ -4177,6 +4176,10 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
 }
 
 @media (max-width: 768.98px) {
+  html[dir="ltr"] .new-order-info .order-info .info .data .write-consult {
+    margin-right: 20px;
+    margin-left: 0;
+  }
   html[dir="ltr"] .pending-order-info-2 .order-info .info .data .name {
     margin-left: 100px;
     margin-right: 0;
@@ -4184,10 +4187,6 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   html[dir="ltr"] .pending-order-info-2 .order-info .info .data .name + .date {
     margin-left: 100px;
     margin-right: 0;
-  }
-  html[dir="ltr"] .pending-order-info-2 .order-info .info .data .write-consult {
-    margin-right: 20px;
-    margin-left: 0;
   }
   html[dir="ltr"] .pending-order-info-3 .online-consult .show-case .add-date .available-time > .date {
     margin-right: 45px;
@@ -4279,6 +4278,10 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
     margin-left: 55px;
     margin-right: 0;
   }
+  html[dir="ltr"] .new-order-info .order-info .info .data .write-consult {
+    margin-left: 0;
+    margin-right: 0;
+  }
   html[dir="ltr"] .prev-order-info .order-info .level-orders {
     left: initial;
     right: -3px;
@@ -4286,10 +4289,6 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   html[dir="ltr"] .prev-order-info .order-info .level-orders .level:after {
     left: initial;
     right: 40px;
-  }
-  html[dir="ltr"] .pending-order-info-2 .order-info .info .data .write-consult {
-    margin-left: 0;
-    margin-right: 0;
   }
   html[dir="ltr"] .pending-order-info-3 .order-info .info .data .name {
     margin-right: -40px !important;
