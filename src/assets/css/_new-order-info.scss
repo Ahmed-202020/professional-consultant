@@ -497,6 +497,13 @@
     }
 }
 .pending-order-info-3{
+    .order-info{
+        .info{
+            .data{
+                overflow: auto ;
+            }
+        }
+    }
     .online-consult{
         margin-top: 70px;
         margin-left: 128px ;
@@ -530,10 +537,10 @@
                     .day{
                         border: 1px solid $light-line;
                         background-color: $light-bg ;
-                        width: 160px ;
+                        width: 150px ;
                         height: 50px ;
                         line-height: 50px ;
-                        display: inline-block ;
+                        display: none ;
                         text-align: center ;
                         color: $black ;
                         font-size: 14pt ;
@@ -542,6 +549,9 @@
                         -ms-border-radius:8px;
                         -o-border-radius:8px;
                         -webkit-border-radius:8px;
+                        &:focus{
+                            outline: none ;
+                        }
                     }
                     .day+.day{
                         margin-top: 10px ;
@@ -575,6 +585,7 @@
                 display: flex ;
                 justify-content: space-between ;
                 .available-time{
+                    width: 100%;
                     margin-bottom: 50px ;
                     .title{
                         color: $min-color ;
@@ -586,9 +597,10 @@
                         align-items: baseline ;
                         position: relative;
                         margin-bottom: 2px ;
+                        width: fit-content ;
                         .form-control{
                             @extend %form-control ; 
-                            width: 15% ;
+                            font-size: 15pt ;
                             text-align: center ;
                             &::placeholder{
                                 color: $light-line;
@@ -627,13 +639,17 @@
                     }
                     .decided-date{
                         position: relative ;
+                        width: 80%;
+                        display: flex ;
+                        flex-wrap: wrap ;
                         .date{
                             border: 1px solid $light-line;
                             background-color: $light-bg ;
-                            width: 125px ;
+                            width: 20%  ;
                             height: 50px ;
                             line-height: 50px ;
-                            display: inline-block ;
+                            margin-left:20px ;
+                            display:flow-root ;
                             text-align: center ;
                             color: $black ;
                             font-size: 15pt ;
@@ -642,12 +658,9 @@
                             -ms-border-radius:8px;
                             -o-border-radius:8px;
                             -webkit-border-radius:8px;
-                            .night-morn{
-                                margin-left: 3px ;
+                            &:focus{
+                                outline: none ;
                             }
-                        }
-                        .date+.date{
-                            margin-right:20px ;
                         }
                     }
                 }
@@ -670,7 +683,7 @@
                 }
             }
             .decided-day{
-                padding-inline: 30px ;
+                padding-inline: 25px ;
                 border: 1px solid #dcdcdc;
                 background-color: #fafafa;
                 height: 50px;
@@ -687,28 +700,20 @@
                 font-size: 14pt;
                 .title{
                     color: $min-color ;
-                    margin-left: 10px ;
+                    width: 160px ;
                 }
                 .day{
-                    margin-left: 10px ;
-                }
-                .hours{
-                    margin-left: 10px ;
-                }
-                .hours + .hours{
-                    margin-right: 10px ;
-                }
-                .night-morning{
-                    margin-left: 3px;
+                    width: 100px ;
                 }
                 .time-element{
                     display: flex ;
                     color: $black ;
                     .date{
                         color: $black ;
-                    }
-                    .date + .date{
-                        margin-right: 10px ;
+                        background-color: $light-bg;
+                        border: none ;
+                        outline: none ;
+                        margin-bottom: 0 ;
                     }
                 }
             }
@@ -719,6 +724,7 @@
             .add-date-btn{
                 position: absolute ;
                 left: 50% ;
+                opacity: .7;
                 transform: translateX(-50%);
                 -webkit-transform: translateX(-50%);
                 -moz-transform: translateX(-50%);
@@ -745,6 +751,7 @@
             margin-top: 30px ;
             padding: 30px 25px 150px  ;
             display: none ;
+            overflow: auto ;
         }
         .button{
             display: flex ;
@@ -967,49 +974,9 @@ html[dir = "ltr"]{
                             }
                         }
                     }
-                    .decided-date{
-                        .date{
-                            .night-morn{
-                                margin-right: 3px ;
-                                margin-left: 0 ;
-                            }
-                        }
-                        .date+.date{
-                            margin-left: 20px ;
-                            margin-right: 0 ;
-                        }
-                    }
                     .btn-time{
                         right: -50px ;
                         left: initial ;
-                    }
-                }
-            }
-            .decided-day{
-                .title{
-                    margin-right: 10px ;
-                    margin-left: 0 ;
-                }
-                .day{
-                    margin-right: 10px ;
-                    margin-left: 0 ;
-                }
-                .hours{
-                    margin-right: 10px ;
-                    margin-left: 0 ;
-                }
-                .hours + .hours{
-                    margin-left: 10px ;
-                    margin-right: 0 ;
-                }
-                .night-morning{
-                    margin-right: 3px ;
-                    margin-left: 0 ;
-                }
-                .time-element{
-                    .date + .date{
-                        margin-left: 10px ;
-                        margin-right: 0 ;
                     }
                 }
             }
@@ -1017,9 +984,7 @@ html[dir = "ltr"]{
                 margin-left: 10px ;
                 margin-right: 0 ;  
             }
-
         }
-
     }
 }
 
@@ -1047,6 +1012,21 @@ html[dir = "ltr"]{
         .order-info{
             .level-orders{
                 left: 1% ;
+            }
+        }
+    }
+    .pending-order-info-3{
+        .online-consult{
+            .show-case{
+                .add-date{
+                    .available-time{
+                        .decided-date{
+                            .date{
+                                width: 25% ;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -1109,9 +1089,6 @@ html[dir = "ltr"]{
                     .available-time {
                         .date{
                             margin-right: 0 ;
-                        }
-                        &> .date .form-control{
-                            width: 20% ;
                         }
                     }
                 }
@@ -1225,6 +1202,11 @@ html[dir = "ltr"]{
             .show-case{
                 .add-date{
                     .available-time{
+                        .decided-date{
+                            .date{
+                                width: 30% ;
+                            }
+                        }
                         &>.date{
                             margin-left: 45px ;
                             .custom-arrow{
@@ -1308,6 +1290,13 @@ html[dir = "ltr"]{
         }
     }
     .pending-order-info-3{
+        .order-info{
+            .info{
+                .date{
+                    margin-right: 22px ;
+                }
+            }
+        }
         .online-consult{
             .show-case{
                 padding: 50px 7% 100px ;
@@ -1462,27 +1451,27 @@ html[dir = "ltr"]{
                 .data{
                     .name{
                         margin-right: 0 !important ;
-                        margin-left: 150px ;
+                        margin-left: 50px ;
                     }
                     .name+.date{
                         margin-right: 0 !important ;
-                        margin-left: 150px ;
+                        margin-left: 50px ;
                     }
                     .rating{
                         font-size: 12pt ;
                     }
                     .details-order{
                         .text{
-                            width: 70% ;
+                            width: 100% ;
                         }
                     }
                 }
             }
         }
         .online-consult{
+            margin-left: 0 ;
             .show-case{
                 padding: 50px 5px 100px ;
-                width: 76% ;
                 .available-days{
                     flex-direction: column ;
                     justify-content: center ;
@@ -1514,13 +1503,15 @@ html[dir = "ltr"]{
                             margin-right: 0 ;
                             margin-left: 0 ;
                             justify-content: center ;
-                            .form-control{
-                                width:  27% ;
-                            }
                             .custom-arrow{
                                 svg{
                                     left: 6px ;
                                 }
+                            }
+                        }
+                        .decided-date{
+                            .date{
+                                width: 41% ;
                             }
                         }
                     }
@@ -1540,9 +1531,6 @@ html[dir = "ltr"]{
             }
             .show-case + .show-case{
                 padding: 30px 10px 100px ;
-            }
-            .button{
-                width: 78% ;
             }
         }
     }
@@ -1641,12 +1629,27 @@ html[dir = "ltr"]{
             padding: 30px 5px 80px ;
             .info{
                 .data{
+                    .name{
+                        margin-left: -40px ;
+                    }
+                    .name + .date{
+                        margin-left: -40px ;
+                    }
+                    .interseted-order{
+                        .type-consult{
+                            span{
+                                &:last-child{
+                                    width: 110px ;
+                                }
+                            }
+                        }
+                    }
                     .rating{
                         font-size: 9pt ;
                     }
                     .details-order{
                         .text{
-                            width: 60% ;
+                            width: 100% ;
                         }
                     }
                 }
@@ -1657,7 +1660,6 @@ html[dir = "ltr"]{
                 font-size: 12pt;
             }
             .show-case{
-                width: 66% ;
                 .add-date{
                     .available-time{
                         .date{
@@ -1665,11 +1667,14 @@ html[dir = "ltr"]{
                                 width: 25% ;
                             }
                         }
+                        .decided-date{
+                            .date{
+                                width: 46% ;
+                                margin-left: 8px;
+                            }
+                        }
                     }
                 }
-            }
-            .button{
-                width: 65% ;
             }
         }
     }
@@ -1746,7 +1751,7 @@ html[dir = "ltr"]{
                     .add-date{
                         .available-time {
                             .date{
-                                margin-right: 0 ;
+                                margin-right: 20px ;
                                 margin-left: 0 ;
                             }
                         }
@@ -1858,7 +1863,16 @@ html[dir = "ltr"]{
             }
         }
         .pending-order-info-3{
+            .order-info{
+                .info{
+                    .date{
+                        margin-left: 22px ;
+                        margin-right: 0 ;
+                    }
+                }
+            }
             .online-consult{
+                margin-right: 0  !important ;
                 .show-case{
                     .add-date{
                         .btn-time{
@@ -1936,11 +1950,11 @@ html[dir = "ltr"]{
                 .info{
                     .data{
                         .name{
-                            margin-right: 150px !important ;
+                            margin-right: 50px !important ;
                             margin-left: 0 !important ;
                         }
                         .name+.date{
-                            margin-right: 150px !important ;
+                            margin-right: 50px !important ;
                             margin-left: 0 !important ;
                         }
                     }
@@ -1959,21 +1973,6 @@ html[dir = "ltr"]{
                             .input-date{
                                 right: 35% ;
                                 left: initial ;
-                            }
-                        }
-                    }
-                    .add-date{
-                        .available-time{
-                            .date{
-                                .form-control{
-                                    width:  27% ;
-                                }
-                                .custom-arrow{
-                                    svg{
-                                        right: 6px ;
-                                        left: initial ;
-                                    }
-                                }
                             }
                         }
                     }
@@ -2038,14 +2037,31 @@ html[dir = "ltr"]{
             }
         }
         .pending-order-info-3{
+            .order-info{
+                .info{
+                    .data{
+                        .name{
+                            margin-right: -40px !important ;
+                            margin-left: 0 !important ;
+                        }
+                        .name + .date{
+                            margin-right: -40px !important ;
+                            margin-left: 0  !important ;
+                        }
+                    }
+                }
+            }
             .online-consult{
                 .show-case{
                     .add-date{
                         .available-time{
                             .date{
                                 margin-right: 0 ;
-                                .form-control{
-                                    width: 25% ;
+                            }
+                            .decided-date{
+                                .date{
+                                    margin-right: 8px ;
+                                    margin-left: 0 ;
                                 }
                             }
                         }

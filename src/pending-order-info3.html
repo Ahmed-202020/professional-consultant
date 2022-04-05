@@ -112,11 +112,11 @@
                         <div class="details-order">
                             <div class="title">تفاصيل الطلب :</div>
                             <div class="text">
-                                استشارة قانونية للعديد من الخدمات
-                                استشارة قانونية للعديد من الخدمات
-                                استشارة قانونية للعديد من الخدمات
-                                استشارة قانونية للعديد من الخدمات
-                                استشارة قانونية للعديد من الخدمات
+                                    استشارة قانونية للعديد من الخدمات
+                                    استشارة قانونية للعديد من الخدمات
+                                    استشارة قانونية للعديد من الخدمات
+                                    استشارة قانونية للعديد من الخدمات
+                                    استشارة قانونية للعديد من الخدمات
                             </div>
                         </div>
                         <div class="documents">
@@ -140,12 +140,13 @@
                             <div class="title">مواعيد الاستشارة :</div>
                             <form action="." class="form-group">
                                 <div class="show-case">
-                                    <button type="submit"  class="add-date-btn ">
+                                    <button disabled type="submit"  class="add-date-btn ">
                                         اضافة
                                     </button>
                                     <div class="available-days">
                                         <div class=" days">
                                             <div class="title">الأيام المتاحة للاستشارة :</div>
+                                            <input readonly type="date" class="day">
                                         </div>
                                         <div class="image">
                                             <input type="date" class="input-date" required>
@@ -156,18 +157,7 @@
                                         <div class="available-time">
                                             <div class="title">المواعيد المتاحة لتقديم الاستشارة :</div>
                                             <div class="date">
-                                                <input type="text" name="minuts" class="form-control minuts" placeholder="mm" maxlength="2" required>
-                                                <span>:</span>
-                                                <input type="text" name="hours" class="form-control hours" placeholder="hh" maxlength="2" required>
-                                                <select name="time" class="form-control">
-                                                    <option value="0">AM</option>
-                                                    <option value="1">PM</option>
-                                                </select>
-                                                <div class="custom-arrow">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9">
-                                                        <path id="Icon_ionic-md-arrow-dropdown" data-name="Icon ionic-md-arrow-dropdown" d="M9,22.5l9-9,9,9Z" transform="translate(-9 -13.5)"/>
-                                                    </svg>
-                                                </div>
+                                                <input disabled type="time" name="time" class="form-control minuts"  required>
                                             </div>
                                             <div class="decided-date">
                                             </div>
