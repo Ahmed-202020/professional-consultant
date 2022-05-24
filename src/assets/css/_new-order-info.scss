@@ -91,6 +91,7 @@
             .data{
                 margin-top: 25px ;
                 margin-right: 25px ;
+                width: 100% ;
                 .name{
                     .text{
                         font-size: 22pt ;
@@ -227,9 +228,13 @@
                             .btn:nth-child(2){
                                 margin-top: 25px ;
                                 background-image: none !important;
-                                background-color: $light-line ;
-                                border: 1px solid $light-line;
-                                color: $hint;
+                                background-color: $white ;
+                                border: 1px solid $btn-1;
+                                color: $btn-1;
+                                &:hover{
+                                    background-color: $btn-2 ;
+                                    color: $white ;
+                                }
                             }
                         }
                     }
@@ -763,11 +768,14 @@
             }
             .btn:last-child{
                 background-image: none !important;
-                background-color: $light-line ;
-                border: 1px solid $light-line ;
+                background-color: $white ;
+                border: 1px solid $btn-1;
+                color: $btn-1;
                 margin-top: 25px ;
-                font-weight: bold ;
-                color: $hint ;
+                &:hover{
+                    background-color: $btn-2 ;
+                    color: $white ;
+                }
             }
         }
     }

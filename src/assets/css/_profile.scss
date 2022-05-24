@@ -1,7 +1,41 @@
 .profile{
     padding: 50px 70px 300px ;
+    position: relative ;
     .branch{
         @extend %branch ; 
+    }
+    .msg{
+        background-color: $btn-1;
+        position: absolute ;
+        top: 50px ;
+        left: 70px ;
+        width: 50px ;
+        height: 50px ;
+        line-height: 50px ;
+        text-align: center ;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        .active{
+            position: absolute ;
+            font-weight: bold ;
+            font-size: 14pt ;
+            left: 0 ;
+            top: 0 ;
+            background-color: red ;
+            color: $white ;
+            width: 20px ;
+            height: 20px ;
+            line-height: 20px ;
+            text-align: center ;
+            border-radius: 50% ;
+            -webkit-border-radius: 50% ;
+            -moz-border-radius: 50% ;
+            -ms-border-radius: 50% ;
+            -o-border-radius: 50% ;
+        }
     }
     .sections{
         display: grid ;
@@ -89,6 +123,14 @@ html[dir = "ltr"]{
                     left: 30px ;
                     right: initial ;
                 }
+            }
+        }
+        .msg{
+            right: 70px ;
+            left: initial ;
+            .active{
+                right: 0 ;
+                left: initial ;
             }
         }
         .sections{
@@ -187,6 +229,9 @@ html[dir = "ltr"]{
         }
         padding: 50px 5px 300px ;
     }
+    .msg{
+        left: 10px !important ;
+    }
     .orders{
         .shape{
             right: 30% !important ;
@@ -195,7 +240,14 @@ html[dir = "ltr"]{
 }
 @media(max-width : 280px){
     .profile{
+        .branch{
+            display: none ;
+        }
+        .msg{
+            top: 10px ;
+        }
         .sections{
+            margin-top: 30px ;
             .section{
                 .show-case{
                     padding-inline: 15px ;
@@ -237,6 +289,10 @@ html[dir = "ltr"]{
             .shape{
                 left: 45% !important ;
                 right: initial !important ;
+            }
+            .msg{
+                right: 10px !important ;
+                left: initial !important ;
             }
             padding: 50px 5px 300px ;
         }

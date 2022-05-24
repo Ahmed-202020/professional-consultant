@@ -27,6 +27,17 @@ $(function(){
         $(".ph").val($(this).val().replace(/.*(\/|\\)/, ''));
     }) ; 
 
+    $(".send-message").on("click" , function(){
+        if($(".message .form-control").val()){
+            console.log("yes") ; 
+            var textMs = $("<div class = 'text'></div>")
+            $(".chat .show-case .sent").css("display" ,  "block") ; 
+            $(textMs).text($(".message .form-control").val()) ;
+            $(".chat .show-case .sent").append(textMs) ; 
+            $(".message .form-control").val("") ; 
+        }
+    })
+
 
     if( $(".modal-register .form-group").hasClass("error") ) {
         $(".modal-register .text-error").text("المستخدم غير مسجل بالنظام") ; 
@@ -94,11 +105,6 @@ $(function(){
         $(".bank-info").hide() ; 
         $("#successful-submit").modal("show") ; 
     });
-    $(".online-consult .button .btn").on("click" , function(e){
-        e.preventDefault();
-        $("#successful-submit").modal("show") ; 
-    });
-
     $(".input-date").on("change" , function(){
         let element = $(".available-days .days .day") ; 
         element.val($(".input-date").val()) ; 
