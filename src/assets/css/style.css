@@ -4884,6 +4884,10 @@ body.custom {
   overflow-y: auto;
 }
 
+.chat .show-case .sending .send-text {
+  display: none;
+}
+
 .chat .show-case .sending .send-text .text {
   text-align: right;
   background-color: #fafafa;

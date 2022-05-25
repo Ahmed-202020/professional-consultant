@@ -34,17 +34,23 @@ $(function(){
             var txtMS = $("<div class = 'text'></div>") ;
             $( txtMS).text($(".message .form-control").val()) ;
             var timeMS = $("<div class = 'time'></div>") ;
+            var mE= $("<span class = 'm-v'></span>") ; 
             var m =  $("<span class = 'm'></span>") ;
             var dot = $("<span class = 'dot'>:</span>") ;
             var h =  $("<span class = 'h'></span>") ;
             var date = new Date() ; 
-            getH = date.getHours() ; 
+            getH = date.getHours() % 12; 
+            getH =  getH<10 ? '0' + getH : 12 ; 
             h.append(getH) ; 
-            getM = date.getMinutes() ; 
+            getM = date.getMinutes()  ; 
+            getM = getM<10 ? '0' + getM : getM ; 
             m.append(getM) ; 
+            var amPm = getH >= 12 ?  "ص" : "م" ;
+            mE.append(amPm) ; 
             timeMS.append(h) ; 
             timeMS.append(dot) ; 
             timeMS.append(m) ; 
+            timeMS.append(mE) ; 
             sendMs.append(timeMS) ; 
             sendMs.append(txtMS) ; 
             $(sendMs).css("display" ,  "block") ; 
