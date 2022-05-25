@@ -69,6 +69,7 @@ body.custom{
         margin-bottom: 100px ;
     }
     .show-case{
+        overflow-x: auto ;
         background-color: $white ;
         padding: 50px  ;
         width: 60% ;
@@ -116,8 +117,9 @@ body.custom{
             display: none ;
             .text{
                 background-color: $light-bg ;
-                border: 1px solid $light-line ;
                 width: fit-content ;
+                word-break: break-all;
+                border: 1px solid $light-line ;
                 color: $black ;
                 font-size: 14pt ;
                 padding: 8px 16px ;
@@ -160,7 +162,7 @@ body.custom{
                 border: 1px solid rgba($light-line , 0.2);
                 box-shadow: 2px 2px 5px rgba($light-line , 0.5) ;
                 width: 400px  ;
-                padding: 10px 20px ;
+                padding: 10px 20px 10px 60px  ;
                 border-radius: 15px ;
                 -webkit-border-radius: 15px ;
                 -moz-border-radius: 15px ;
@@ -304,6 +306,9 @@ html[dir = "ltr"]{
                 text-align: right ;
             }
             .message{
+                .form-control{
+                    padding: 10px 60px 10px 20px ;
+                }
                 .btn{
                     right: 20px ;
                     left: initial ;
@@ -374,6 +379,7 @@ html[dir = "ltr"]{
     .chat{
         padding-inline: 10px ;
         .show-case{
+            padding: 50px 10px 50px ;
             .day{
                 &::before{
                     width: 50px ;

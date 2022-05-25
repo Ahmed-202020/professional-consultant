@@ -4816,6 +4816,7 @@ body.custom {
 }
 
 .chat .show-case {
+  overflow-x: auto;
   background-color: #ffffff;
   padding: 50px;
   width: 60%;
@@ -4871,10 +4872,11 @@ body.custom {
 
 .chat .show-case .sent .text {
   background-color: #fafafa;
-  border: 1px solid #dcdcdc;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  word-break: break-all;
+  border: 1px solid #dcdcdc;
   color: #000;
   font-size: 14pt;
   padding: 8px 16px;
@@ -4923,7 +4925,7 @@ body.custom {
   -webkit-box-shadow: 2px 2px 5px rgba(220, 220, 220, 0.5);
           box-shadow: 2px 2px 5px rgba(220, 220, 220, 0.5);
   width: 400px;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 60px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -5074,6 +5076,10 @@ html[dir="ltr"] .chat .show-case .received {
   text-align: right;
 }
 
+html[dir="ltr"] .chat .show-case .message .form-control {
+  padding: 10px 60px 10px 20px;
+}
+
 html[dir="ltr"] .chat .show-case .message .btn {
   right: 20px;
   left: initial;
@@ -5127,6 +5133,9 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
 @media (max-width: 500px) {
   .chat {
     padding-inline: 10px;
+  }
+  .chat .show-case {
+    padding: 50px 10px 50px;
   }
   .chat .show-case .day::before {
     width: 50px;
