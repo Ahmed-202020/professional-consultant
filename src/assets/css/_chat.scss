@@ -112,40 +112,80 @@ body.custom{
             }
         }
         .sending{
+            height: 350px ;
+            padding-block: 20px ;
+            overflow-y: auto ;
             .send-text{
                 display: none ;
-                text-align: right ;
-                background-color: $light-bg ;
-                width: fit-content ;
-                word-break: break-all;
-                border: 1px solid $light-line ;
-                color: $black ;
-                font-size: 14pt ;
-                padding: 8px 16px ;
-                border-radius: 10px ;
-                -webkit-border-radius: 10px ;
-                -moz-border-radius: 10px ;
-                -ms-border-radius: 10px ;
-                -o-border-radius: 10px ;
+                .text{
+                    text-align: right ;
+                    background-color: $light-bg ;
+                    border: 1px solid $light-line ;
+                    color: $black ;
+                }
+                .time{
+                    left: 0 ;
+                }
             }
             .send-text+ .send-text{
-                margin-top: 20px ;
+                margin-top: 30px ;
+            }
+            .send-text , .received-text{
+                position: relative ;
+                .text{
+                    width: fit-content ;
+                    max-width: 500px  ;
+                    display: block ;
+                    word-break: break-all;
+                    background-color: rgba($light-bg , 0.5)  ;
+                    border: 1px solid gba($light-line , 0.5)  ;
+                    font-size: 14pt ;
+                    padding: 8px 16px ;
+                    border-radius: 10px ;
+                    -webkit-border-radius: 10px ;
+                    -moz-border-radius: 10px ;
+                    -ms-border-radius: 10px ;
+                    -o-border-radius: 10px ;
+                }
+                .time{
+                    position: absolute ;
+                    top: 50% ;
+                    width: fit-content ;
+                    word-break: break-all;
+                    background-color: rgba($light-bg , 0.5)  ;
+                    border: 1px solid gba($light-line , 0.5)  ;
+                    color: $hint ;
+                    font-size: 14pt ;
+                    padding: 8px 16px ;
+                    border-radius: 10px ;
+                    -webkit-border-radius: 10px ;
+                    -moz-border-radius: 10px ;
+                    -ms-border-radius: 10px ;
+                    -o-border-radius: 10px ;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    .m-v{
+                        margin-right: 5px ;
+                    }
+                }
             }
             .received-text{
-                margin-right: auto ;
-                display: block ;
-                width: fit-content ;
-                word-break: break-all;
-                background-color: rgba($light-bg , 0.5)  ;
-                border: 1px solid gba($light-line , 0.5)  ;
-                color: $btn-1 ;
-                font-size: 14pt ;
-                padding: 8px 16px ;
-                border-radius: 10px ;
-                -webkit-border-radius: 10px ;
-                -moz-border-radius: 10px ;
-                -ms-border-radius: 10px ;
-                -o-border-radius: 10px ;
+                .text{
+                    margin-right: auto ;
+                    color: $btn-1 ;
+                }
+            }
+            .received-text+.received-text{
+                margin-top: 30px ;
+            }
+            .send-text+.received-text{
+                margin-top: 30px ;
+            }
+            .received-text+.send-text{
+                margin-top: 30px ;
             }
         }
         .message{
@@ -307,11 +347,27 @@ html[dir = "ltr"]{
         .show-case{
             .sending{
                 .send-text{
-                    text-align: left ;
+                    .text{
+                        text-align: left ;
+                    }
+                    .time{
+                        right: 0 ;
+                        left: initial ;
+                    }
+                }
+                .send-text , .received-text{
+                    .time{
+                        .m-v{
+                            margin-left: 5px ;
+                            margin-right: 0 ;
+                        }
+                    }
                 }
                 .received-text{
-                    margin-left: auto ;
-                    margin-right: 0 ;
+                    .text{
+                        margin-left: auto ;
+                        margin-right: 0 ;
+                    }
                 }
             }
             .message{

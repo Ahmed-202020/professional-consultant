@@ -4878,16 +4878,40 @@ body.custom {
   right: 5%;
 }
 
-.chat .show-case .sending .send-text {
-  display: none;
+.chat .show-case .sending {
+  height: 350px;
+  padding-block: 20px;
+  overflow-y: auto;
+}
+
+.chat .show-case .sending .send-text .text {
   text-align: right;
   background-color: #fafafa;
+  border: 1px solid #dcdcdc;
+  color: #000;
+}
+
+.chat .show-case .sending .send-text .time {
+  left: 0;
+}
+
+.chat .show-case .sending .send-text + .send-text {
+  margin-top: 30px;
+}
+
+.chat .show-case .sending .send-text, .chat .show-case .sending .received-text {
+  position: relative;
+}
+
+.chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  max-width: 500px;
+  display: block;
   word-break: break-all;
-  border: 1px solid #dcdcdc;
-  color: #000;
+  background-color: rgba(250, 250, 250, 0.5);
+  border: 1px solid gba(#dcdcdc, 0.5);
   font-size: 14pt;
   padding: 8px 16px;
   border-radius: 10px;
@@ -4897,20 +4921,16 @@ body.custom {
   -o-border-radius: 10px;
 }
 
-.chat .show-case .sending .send-text + .send-text {
-  margin-top: 20px;
-}
-
-.chat .show-case .sending .received-text {
-  margin-right: auto;
-  display: block;
+.chat .show-case .sending .send-text .time, .chat .show-case .sending .received-text .time {
+  position: absolute;
+  top: 50%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   word-break: break-all;
   background-color: rgba(250, 250, 250, 0.5);
   border: 1px solid gba(#dcdcdc, 0.5);
-  color: #d6a22b;
+  color: #c3c3c3;
   font-size: 14pt;
   padding: 8px 16px;
   border-radius: 10px;
@@ -4918,6 +4938,32 @@ body.custom {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.chat .show-case .sending .send-text .time .m-v, .chat .show-case .sending .received-text .time .m-v {
+  margin-right: 5px;
+}
+
+.chat .show-case .sending .received-text .text {
+  margin-right: auto;
+  color: #d6a22b;
+}
+
+.chat .show-case .sending .received-text + .received-text {
+  margin-top: 30px;
+}
+
+.chat .show-case .sending .send-text + .received-text {
+  margin-top: 30px;
+}
+
+.chat .show-case .sending .received-text + .send-text {
+  margin-top: 30px;
 }
 
 .chat .show-case .message {
@@ -5086,11 +5132,21 @@ html[dir="ltr"] .chat .branch .shape .text:nth-of-type(4) {
   right: initial;
 }
 
-html[dir="ltr"] .chat .show-case .sending .send-text {
+html[dir="ltr"] .chat .show-case .sending .send-text .text {
   text-align: left;
 }
 
-html[dir="ltr"] .chat .show-case .sending .received-text {
+html[dir="ltr"] .chat .show-case .sending .send-text .time {
+  right: 0;
+  left: initial;
+}
+
+html[dir="ltr"] .chat .show-case .sending .send-text .time .m-v, html[dir="ltr"] .chat .show-case .sending .received-text .time .m-v {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .chat .show-case .sending .received-text .text {
   margin-left: auto;
   margin-right: 0;
 }

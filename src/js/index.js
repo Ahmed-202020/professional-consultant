@@ -30,10 +30,25 @@ $(function(){
     $(".send-message").on("click" , function(){
         if($(".message .form-control").val()){
             console.log("yes") ; 
-            var textMs = $("<div class = 'send-text'></div>")
-            $(textMs).css("display" ,  "block") ; 
-            $(textMs).text($(".message .form-control").val()) ;
-            $(".chat .show-case .sending").append(textMs) ; 
+            var sendMs = $("<div class = 'send-text'></div>") ; 
+            var txtMS = $("<div class = 'text'></div>") ;
+            $( txtMS).text($(".message .form-control").val()) ;
+            var timeMS = $("<div class = 'time'></div>") ;
+            var m =  $("<span class = 'm'></span>") ;
+            var dot = $("<span class = 'dot'>:</span>") ;
+            var h =  $("<span class = 'h'></span>") ;
+            var date = new Date() ; 
+            getH = date.getHours() ; 
+            h.append(getH) ; 
+            getM = date.getMinutes() ; 
+            m.append(getM) ; 
+            timeMS.append(h) ; 
+            timeMS.append(dot) ; 
+            timeMS.append(m) ; 
+            sendMs.append(timeMS) ; 
+            sendMs.append(txtMS) ; 
+            $(sendMs).css("display" ,  "block") ; 
+            $(".chat .show-case .sending").append(sendMs) ; 
             $(".message .form-control").val("") ; 
         }
     })
