@@ -5191,6 +5191,12 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   }
 }
 
+@media (max-width: 991.98px) {
+  .chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
+    max-width: 350px;
+  }
+}
+
 @media (max-width: 820px) {
   .chat .show-case {
     width: 100%;
@@ -5203,6 +5209,9 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   }
   .chat .branch {
     display: none;
+  }
+  .chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
+    max-width: 250px;
   }
   .prev-msg .show-case .content {
     padding: 50px 20px;
@@ -5225,6 +5234,9 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   .chat .show-case .message .form-control {
     width: 260px;
   }
+  .chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
+    max-width: 200px;
+  }
   .prev-msg .show-case .content {
     padding: 50px 10px;
   }
@@ -5241,6 +5253,12 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   .prev-msg .show-case .content .time {
     left: 10px;
     font-size: 12pt;
+  }
+}
+
+@media (max-width: 280px) {
+  .chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
+    max-width: 140px;
   }
 }
 

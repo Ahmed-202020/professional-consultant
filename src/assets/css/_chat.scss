@@ -418,6 +418,19 @@ html[dir = "ltr"]{
         }
     }
 }
+@media(max-width:991.98px){
+    .chat{
+        .show-case{
+            .sending{
+                .send-text , .received-text{
+                    .text{
+                        max-width: 350px ;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width:820px){
     .chat{
         .show-case{
@@ -427,10 +440,19 @@ html[dir = "ltr"]{
 }
 @media(max-width:575.98px){
     .chat{
+        padding-inline: 30px ;
         .branch{
             display: none ;
         }
-        padding-inline: 30px ;
+        .show-case{
+            .sending{
+                .send-text , .received-text{
+                    .text{
+                        max-width: 250px ;
+                    }
+                }
+            }
+        }
     }
     .prev-msg{
         .show-case{
@@ -458,6 +480,13 @@ html[dir = "ltr"]{
                     width: 260px ;
                 }
             }
+            .sending{
+                .send-text , .received-text{
+                    .text{
+                        max-width: 200px ;
+                    }
+                }
+            }
         }
     }
     .prev-msg{
@@ -481,6 +510,19 @@ html[dir = "ltr"]{
                 .time{
                     left: 10px ;
                     font-size: 12pt ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:280px){
+    .chat{
+        .show-case{
+            .sending{
+                .send-text , .received-text{
+                    .text{
+                        max-width: 140px ;
+                    }
                 }
             }
         }
