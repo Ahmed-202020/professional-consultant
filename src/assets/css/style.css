@@ -540,6 +540,51 @@ html[dir="ltr"] .modal-create .modal-dialog .row .col-6 .signin .form-group .mai
   color: #e8b134;
 }
 
+.profile .msg, html[dir="ltr"] .profile .msg, .pending-order-info-2 .msg, .pending-order-info-3 .msg {
+  background-color: #d6a22b;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile .msg .active, html[dir="ltr"] .profile .msg .active, .pending-order-info-2 .msg .active, .pending-order-info-3 .msg .active {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14pt;
+  left: 0;
+  top: 0;
+  background-color: red;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+html[dir="ltr"] .pending-order-info-2 .msg, html[dir="ltr"] .pending-order-info-3 .msg {
+  right: 70px;
+  left: initial;
+}
+
+html[dir="ltr"] .pending-order-info-2 .msg .active, html[dir="ltr"] .pending-order-info-3 .msg .active {
+  right: 0;
+  left: initial;
+}
+
 .active-lang {
   color: #e8b134 !important;
   background-color: #fafafa !important;
@@ -1372,41 +1417,6 @@ html[dir="ltr"] .t-c .branch .shape .text {
   position: relative;
 }
 
-.profile .msg {
-  background-color: #d6a22b;
-  position: absolute;
-  top: 50px;
-  left: 70px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.profile .msg .active {
-  position: absolute;
-  font-weight: bold;
-  font-size: 14pt;
-  left: 0;
-  top: 0;
-  background-color: red;
-  color: #ffffff;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
 .profile .sections {
   display: -ms-grid;
   display: grid;
@@ -1485,16 +1495,6 @@ html[dir="ltr"] .profile .branch .shape img:nth-child(3) {
 html[dir="ltr"] .profile .branch .shape .text {
   left: 30px;
   right: initial;
-}
-
-html[dir="ltr"] .profile .msg {
-  right: 70px;
-  left: initial;
-}
-
-html[dir="ltr"] .profile .msg .active {
-  right: 0;
-  left: initial;
 }
 
 html[dir="ltr"] .profile .sections .section .show-case .title {
@@ -3962,6 +3962,9 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   .submit-porpose .modal-dialog .modal-content .show-case .form-group {
     width: 70%;
   }
+  .pending-order-info-2 .msg, .pending-order-info-3 .msg {
+    top: 105px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -4103,6 +4106,13 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   }
   .pending-order-info-3 .online-consult .show-case + .show-case {
     padding: 30px 10px 100px;
+  }
+  .pending-order-info-2 .order-info, .pending-order-info-3 .order-info {
+    margin-top: 80px;
+  }
+  .pending-order-info-2 .msg, .pending-order-info-3 .msg {
+    left: 10px !important;
+    top: 35px;
   }
 }
 
@@ -4338,6 +4348,10 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   }
   html[dir="ltr"] .submit-porpose .modal-content .show-case .title::after {
     content: initial;
+  }
+  html[dir="ltr"] .pending-order-info-2 .msg, html[dir="ltr"] .pending-order-info-3 .msg {
+    right: 10px !important;
+    left: initial !important;
   }
 }
 

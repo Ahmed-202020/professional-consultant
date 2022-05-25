@@ -780,6 +780,11 @@
         }
     }
 }
+.pending-order-info-2 , .pending-order-info-3{
+    .msg{
+        @extend %msg ;
+    }
+}
 
 //ltr 
 html[dir = "ltr"]{
@@ -983,6 +988,11 @@ html[dir = "ltr"]{
                 margin-left: 10px ;
                 margin-right: 0 ;  
             }
+        }
+    }
+    .pending-order-info-2 , .pending-order-info-3{
+        .msg{
+            @extend %msg-ltr ;
         }
     }
 }
@@ -1340,6 +1350,11 @@ html[dir = "ltr"]{
             }
         }
     }
+    .pending-order-info-2 , .pending-order-info-3{
+        .msg{
+            top: 105px ;
+        }
+    }
 }
 @media(max-width:500px){
     .new-order-info{
@@ -1521,6 +1536,15 @@ html[dir = "ltr"]{
             .show-case + .show-case{
                 padding: 30px 10px 100px ;
             }
+        }
+    }
+    .pending-order-info-2 , .pending-order-info-3{
+        .order-info{
+            margin-top: 80px ;
+        }
+        .msg{
+            left: 10px !important ;
+            top: 35px ;
         }
     }
 }
@@ -1979,6 +2003,12 @@ html[dir = "ltr"]{
                         }
                     }
                 }
+            }
+        }
+        .pending-order-info-2 , .pending-order-info-3{
+            .msg{
+                right: 10px !important ;
+                left: initial !important ;
             }
         }
     }
