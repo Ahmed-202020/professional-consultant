@@ -40,7 +40,7 @@ $(function(){
             var h =  $("<span class = 'h'></span>") ;
             var date = new Date() ; 
             getH = date.getHours() % 12; 
-            getH =  getH<10 ? '0' + getH : 12 ; 
+            getH =  getH<10 ? '0' + getH : getH ; 
             h.append(getH) ; 
             getM = date.getMinutes()  ; 
             getM = getM<10 ? '0' + getM : getM ; 
