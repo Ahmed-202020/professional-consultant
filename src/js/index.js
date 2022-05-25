@@ -30,10 +30,10 @@ $(function(){
     $(".send-message").on("click" , function(){
         if($(".message .form-control").val()){
             console.log("yes") ; 
-            var textMs = $("<div class = 'text'></div>")
-            $(".chat .show-case .sent").css("display" ,  "block") ; 
+            var textMs = $("<div class = 'send-text'></div>")
+            $(textMs).css("display" ,  "block") ; 
             $(textMs).text($(".message .form-control").val()) ;
-            $(".chat .show-case .sent").append(textMs) ; 
+            $(".chat .show-case .sending").append(textMs) ; 
             $(".message .form-control").val("") ; 
         }
     })

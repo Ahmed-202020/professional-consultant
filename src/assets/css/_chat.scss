@@ -111,11 +111,10 @@ body.custom{
                 right: 5%  ;
             }
         }
-        .sent{
-            text-align: right ;
-            margin-bottom: 50px ;
-            display: none ;
-            .text{
+        .sending{
+            .send-text{
+                display: none ;
+                text-align: right ;
                 background-color: $light-bg ;
                 width: fit-content ;
                 word-break: break-all;
@@ -129,15 +128,15 @@ body.custom{
                 -ms-border-radius: 10px ;
                 -o-border-radius: 10px ;
             }
-            .text+.text{
+            .send-text+ .send-text{
                 margin-top: 20px ;
             }
-        }
-        .received{
-            text-align: left ;
-            .text{
+            .received-text{
+                margin-right: auto ;
+                display: block ;
+                width: fit-content ;
+                word-break: break-all;
                 background-color: rgba($light-bg , 0.5)  ;
-                display: inline-block ;
                 border: 1px solid gba($light-line , 0.5)  ;
                 color: $btn-1 ;
                 font-size: 14pt ;
@@ -299,11 +298,14 @@ html[dir = "ltr"]{
             }
         }
         .show-case{
-            .sent{
-                text-align: left ;
-            }
-            .received{
-                text-align: right ;
+            .sending{
+                .send-text{
+                    text-align: left ;
+                }
+                .received-text{
+                    margin-left: auto ;
+                    margin-right: 0 ;
+                }
             }
             .message{
                 .form-control{
