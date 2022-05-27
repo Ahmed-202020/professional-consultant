@@ -286,6 +286,40 @@ body.custom{
     }
 }
 
+.prev-msg.notifications{
+    .show-case{
+        overflow: hidden;
+        text-align: initial ;
+        .content{
+            .title{
+                position: relative ;
+                color: $black ; 
+                font-size: 18pt ; 
+                width: 60% ;
+                font-weight: normal ; 
+                &::before{
+                    position: absolute ;
+                    content: "" ;
+                    width: 10px ;
+                    height: 10px ;
+                    line-height: 10px ;
+                    background-image: linear-gradient($btn-1 , $btn-2) ;
+                    right: -20px ;
+                    top: 15px ;
+                    border-radius: 50%  ;
+                    -webkit-border-radius: 50%  ;
+                    -moz-border-radius: 50%  ;
+                    -ms-border-radius: 50%  ;
+                    -o-border-radius: 50%  ;
+                }
+            }
+            .time.date{
+                left: 145px ; 
+            }
+        }
+    }
+}
+
 //ltr
 
 html[dir = "ltr"]{
@@ -401,6 +435,22 @@ html[dir = "ltr"]{
             }
         }
     }
+    .prev-msg.notifications{
+        .show-case{
+            .content{
+                .title{
+                    &::before{
+                        left: -20px ;
+                        right: initial ;
+                    }
+                }
+                .time.date{
+                    right: 145px ;
+                    left: initial ;
+                }
+            }
+        }
+    }
 }
 
 //res
@@ -461,12 +511,25 @@ html[dir = "ltr"]{
             }
         }
     }
+    .prev-msg.notifications{
+        .show-case{
+            .content{
+                padding: 50px 30px ;
+                .time{
+                    left: 10px ;
+                }
+                .time.date{
+                    left: 80px ;
+                }
+            }
+        }
+    }
 }
 @media(max-width:500px){
     .chat{
         padding-inline: 10px ;
         .show-case{
-            padding: 50px 10px 50px ;
+            padding: 0 10px 50px ;
             .day{
                 &::before{
                     width: 50px ;
@@ -514,6 +577,24 @@ html[dir = "ltr"]{
             }
         }
     }
+    .prev-msg.notifications{
+        .show-case{
+            .content{
+                .title{
+                    font-size: 12pt ;
+                    &::before{
+                        top: 9px ;
+                    }
+                }
+                .time{
+                    left: 0 ;
+                }
+                .time.date{
+                    left: 60px ;
+                }
+            }
+        }
+    }
 }
 @media(max-width:280px){
     .chat{
@@ -527,11 +608,41 @@ html[dir = "ltr"]{
             }
         }
     }
+    .prev-msg.notifications{
+        .show-case{
+            .content{
+                .title{
+                    width: 100% ;
+                }
+                .time{
+                    position: initial ;
+                    display: inline-block ;
+                }
+            }
+        }
+    }
 }
 
 
 //ltr_res
-
+@media(max-width:575.98px){
+    html[dir = "ltr"]{
+        .prev-msg.notifications{
+            .show-case{
+                .content{
+                    .time{
+                        right: 10px ;
+                        left: initial ;
+                    }
+                    .time.date{
+                        right: 80px ;
+                        left: initial ;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width:500px){
     html[dir = "ltr"]{
         .prev-msg{
@@ -540,6 +651,20 @@ html[dir = "ltr"]{
                     .time{
                         right: 10px  ;
                         left: 0 initial ;
+                    }
+                }
+            }
+        }
+        .prev-msg.notifications{
+            .show-case{
+                .content{
+                    .time{
+                        right: 0 ;
+                        left: initial ;
+                    }
+                    .time.date{
+                        right: 60px ;
+                        left: initial ;
                     }
                 }
             }

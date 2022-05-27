@@ -540,7 +540,7 @@ html[dir="ltr"] .modal-create .modal-dialog .row .col-6 .signin .form-group .mai
   color: #e8b134;
 }
 
-.profile .msg, html[dir="ltr"] .profile .msg, .pending-order-info-2 .msg, .pending-order-info-3 .msg {
+.profile .msg, .pending-order-info-2 .msg, .pending-order-info-3 .msg {
   background-color: #d6a22b;
   position: absolute;
   top: 50px;
@@ -556,7 +556,7 @@ html[dir="ltr"] .modal-create .modal-dialog .row .col-6 .signin .form-group .mai
   -o-border-radius: 50%;
 }
 
-.profile .msg .active, html[dir="ltr"] .profile .msg .active, .pending-order-info-2 .msg .active, .pending-order-info-3 .msg .active {
+.profile .msg .active, .pending-order-info-2 .msg .active, .pending-order-info-3 .msg .active {
   position: absolute;
   font-weight: bold;
   font-size: 14pt;
@@ -575,12 +575,12 @@ html[dir="ltr"] .modal-create .modal-dialog .row .col-6 .signin .form-group .mai
   -o-border-radius: 50%;
 }
 
-html[dir="ltr"] .pending-order-info-2 .msg, html[dir="ltr"] .pending-order-info-3 .msg {
+html[dir="ltr"] .profile .msg, html[dir="ltr"] .pending-order-info-2 .msg, html[dir="ltr"] .pending-order-info-3 .msg {
   right: 70px;
   left: initial;
 }
 
-html[dir="ltr"] .pending-order-info-2 .msg .active, html[dir="ltr"] .pending-order-info-3 .msg .active {
+html[dir="ltr"] .profile .msg .active, html[dir="ltr"] .pending-order-info-2 .msg .active, html[dir="ltr"] .pending-order-info-3 .msg .active {
   right: 0;
   left: initial;
 }
@@ -1417,6 +1417,10 @@ html[dir="ltr"] .t-c .branch .shape .text {
   position: relative;
 }
 
+.profile .msg.noti {
+  left: 145px;
+}
+
 .profile .sections {
   display: -ms-grid;
   display: grid;
@@ -1497,6 +1501,11 @@ html[dir="ltr"] .profile .branch .shape .text {
   right: initial;
 }
 
+html[dir="ltr"] .profile .msg.noti {
+  right: 145px;
+  left: initial;
+}
+
 html[dir="ltr"] .profile .sections .section .show-case .title {
   margin-left: 25px;
   margin-right: 0;
@@ -1561,11 +1570,20 @@ html[dir="ltr"] .orders .branch .shape .text:last-child {
   .profile {
     padding: 50px 5px 300px;
   }
+  .profile .branch {
+    display: none;
+  }
   .profile .shape {
     right: 45% !important;
   }
+  .profile .sections {
+    margin-top: 80px;
+  }
   .msg {
     left: 10px !important;
+  }
+  .msg.noti {
+    left: 75px !important;
   }
   .orders .shape {
     right: 30% !important;
@@ -1573,9 +1591,6 @@ html[dir="ltr"] .orders .branch .shape .text:last-child {
 }
 
 @media (max-width: 280px) {
-  .profile .branch {
-    display: none;
-  }
   .profile .msg {
     top: 10px;
   }
@@ -1610,6 +1625,10 @@ html[dir="ltr"] .orders .branch .shape .text:last-child {
   }
   html[dir="ltr"] .profile .msg {
     right: 10px !important;
+    left: initial !important;
+  }
+  html[dir="ltr"] .profile .msg.noti {
+    right: 75px !important;
     left: initial !important;
   }
   html[dir="ltr"] .orders .shape {
@@ -3494,6 +3513,7 @@ html[dir="ltr"] .new-orders .orders .card .date {
 }
 
 .pending-order-info-3 .online-consult .show-case .decided-day {
+  position: relative;
   padding-inline: 25px;
   border: 1px solid #dcdcdc;
   background-color: #fafafa;
@@ -3513,6 +3533,16 @@ html[dir="ltr"] .new-orders .orders .card .date {
   text-align: center;
   color: #000;
   font-size: 14pt;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .remove {
+  position: absolute;
+  left: 7px;
+  top: -14px;
+}
+
+.pending-order-info-3 .online-consult .show-case .decided-day .remove img {
+  width: 13px;
 }
 
 .pending-order-info-3 .online-consult .show-case .decided-day .title {
@@ -3610,6 +3640,10 @@ html[dir="ltr"] .new-orders .orders .card .date {
 .pending-order-info-3 .online-consult .button .btn:last-child:hover {
   background-color: #b07e0a;
   color: #ffffff;
+}
+
+.pending-order-info-2 .msg.noti, .pending-order-info-3 .msg.noti {
+  left: 145px;
 }
 
 html[dir="ltr"] .new-order-info .branch .shape img:nth-child(3) {
@@ -3764,9 +3798,19 @@ html[dir="ltr"] .pending-order-info-3 .show-case .add-date .available-time .btn-
   left: initial;
 }
 
+html[dir="ltr"] .pending-order-info-3 .show-case .decided-day .remove {
+  right: 7px;
+  left: initial;
+}
+
 html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   margin-left: 10px;
   margin-right: 0;
+}
+
+html[dir="ltr"] .pending-order-info-2 .msg.noti, html[dir="ltr"] .pending-order-info-3 .msg.noti {
+  right: 145px;
+  left: initial;
 }
 
 @media (max-width: 1399.98px) {
@@ -4114,6 +4158,9 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
     left: 10px !important;
     top: 35px;
   }
+  .pending-order-info-2 .msg.noti, .pending-order-info-3 .msg.noti {
+    left: 75px !important;
+  }
 }
 
 @media (max-width: 280px) {
@@ -4351,6 +4398,10 @@ html[dir="ltr"] .pending-order-info-3 .show-case .decided-day + .decided-day {
   }
   html[dir="ltr"] .pending-order-info-2 .msg, html[dir="ltr"] .pending-order-info-3 .msg {
     right: 10px !important;
+    left: initial !important;
+  }
+  html[dir="ltr"] .pending-order-info-2 .msg.noti, html[dir="ltr"] .pending-order-info-3 .msg.noti {
+    right: 75px !important;
     left: initial !important;
   }
 }
@@ -5082,6 +5133,40 @@ body.custom {
   background-color: #fafafa;
 }
 
+.prev-msg.notifications .show-case {
+  overflow: hidden;
+  text-align: initial;
+}
+
+.prev-msg.notifications .show-case .content .title {
+  position: relative;
+  color: #000;
+  font-size: 18pt;
+  width: 60%;
+  font-weight: normal;
+}
+
+.prev-msg.notifications .show-case .content .title::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6a22b), to(#b07e0a));
+  background-image: linear-gradient(#d6a22b, #b07e0a);
+  right: -20px;
+  top: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.prev-msg.notifications .show-case .content .time.date {
+  left: 145px;
+}
+
 html[dir="ltr"] .chat .branch .shape img:nth-child(1) {
   z-index: 5;
 }
@@ -5179,6 +5264,16 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   left: initial;
 }
 
+html[dir="ltr"] .prev-msg.notifications .show-case .content .title::before {
+  left: -20px;
+  right: initial;
+}
+
+html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
+  right: 145px;
+  left: initial;
+}
+
 @media (max-width: 1199.98px) {
   .chat .show-case {
     width: 70%;
@@ -5216,6 +5311,15 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   .prev-msg .show-case .content {
     padding: 50px 20px;
   }
+  .prev-msg.notifications .show-case .content {
+    padding: 50px 30px;
+  }
+  .prev-msg.notifications .show-case .content .time {
+    left: 10px;
+  }
+  .prev-msg.notifications .show-case .content .time.date {
+    left: 80px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -5223,7 +5327,7 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
     padding-inline: 10px;
   }
   .chat .show-case {
-    padding: 50px 10px 50px;
+    padding: 0 10px 50px;
   }
   .chat .show-case .day::before {
     width: 50px;
@@ -5254,11 +5358,41 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
     left: 10px;
     font-size: 12pt;
   }
+  .prev-msg.notifications .show-case .content .title {
+    font-size: 12pt;
+  }
+  .prev-msg.notifications .show-case .content .title::before {
+    top: 9px;
+  }
+  .prev-msg.notifications .show-case .content .time {
+    left: 0;
+  }
+  .prev-msg.notifications .show-case .content .time.date {
+    left: 60px;
+  }
 }
 
 @media (max-width: 280px) {
   .chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
     max-width: 140px;
+  }
+  .prev-msg.notifications .show-case .content .title {
+    width: 100%;
+  }
+  .prev-msg.notifications .show-case .content .time {
+    position: initial;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html[dir="ltr"] .prev-msg.notifications .show-case .content .time {
+    right: 10px;
+    left: initial;
+  }
+  html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
+    right: 80px;
+    left: initial;
   }
 }
 
@@ -5266,6 +5400,14 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   html[dir="ltr"] .prev-msg .show-case .content .time {
     right: 10px;
     left: 0 initial;
+  }
+  html[dir="ltr"] .prev-msg.notifications .show-case .content .time {
+    right: 0;
+    left: initial;
+  }
+  html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
+    right: 60px;
+    left: initial;
   }
 }
 

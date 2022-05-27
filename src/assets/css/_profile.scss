@@ -7,6 +7,9 @@
     .msg{
         @extend %msg ; 
     }
+    .msg.noti{
+        left: 145px ;
+    }
     .sections{
         display: grid ;
         grid-template-columns: repeat(auto-fill , minmax(calc(100% / 4) , 1fr)) ; 
@@ -96,7 +99,11 @@ html[dir = "ltr"]{
             }
         }
         .msg{
-            @extend %msg ; 
+            @extend %msg-ltr ; 
+        }
+        .msg.noti{
+            right: 145px ;
+            left: initial ;
         }
         .sections{
             .section{
@@ -189,14 +196,23 @@ html[dir = "ltr"]{
 }
 @media(max-width : 500px){
     .profile{
+        .branch{
+            display: none;
+        }
         .shape{
             right: 45% !important ;
         }
         padding: 50px 5px 300px ;
+        .sections{
+            margin-top: 80px ;
+        }
     }
     
     .msg{
         left: 10px !important ;
+    }
+    .msg.noti{
+        left: 75px !important;
     }
     .orders{
         .shape{
@@ -206,9 +222,6 @@ html[dir = "ltr"]{
 }
 @media(max-width : 280px){
     .profile{
-        .branch{
-            display: none ;
-        }
         .msg{
             top: 10px ;
         }
@@ -258,6 +271,10 @@ html[dir = "ltr"]{
             }
             .msg{
                 right: 10px !important ;
+                left: initial !important ;
+            }
+            .msg.noti{
+                right: 75px !important ;
                 left: initial !important ;
             }
             padding: 50px 5px 300px ;

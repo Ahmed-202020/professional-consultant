@@ -687,6 +687,7 @@
                 }
             }
             .decided-day{
+                position: relative ;
                 padding-inline: 25px ;
                 border: 1px solid #dcdcdc;
                 background-color: #fafafa;
@@ -702,6 +703,14 @@
                 text-align: center;
                 color: #000;
                 font-size: 14pt;
+                .remove{
+                    position: absolute ;
+                    left: 7px ;
+                    top: -14px ;
+                    img{
+                        width: 13px ;
+                    }
+                }
                 .title{
                     color: $min-color ;
                     width: 160px ;
@@ -783,6 +792,9 @@
 .pending-order-info-2 , .pending-order-info-3{
     .msg{
         @extend %msg ;
+    }
+    .msg.noti{
+        left: 145px ;
     }
 }
 
@@ -984,6 +996,12 @@ html[dir = "ltr"]{
                     }
                 }
             }
+            .decided-day{
+                .remove{
+                    right: 7px ;
+                    left: initial ;
+                }
+            }
             .decided-day + .decided-day{
                 margin-left: 10px ;
                 margin-right: 0 ;  
@@ -993,6 +1011,10 @@ html[dir = "ltr"]{
     .pending-order-info-2 , .pending-order-info-3{
         .msg{
             @extend %msg-ltr ;
+        }
+        .msg.noti{
+            right: 145px ;
+            left: initial ;
         }
     }
 }
@@ -1546,6 +1568,9 @@ html[dir = "ltr"]{
             left: 10px !important ;
             top: 35px ;
         }
+        .msg.noti{
+            left: 75px !important;
+        }
     }
 }
 @media(max-width:280px){
@@ -2008,6 +2033,10 @@ html[dir = "ltr"]{
         .pending-order-info-2 , .pending-order-info-3{
             .msg{
                 right: 10px !important ;
+                left: initial !important ;
+            }
+            .msg.noti{
+                right: 75px !important ;
                 left: initial !important ;
             }
         }

@@ -148,6 +148,7 @@ $(function(){
     $(".online-consult .form-group").on("submit" , function(e){
         e.preventDefault() ; 
         let element = $("<div class = 'decided-day'></div>") ; 
+        let remEl = $('<a href = "#" class = "remove"> <img src="./assets/icons/Icon ionic-ios-close-circle-outline.svg"  alt="close"></a>') ; 
         let titleElement = $("<span class='title'>تاريخ الاستشارة :</span>") ; 
         let dayElement = $("<span class='day'></span>")
         dayElement.text($(".available-days .days .day").val()) ; 
@@ -160,6 +161,7 @@ $(function(){
         element.append(titleElement) ; 
         element.append(dayElement) ; 
         element.append(timeElement) ; 
+        element.append(remEl) ; 
         $(".available-days .days .day").text("") ; 
         $(".available-time .date input").val("") ; 
         $(".add-date-btn").attr("disabled" , "disabled").css("opacity" , "0.7") ; 
