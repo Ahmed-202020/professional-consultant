@@ -292,6 +292,9 @@ body.custom{
         text-align: initial ;
         .content{
             .title{
+                margin-bottom: 15px ;
+            }
+            .hint{
                 position: relative ;
                 color: $black ; 
                 font-size: 18pt ; 
@@ -438,7 +441,7 @@ html[dir = "ltr"]{
     .prev-msg.notifications{
         .show-case{
             .content{
-                .title{
+                .hint{
                     &::before{
                         left: -20px ;
                         right: initial ;
@@ -580,7 +583,7 @@ html[dir = "ltr"]{
     .prev-msg.notifications{
         .show-case{
             .content{
-                .title{
+                .hint{
                     font-size: 12pt ;
                     &::before{
                         top: 9px ;
@@ -611,7 +614,7 @@ html[dir = "ltr"]{
     .prev-msg.notifications{
         .show-case{
             .content{
-                .title{
+                .hint{
                     width: 100% ;
                 }
                 .time{

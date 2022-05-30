@@ -5139,6 +5139,10 @@ body.custom {
 }
 
 .prev-msg.notifications .show-case .content .title {
+  margin-bottom: 15px;
+}
+
+.prev-msg.notifications .show-case .content .hint {
   position: relative;
   color: #000;
   font-size: 18pt;
@@ -5146,7 +5150,7 @@ body.custom {
   font-weight: normal;
 }
 
-.prev-msg.notifications .show-case .content .title::before {
+.prev-msg.notifications .show-case .content .hint::before {
   position: absolute;
   content: "";
   width: 10px;
@@ -5264,7 +5268,7 @@ html[dir="ltr"] .prev-msg .show-case .content .time::after {
   left: initial;
 }
 
-html[dir="ltr"] .prev-msg.notifications .show-case .content .title::before {
+html[dir="ltr"] .prev-msg.notifications .show-case .content .hint::before {
   left: -20px;
   right: initial;
 }
@@ -5358,10 +5362,10 @@ html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
     left: 10px;
     font-size: 12pt;
   }
-  .prev-msg.notifications .show-case .content .title {
+  .prev-msg.notifications .show-case .content .hint {
     font-size: 12pt;
   }
-  .prev-msg.notifications .show-case .content .title::before {
+  .prev-msg.notifications .show-case .content .hint::before {
     top: 9px;
   }
   .prev-msg.notifications .show-case .content .time {
@@ -5376,7 +5380,7 @@ html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
   .chat .show-case .sending .send-text .text, .chat .show-case .sending .received-text .text {
     max-width: 140px;
   }
-  .prev-msg.notifications .show-case .content .title {
+  .prev-msg.notifications .show-case .content .hint {
     width: 100%;
   }
   .prev-msg.notifications .show-case .content .time {
