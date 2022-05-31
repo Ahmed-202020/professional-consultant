@@ -1,0 +1,241 @@
+.profile-info.edit-profile-info.contact{
+    .show-case{
+        padding: 80px 0;
+        width: 90% ;
+        .title{
+            @extend %title-style ; 
+            margin-bottom: 40px ;
+            &::after{
+                right: 500px  ;
+            }
+        }
+    }
+}
+@media(max-width:1399.98px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 450px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1280px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 400px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1199.98px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 360px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1024px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 280px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:991.98px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 270px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:912px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 235px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:820px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: 195px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            width: 100% ;
+            .title{
+                &::after{
+                    right: 200px ;
+                }
+            }
+        }
+    }
+}
+@media(max-width:575.98px){
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    content: initial ;
+                }
+            }
+        }
+    }
+}
+
+//ltr
+html[dir = "ltr"]{
+    .profile-info.edit-profile-info.contact{
+        .show-case{
+            .title{
+                &::after{
+                    right: initial  ;
+                    left: 500px   ;
+                }
+            }
+        }
+    }
+}
+
+//res ltr
+@media(max-width:1399.98px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 450px ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1280px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 400px ;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media(max-width:1199.98px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 360px ;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media(max-width:1024px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 280px ;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media(max-width:991.98px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 270px ;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media(max-width:912px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right:initial ;
+                        left: 235px ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:820px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 195px ;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media(max-width:768px){
+    html[dir = "ltr"]{
+        .profile-info.edit-profile-info.contact{
+            .show-case{
+                .title{
+                    &::after{
+                        right: initial ;
+                        left: 200px ;
+                    }
+                }
+            }
+        }
+    }    
+}

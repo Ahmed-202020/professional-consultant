@@ -90,7 +90,7 @@ body input[type='password'] {
   height: 1px;
 }
 
-.submit-porpose .modal-content .title, .submit-porpose .modal-content .show-case .title, html[dir="ltr"] .submit-porpose .modal-content .title, html[dir="ltr"] .submit-porpose .modal-content .show-case .title, .bank-info .modal-content > .title, html[dir="ltr"] .bank-info .modal-content > .title, .services .title, .vip-consultant > .title, .why-choose-us .title {
+.submit-porpose .modal-content .title, .submit-porpose .modal-content .show-case .title, html[dir="ltr"] .submit-porpose .modal-content .title, html[dir="ltr"] .submit-porpose .modal-content .show-case .title, .bank-info .modal-content > .title, html[dir="ltr"] .bank-info .modal-content > .title, .profile-info.edit-profile-info.contact .show-case .title, .services .title, .vip-consultant > .title, .why-choose-us .title {
   position: relative;
   text-align: center;
   margin-bottom: 80px;
@@ -99,7 +99,7 @@ body input[type='password'] {
   font-weight: bold;
 }
 
-.submit-porpose .modal-content .title::after, .submit-porpose .modal-content .show-case .title::after, html[dir="ltr"] .submit-porpose .modal-content .title::after, html[dir="ltr"] .submit-porpose .modal-content .show-case .title::after, .bank-info .modal-content > .title::after, html[dir="ltr"] .bank-info .modal-content > .title::after, .services .title::after, .vip-consultant > .title::after, .why-choose-us .title::after {
+.submit-porpose .modal-content .title::after, .submit-porpose .modal-content .show-case .title::after, html[dir="ltr"] .submit-porpose .modal-content .title::after, html[dir="ltr"] .submit-porpose .modal-content .show-case .title::after, .bank-info .modal-content > .title::after, html[dir="ltr"] .bank-info .modal-content > .title::after, .profile-info.edit-profile-info.contact .show-case .title::after, .services .title::after, .vip-consultant > .title::after, .why-choose-us .title::after {
   position: absolute;
   content: "";
   top: 30%;
@@ -5412,6 +5412,137 @@ html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
   html[dir="ltr"] .prev-msg.notifications .show-case .content .time.date {
     right: 60px;
     left: initial;
+  }
+}
+
+.profile-info.edit-profile-info.contact .show-case {
+  padding: 80px 0;
+  width: 90%;
+}
+
+.profile-info.edit-profile-info.contact .show-case .title {
+  margin-bottom: 40px;
+}
+
+.profile-info.edit-profile-info.contact .show-case .title::after {
+  right: 500px;
+}
+
+@media (max-width: 1399.98px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 450px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 400px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 360px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 280px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 270px;
+  }
+}
+
+@media (max-width: 912px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 235px;
+  }
+}
+
+@media (max-width: 820px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 195px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-info.edit-profile-info.contact .show-case {
+    width: 100%;
+  }
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: 200px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-info.edit-profile-info.contact .show-case .title::after {
+    content: initial;
+  }
+}
+
+html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+  right: initial;
+  left: 500px;
+}
+
+@media (max-width: 1399.98px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 450px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 400px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 360px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 280px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 270px;
+  }
+}
+
+@media (max-width: 912px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 235px;
+  }
+}
+
+@media (max-width: 820px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 195px;
+  }
+}
+
+@media (max-width: 768px) {
+  html[dir="ltr"] .profile-info.edit-profile-info.contact .show-case .title::after {
+    right: initial;
+    left: 200px;
   }
 }
 
